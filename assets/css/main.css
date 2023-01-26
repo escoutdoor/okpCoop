@@ -1,0 +1,54 @@
+.delPage {
+    width: 100%;
+    background-color: #fff;
+    display: block;
+}
+
+.delPage__poster {
+    color: #fff;
+    padding-top: 54px;
+    height: 680px;
+    display: flex;
+    justify-content: space-around;
+    width: 1810px;
+    margin: 0 auto;
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    border-radius: 36px;
+}
+
+.delPage__poster img {
+    width: 573px;
+    height: 571.12px;
+}
+
+.delPage__poster-det {
+    margin: 42px 0 0 200px;
+    width: 715px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delPage__poster-det h1 {
+    font-weight: 800;
+    line-height: 80px;
+    font-size: 72px;
+}
+
+.delPage__poster-det p {
+    margin-top: 8px;
+    font-weight: 300;
+    line-height: 42px;
+    font-size: 20px;
+}
+
+.delPage__poster-det a {
+    margin-top: 36px;
+    width: 260px;
+    height: 66px;
+    text-align: center;
+    color: #fff;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 24px 0px 0 0;
+}
