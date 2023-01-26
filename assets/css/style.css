@@ -33,4 +33,5 @@ ul, ol {
 .wrap {
     width: 1410px;
     margin: 0 auto;
+    padding: 0 5px;
 }
