@@ -29,3 +29,8 @@ ul, ol {
     list-style: none;
     color: var(--color-black);
 }
+
+.wrap {
+    width: 1410px;
+    margin: 0 auto;
+}
