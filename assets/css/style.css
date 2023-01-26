@@ -37,7 +37,8 @@ ul, ol {
 }
 
 .background-wrap {
-    width: 1810px;
+    background: var(--background-color);
+    border-radius: 36px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 0 5px;
 }
