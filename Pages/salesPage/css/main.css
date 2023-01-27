@@ -1,0 +1,30 @@
+.background {
+    border-radius: 36px;
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    margin: 0px 42px 121px 78px;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0px 87px;
+}
+.background-links {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.background-title {
+    margin-top: 29px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+.background-subTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
