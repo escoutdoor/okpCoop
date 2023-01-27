@@ -1,0 +1,7 @@
+:root {
+    --color-black: #1F2428;
+    --color-buttGreenColor:linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+    --shadow-buttShadow: 0px 4px 4px rgba(1, 203, 124, 0.2); 
+    --background-color: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    --color-green: #01CD7D;
+}
