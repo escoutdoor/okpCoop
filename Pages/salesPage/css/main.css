@@ -28,3 +28,21 @@
     line-height: 30px;
     color: #fff;
 }
+
+.background button {
+    color: #FFFFFF;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 15px 40px;
+    
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.background button:hover {
+    transform: scale(1.05);
+}
