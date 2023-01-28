@@ -97,6 +97,8 @@
 
 .block2 {
     background-image: url(/assets/images/img/salesPageImg/img2.svg);
+    position: relative;
+    left: 6px;
 }
 
 .block3 {
