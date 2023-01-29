@@ -362,6 +362,7 @@
 }
 
 .delPage__banner-det p {
+    margin-top: 11px;
     line-height: 40px;
     font-size: 18px;
 }
