@@ -98,11 +98,11 @@
     height: 100%;
     background: #1f242886;
     /* opacity: 0.4; */
-    position: absolute;
-    display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
-    /* display: none; */
+    top: 0;
+    display: none;
 }
 
 .pop-up-login__body {
