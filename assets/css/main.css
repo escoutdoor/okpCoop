@@ -6,14 +6,19 @@
 
 .delPage__poster {
     color: #fff;
-    padding-top: 54px;
     height: 680px;
-    display: flex;
-    justify-content: space-around;
     width: 1810px;
     margin: 0 auto;
     background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
     border-radius: 36px;
+    padding: 54px 260px 0px 200px;
+}
+
+.delPage__poster-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
 }
 
 .delPage__poster img {
@@ -22,7 +27,6 @@
 }
 
 .delPage__poster-det {
-    margin: 42px 0px 0 100px;
     width: 715px;
     display: flex;
     flex-direction: column;
@@ -119,7 +123,6 @@
 
 .leftarr, 
 .rightarr {
-    /* border-radiu: 16px; */
     display: flex;
     cursor: pointer;
     position: absolute;
@@ -172,14 +175,14 @@
 
 .delPage__pricesProducts-itemDelivery {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
 }
 
 .delPage__pricesProducts-itemDelivery-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 44px;
 }
 
@@ -190,7 +193,6 @@
     background-color: #F2F6FC;
     border-radius: 16px;
     display: flex;
-    align-items:center ;
     gap: 28px;
 }
 
@@ -202,4 +204,183 @@
 .deliveryprice__text {
     display: flex;
     flex-direction: column;
+    user-select: none;
+}
+
+.deliveryprice__text p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.deliveryprice__text h1 {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.deliveryprice__text h1::after {
+    content: attr(data-end) ;
+    color: #01CD7D;
+}
+
+.delPage__pricesProducts-CenteredItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delPage__pricesProducts-CenteredItem p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-black);
+}
+
+
+.delPage__pricesProducts-CenteredItem h1 {
+    line-height: 36px;
+    font-size: 26px;
+
+}
+
+.delPage__pricesProducts-CenteredItem h1::after {
+    content: attr(data-end) ;
+    color: #01CD7D;
+}
+
+.desc__deliveryCent-item {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.desc__deliveryCent-item::after{
+    content: attr(data-end) ;
+    color: #01CD7D;
+}
+
+.delPage__pricesProducts-CenteredItem-offers,
+.delPage__pricesProducts-CenteredItem-offers2 {
+    margin-top: 163px; 
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+.delPage__pricesProducts-CenteredItem-offers img:last-child:hover,
+.delPage__pricesProducts-CenteredItem-offers2 img:first-child:hover {
+    justify-content: right;
+    background-color: #F2F6FC;
+    border-radius: 36px;
+    transform: scale(1.1);
+    transition: .2s transform, .1s background-color;
+}
+
+.delPage__pricesProducts-CenteredItem-offers2 img{
+    display: flex;
+    float: right;
+}
+
+.delPage__pricesProducts-CenteredItem-offers2 {
+    justify-content: right;
+}
+
+/*footer product*/
+
+.delPage__pricesProducts-advantages {
+    margin-top: 162px;
+    width: 100%;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 16px;
+    height: 180px;
+    padding: 17.5px 0 27px 0;
+}  
+
+.delPage__pricesProducts-advantages__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.delPage__pricesProducts-advantages__content-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    height: 135.5px;
+    border-right: 1px solid #c0c9d7;
+}
+
+.delPage__pricesProducts-advantages__content-item:first-child {
+    padding-left: 50px;
+}
+
+.delPage__pricesProducts-advantages__content-item {
+    padding-left: 70px;
+}
+
+.delPage__pricesProducts-advantages__content-item h1 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 70px;
+} 
+
+.delPage__pricesProducts-advantages__content-item:last-child {
+    border-right: none;
+}
+
+/*Banner 2*/
+
+.delPage__banner {
+    color: #fff;
+    padding: 38px 0;
+    height: 480px;
+    width: 1810px;
+    margin: 160px auto 0;
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    border-radius: 36px;
+    padding: 50px 350px 43px 208.61px;
+}
+
+.delPage__banner img {
+    width: 402px;
+    height: 405px;
+}
+
+.delPage__banner-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 76.82px;
+}
+
+.delPage__banner-det {
+    display: flex;
+    flex-direction: column;
+}
+
+.delPage__banner-det h1 {
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.delPage__banner-det p {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.delPage__banner-butt {
+    margin-top: 30px;
+    width: 240px;
+    height: 66px;
+    text-align: center;
+    color: #fff;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 24px 0px 0 0;
+    transition: .3s transform, .25s box-shadow;
+}
+
+.delPage__banner-butt:hover,
+.delPage__banner-butt:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
+    transform: translateY(-0.25em);
 }
