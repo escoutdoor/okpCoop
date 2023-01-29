@@ -124,4 +124,10 @@
     width: 100%;
 }
 .questions__body-icon {
+    width: 24px;
+    height: 12px;
+}
+.questions__body-icon img {
+    width: 100%;
+    height: 100%;
 }
