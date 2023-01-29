@@ -56,6 +56,9 @@
     border-radius: 36px;
     padding: 24px 0px 0 0;
     transition: .3s transform, .25s box-shadow;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .delPage__butt:hover,
@@ -378,10 +381,23 @@
     border-radius: 36px;
     padding: 24px 0px 0 0;
     transition: .3s transform, .25s box-shadow;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
 }
 
 .delPage__banner-butt:hover,
 .delPage__banner-butt:focus {
     box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
     transform: translateY(-0.25em);
+}
+
+
+
+/*Delivery from UK*/
+
+.delPage__Ukdelivery {
+    display: block;
+    width: 100%;
+    margin-top: 160px;
 }
