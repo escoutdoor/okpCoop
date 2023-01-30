@@ -97,13 +97,13 @@
     width: 100%;
     height: 100%;
     background: #1f242886;
-    /* opacity: 0.4; */
     position: fixed;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     top: 0;
     display: none;
-    flex-direction: column;
+    opacity: 0;
 }
 
 .pop-up-login__cross-body {
