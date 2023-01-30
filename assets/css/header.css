@@ -103,6 +103,44 @@
     justify-content: center;
     top: 0;
     display: none;
+    flex-direction: column;
+}
+
+.pop-up-login__cross-body {
+    width: 554px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pop-up-login__cross {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: right;
+}
+
+.pop-up-login__cross::before,
+.pop-up-login__cross::after {
+    position: absolute;
+    top: 20px;
+    content: '';
+    width: 100%;
+    height: 1.5px; /* cross thickness */
+    background-color: #FFFFFF;
+}
+
+.pop-up-login__cross:hover {
+    cursor: pointer;
+}
+
+.pop-up-login__cross::before {
+    transform: rotate(45deg);
+}
+
+.pop-up-login__cross::after {
+    transform: rotate(-45deg);
 }
 
 .pop-up-login__body {
@@ -117,6 +155,7 @@
     flex-wrap: wrap;
     padding: 42px 38px 51px 42px;
 }
+
 .pop-up-login__body-title {
     color: var(--color-black);
     width: 317px;
@@ -126,18 +165,21 @@
     line-height: 32px;
     margin-bottom: 21px;
 }
+
 .pop-up-login__body-form {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 4px;
 }
+
 .pop-up-login__body-lable {
     color: var(--color-black);
     font-weight: 700;
     font-size: 16px;
     line-height: 36px;
 }
+
 .pop-up-login__body-item {
     color: var(--color-black);
     border: 1px solid #C0C9D7;
@@ -150,20 +192,24 @@
     font-size: 16px;
     line-height: 16px;
 }
+
 .pop-up-login__body-link {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     margin: 24px 0px 30px;
 }
+
 .pop-up-login__body-link a {
     color: var(--color-green);
 }
+
 .pop-up-login__body-buttom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .pop-up-login__body-btn {
     color: #FFFFFF;
     background: var(--color-buttGreenColor);
@@ -178,18 +224,22 @@
     cursor: pointer;
     width: fit-content;
 }
+
 .pop-up-login__body-btn:hover {
     transform: scale(1.05);
 }
+
 .pop-up-login__body-social {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
 }
+
 .pop-up-login__body-socisl_icon {
     width: 48px;
     height: 48px;
 }
+
 .pop-up-login__body-socisl_icon img {
     width: 100%;
     height: 100%;
