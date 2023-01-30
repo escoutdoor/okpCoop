@@ -676,10 +676,6 @@
     padding-left: 42px;
 }
 
-.delPage__delOptions__contentPrice:first-child span {
-    /* padding-left: 30px; */
-}
-
 .delPage__delOptions__contentPrice-item h1 {
     font-size: 20px;
     line-height: 16px;
@@ -692,3 +688,77 @@
     margin: 33px 0px 0px 16px;
 }
 
+/*FOUR STEPS TO BUY*/
+
+.delPage__foursteps {
+    display: block;
+    margin-top: 170px;
+    width: 100%;
+    color: #1F2428;
+}
+
+.delPage__4steps-title {
+    padding-right: 705px;
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.foursteps__buyProcess {
+    margin-top: 14px;
+}
+
+.foursteps__algorithm {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.foursteps__algorithm-item {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.foursteps__algorithm-item h1 {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-right: 128px;
+}
+
+.foursteps__algorithm-item p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+.foursteps__desc {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    padding-right: 640px;
+}   
+
+.foursteps__butt {
+    width: 240px;
+    height: 66px;
+    text-align: center;
+    color: #fff;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 24px 0px 0 0;
+    transition: .3s transform, .25s box-shadow;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.foursteps__butt:hover,
+.foursteps__butt:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
+    transform: translateY(-0.25em);
+}
