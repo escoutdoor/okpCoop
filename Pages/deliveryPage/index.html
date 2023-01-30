@@ -19,38 +19,6 @@
 
     <!-- Start of Header  -->
     <header>
-        <div class="pop-up-login">
-            <div class="pop-up-login__body">
-                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
-                <form action="#" class="pop-up-login__body-form">
-                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
-                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
-                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
-                    <input type="email" id="email" class="pop-up-login__body-item" required>
-                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
-                    <input type="password" id="password" class="pop-up-login__body-item" required>
-                    <div class="pop-up-login__body-link">
-                        <a href="#">Восстановление пароля</a>
-                        <samp>или</samp> 
-                        <a href="#">быстрая регистрация</a>
-                    </div>
-                    <div class="pop-up-login__body-buttom">
-                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
-                        <div class="pop-up-login__body-social">
-                            <a href="#" class="pop-up-login__body-socisl_icon">
-                                <img src="/assets/images/icon/Google.svg" alt="">
-                            </a>
-                            <a href="#" class="pop-up-login__body-socisl_icon">
-                                <img src="/assets/images/icon/Facebook.svg" alt="">
-                            </a>
-                            <a href="#" class="pop-up-login__body-socisl_icon">
-                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
         <div class="wrap">
             <div class="header__body">
                 <div class="header__body-block1">
@@ -72,14 +40,50 @@
                         <div class="login__body-icon">
                             <img src="/assets/images/icon/User.svg" alt="">
                         </div>
-                        <div class="login__body-btn">Вход</div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
                     </div>
                     <button class="header__body-btn">Связаться с нами</button>
                 </div>
             </div>
         </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </header>
 
-    
+    <!-- Start of js -->
+    <script src="/assets/js/app.js"></script>
 </body>
 </html>
