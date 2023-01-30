@@ -400,4 +400,295 @@
     display: block;
     width: 100%;
     margin-top: 160px;
+    color: #222222;
 }
+
+.delPage__Ukdelivery-headtext {
+    display: flex;
+    padding-right: 420px;
+    flex-direction: column;
+}
+
+.delPage__Ukdelivery-title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 56px;
+}
+
+.delPage__Ukdelivery-subTitle {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    padding-right:200px;
+}
+
+.delPage__UkdelCount {
+    margin-top: 50px;
+    width: 100%;
+    height: 270px;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 16px;
+    padding: 46px 34px 51px 35px;
+}
+
+.delPage__UkdelCount-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.delPage__UkdelCount-content__chooseMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delPage__UkdelCount-content__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 247px;
+    height: 75px;
+    color: #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.delPage__UkdelCount-content__item h1 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.del__chooseCountry {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#placeholder__inst {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-image: url(/assets/images/icons/arrows/arrowDown.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#placeholder__inst.activeCountry {
+    background-image: url(/assets/images/icons/arrows/iconmonstr-angel-up-thin.svg);
+    background-size: 11px;
+    transition: .2s background-image;
+}
+
+#placeholder__item {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;    
+    user-select: none;
+}
+
+#chooseMenu__delivery {
+    width: 246px;
+    height: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #F2F6FC;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    justify-content: space-around;
+    visibility: hidden;
+    transition: .2s visability;
+}
+
+#chooseMenu__delivery.activeMenu {
+    visibility: visible;
+    transition: .2s visabilit, .3s opacity linear;
+}
+
+.chooseMenu__delivery-item {
+    display: block;
+    height: 25px;
+    width: 246px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 3px 0px 0px 41px;
+    cursor: pointer;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.chooseMenu__delivery-item:hover {
+    background-color: #f2f2f2;
+}
+
+.chooseMenu__delivery-item:last-child {
+    border-bottom: 0;
+}
+
+.placeholder__instwolist {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-image: none;
+}
+
+.inputInfoDel::placeholder {
+    font-weight: 300;
+    font-family: 'Gilroy';
+    color: #222222;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#chooseMenu__deliveryPlus {
+    width: 246px;
+    height: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #F2F6FC;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    justify-content: space-around;
+    visibility: hidden;
+    transition: .2s visability;
+}
+
+#chooseMenu__deliveryPlus.activeMenuServ {
+    visibility: visible;
+    transition: .2s visabilit, .3s opacity linear;
+}
+
+#placeholder__instNew {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-image: url(/assets/images/icons/arrows/arrowDown.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#placeholder__instNew.activeServ {
+    background-image: url(/assets/images/icons/arrows/iconmonstr-angel-up-thin.svg);
+    background-size: 11px;
+    transition: .2s background-image;
+}
+
+.counter__button {
+    width: 240px;
+    height: 66px;
+    text-align: center;
+    color: #fff;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 24px 0px 0 0;
+    transition: .3s transform, .25s box-shadow;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.counter__button:hover,
+.counter__button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
+    transform: translateY(-0.25em);
+}
+
+/*OPTIONS OF DELIVERY*/
+
+.delPage__delOpitons {
+    display: block;
+    margin-top: 80px;
+    width: 100%;
+    color: var(--color-black);
+}
+
+.delPage__delOpitons-title {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.delPage__delOpitons__details {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.delPage__delOpitons__details-item {
+    display: block;
+    height: 104px;
+    width: 100%;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 16px;
+}
+
+.delPage__delOpitons__details-item__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 22px 11px 29px;
+}
+
+.delPage__delOptions__contentName {
+    display: flex;
+    gap: 27px;
+    width: 723px;
+    border-right: 1px solid #c0c9d7;
+    height: 82px;
+    align-items: center;
+}
+
+.delPage__delOptions__contentName h1 {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.delPage__delOptions__contentPrice {
+    display: flex;
+}
+
+.delPage__delOptions__contentPrice-item {
+    height: 82px;
+    padding: 15px 50px 0px 0px;
+    border-right: 1px solid #c0c9d7;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.delPage__delOptions__contentPrice-item span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #222222;
+    padding-left: 42px;
+}
+
+.delPage__delOptions__contentPrice:first-child span {
+    /* padding-left: 30px; */
+}
+
+.delPage__delOptions__contentPrice-item h1 {
+    font-size: 20px;
+    line-height: 16px;
+    color: #222222;
+    padding-left: 42px;
+}
+
+.delOptions__arrowButton {
+    cursor: pointer;
+    margin: 33px 0px 0px 16px;
+}
+
