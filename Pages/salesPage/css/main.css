@@ -231,10 +231,11 @@
     justify-content: center;
 }
 
-
-.active {
+.slider-item:hover {
     color: var(--color-green);
     border-color: var(--color-green);
+
+    cursor: pointer;
 }
 
 .threeDots {
