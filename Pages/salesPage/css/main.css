@@ -137,8 +137,24 @@
     left: 10px;
 }
 
+
 .textBlock {
     margin-top: 10px;
+}
+
+.textBlock.specialTextBlock {
+    position: relative;
+    left: -20px;
+}
+
+.textBlock.specialTextBlock2 {
+    position: relative;
+    left: 6px;
+}
+
+.textBlock.specialTextBlock3 {
+    position: relative;
+    left: 10px;
 }
 
 .textBlock h3 {
