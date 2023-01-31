@@ -1,0 +1,148 @@
+.background-container {
+    padding: 45px 0px 87px;
+}
+
+
+.background-links {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    
+    display: flex;
+}
+
+.background-links a, 
+.background-links p {
+    color: #FFFFFF;
+}
+
+
+.background-title {
+    margin-top: 29px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.background-subTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+.background-container button,
+.background-container__secondContainer button {
+    color: #FFFFFF;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 15px 40px;
+    
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+
+    width: 260px;
+    height: 66px;
+    margin-top: 40px;
+}
+
+.background-container button:hover,
+.background-container__secondContainer button:hover {
+    transform: scale(1.05);
+}
+
+.body {
+    margin-top: 100px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 56px;
+
+    color: var(--color-black);
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin: 30px 0px 180px;
+}
+.main-block {
+    width: 685px;
+    height: 280px;
+
+    padding: 35px 65px 0px 37px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 16px;
+}
+
+.main-block img {
+    margin-bottom: 30px;
+}
+
+.main-block h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    margin-bottom: 10px;
+
+    color: var(--color-black);
+}
+
+.main-block p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    color: var(--color-black);
+}
+
+.background-container__secondContainer {
+    padding: 45px 0px 31px;
+
+    display: flex;
+    gap: 70px;
+}
+
+.textBlock {
+    margin-top: 66px;
+
+    color: #FFFFFF;
+}
+
+.textBlock h2 {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 56px;
+
+    width: 650px;
+
+    margin-bottom: 19px;
+}
+
+.textBlock p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-bottom: 30px;
+}
