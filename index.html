@@ -51,35 +51,192 @@
     <main class="calcPage">
         <div class="calcPage__postheader">
             <div class="calcPage__postheaderContent">
-                <a href="#">Главная  /  Цены</a>
+                <div class="postheader__links">
+                    <a href="#">Главная </a>/
+                    <a href="#"> Цены</a>
+                </div>
+
                 <h1>Услуги доставки из Великобритании</h1>
             </div>
         </div>
+
         <div class="wrap">
             <div class="pricewrapperBox">
                 <div class="pricewrapperBox-item">
-                    <img src="/" alt="homeImg">
+                    <img src="/assets/images/img/calcPage/home.svg" alt="homeImg">
                     <h1>Ваш личный адрес для покупок</h1>
                     <p>на нашем современном автоматизированном складе в безналоговом Делавэре</p>
                     <a href="#">Бесплатно</a>
                 </div>
                 <div class="pricewrapperBox-item">
-                    <img src="/" alt="homeImg">
+                    <img src="/assets/images/img/calcPage/packages.svg" alt="packagesImg">
                     <h1>Объединение нескольких посылок в одну</h1>
                     <p>ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной</p>
                     <a href="#">от $10.00</a>
                 </div>
                 <div class="pricewrapperBox-item">
-                    <img src="/" alt="homeImg">
+                    <img src="/assets/images/img/calcPage/task.svg" alt="taskImg">
                     <h1>Усиленная упаковка по запросу</h1>
                     <p>Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.</p>
                     <a href="#">от $0.25</a>
                 </div>
                 <div class="pricewrapperBox-item">
-                    <img src="/" alt="homeImg">
+                    <img src="/assets/images/img/calcPage/grow.svg" alt="growImg">
                     <h1>Хранение входящих посылок 30 дней</h1>
                     <p>чем больше срок хранения посылок на складе – тем больше вы сможете собрать</p>
                     <a href="#">Бесплатно</a>
+                </div>
+            </div>
+
+            <div class="calc__choose">
+                <div class="calc__choose-headtext">
+                    <h1 class="calc__choose-title">Онлайн-калькулятор стоимости доставки товара</h1>
+                    <p class="calc__choose-subTitle">Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.</p>
+                </div>   
+                <div class="calc__chooseCount">
+                    <div class="calc__chooseCount-content">
+                        <div class="calc__chooseCount-content__chooseMenu">
+                            <div class="calc__chooseCount-content__item">
+                                <h1>Страна:</h1>
+                                <div class="calc__chooseCountry">
+                                    <div id="placeholder__inst">
+                                        <img src="/assets/images/icons/delPage/iconsDel/global.svg" alt="globalImg">
+                                        <span id="placeholder__item">Украина</span>
+                                    </div>
+                                    <div id="chooseMenu__calc">
+                                        <p class="chooseMenu__calc-item">США</p>
+                                        <p class="chooseMenu__calc-item">Великобритания</p>
+                                        <p class="chooseMenu__calc-item">Португалия</p>
+                                        <p class="chooseMenu__calc-item">Испания</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__chooseCount-content__item">
+                                <h1>Город:</h1>
+                                <div class="calc__chooseCountry">
+                                    <div class="placeholder__instwolist">
+                                        <img src="/assets/images/icons/delPage/iconsDel/Buildings.svg" alt="BuildingsImg">
+                                        <input class="inputInfoDel" type="text" placeholder="Киев">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__chooseCount-content__item">
+                                <h1>Индекс:</h1>
+                                <div class="calc__chooseCountry">
+                                    <div class="placeholder__instwolist">
+                                        <img src="/assets/images/icons/delPage/iconsDel/Notebook.svg" alt="NotebookImg">
+                                        <input class="inputInfoDel" type="text" placeholder="Введите индекс">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__chooseCount-content__item">
+                                <h1>Вес посылки:</h1>
+                                <div class="calc__chooseCountry">
+                                    <div class="placeholder__instwolist">
+                                        <img src="/assets/images/icons/delPage/iconsDel/Barbell.svg" alt="BarbellImg">
+                                        <input class="inputInfoDel" type="text" placeholder="0,5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__chooseCount-content__item">
+                                <h1>Дополнительные услуги:</h1>
+                                <div class="calc__chooseCountry">
+                                    <div id="placeholder__instNew">
+                                        <img src="/assets/images/icons/delPage/iconsDel/FileText.svg" alt="FileTextImg">
+                                        <span id="placeholder__item">Выберите услуги</span>
+                                    </div>
+                                    <div id="chooseMenu__calcPlus">
+                                        <p class="chooseMenu__calc-item">Скорость доставки</p>
+                                        <p class="chooseMenu__calc-item">Хрупкий товар</p>
+                                        <p class="chooseMenu__calc-item">Дополнительная уповка</p>
+                                        <p class="chooseMenu__calc-item">Гарантия доставки</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="calculator__button" href="#">Рассчитать</a>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="calcPage__delOpitons">
+                <h1 class="calcPage__delOpitons-title">Варианты доставки:</h1>
+                <div class="calcPage__delOpitons__details">
+                    <div class="calcPage__delOpitons__details-item">
+                        <div class="calcPage__delOpitons__details-item__content">
+                            <div class="calcPage__delOptions__contentName">
+                                <img src="/assets/images/icons/delPage/deliveryOptions/delUkr.svg" alt="delUkrimg">
+                                <h1>Укрпочта</h1>
+                            </div>
+                            <div class="calcPage__delOptions__contentPrice">
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Сроки:</span>
+                                    <h1>10-14 дней</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Стоимость доставки:</span>
+                                    <h1>от 27.00$</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Итого:</span>
+                                    <h1>41.99$</h1>
+                                </div>
+                                <div class="delOptions__arrowButton">
+                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calcPage__delOpitons__details-item">
+                        <div class="calcPage__delOpitons__details-item__content">
+                            <div class="calcPage__delOptions__contentName">
+                                <img src="/assets/images/icons/delPage/deliveryOptions/delEMS.svg" alt="delEMSimg">
+                                <h1>EMS Укрпочта</h1>
+                            </div>
+                            <div class="calcPage__delOptions__contentPrice">
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Сроки:</span>
+                                    <h1>10-12 дней</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Стоимость доставки:</span>
+                                    <h1>от 40.00$</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Итого:</span>
+                                    <h1>41.99$</h1>
+                                </div>
+                                <div class="delOptions__arrowButton">
+                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calcPage__delOpitons__details-item">
+                        <div class="calcPage__delOpitons__details-item__content">
+                            <div class="calcPage__delOptions__contentName">
+                                <img src="/assets/images/icons/delPage/deliveryOptions/delSmall.svg" alt="delSmallimg">
+                                <h1>Укрпочта МЕЛКИЕ ПАКЕТЫ</h1>
+                            </div>
+                            <div class="calcPage__delOptions__contentPrice">
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Сроки:</span>
+                                    <h1>10-14 дней</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Стоимость доставки:</span>
+                                    <h1>от 13.00$</h1>
+                                </div>
+                                <div class="calcPage__delOptions__contentPrice-item">
+                                    <span>Итого:</span>
+                                    <h1>41.99$</h1>
+                                </div>
+                                <div class="delOptions__arrowButton">
+                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

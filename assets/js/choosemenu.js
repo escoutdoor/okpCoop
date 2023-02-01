@@ -1,5 +1,5 @@
 let country = document.getElementById('placeholder__inst')
-let countryMenu = document.getElementById('chooseMenu__delivery');
+let countryMenu = document.getElementById('chooseMenu__calc');
 
 country.onclick = function() {
     countryMenu.classList.toggle('activeMenu');
@@ -8,11 +8,11 @@ country.onclick = function() {
     servicesTitle.classList.remove('activeServ');
 }
 
-let crItem = document.querySelectorAll('chooseMenu__delivery-item');
+let crItem = document.querySelectorAll('chooseMenu__calc-item');
 
 
 let servicesTitle = document.getElementById('placeholder__instNew')
-let servicesMenu = document.getElementById('chooseMenu__deliveryPlus');
+let servicesMenu = document.getElementById('chooseMenu__calcPlus');
 
 servicesTitle.onclick = function() {
     servicesMenu.classList.toggle('activeMenuServ');
