@@ -48,10 +48,13 @@
     width: 260px;
     height: 66px;
     margin-top: 40px;
+
+    transition: .3s transform, .25s box-shadow;
 }
 
-.background-container button:hover {
-    transform: scale(1.05);
+.background-container button:is(:hover, :focus) {
+    box-shadow: 0 0.5em 0.5em -0.4em #8dd3f1;
+    transform: translateY(-0.25em);
 }
 
 .body {
