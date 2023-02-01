@@ -166,19 +166,7 @@
     cursor: pointer;
 }
 
-.threeDots {
-    width: 42px;
-    height: 42px;
-    border: 1px solid #fff;
-    border-radius: 36px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #C0C9D7;
-}
-
 .rotatedArrow {
     transform: rotate(180deg);
 }
+
