@@ -1,0 +1,262 @@
+.background-container {
+    padding: 45px 0px 87px;
+}
+
+.background-links {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    
+    display: flex;
+}
+
+.background-links a, 
+.background-links p {
+    color: #FFFFFF;
+}
+
+
+.background-title {
+    margin-top: 29px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.background-subTitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+.background-container button {
+    color: #FFFFFF;
+    background: var(--color-buttGreenColor);
+    box-shadow: var(--shadow-buttShadow);
+    border-radius: 36px;
+    padding: 15px 40px;
+    
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+
+    width: 260px;
+    height: 66px;
+    margin-top: 40px;
+
+    transition: .3s transform, .25s box-shadow;
+}
+
+.background-container button:is(:hover, :focus) {
+    box-shadow: 0 0.5em 0.5em -0.4em #8dd3f1;
+    transform: translateY(-0.25em);
+}
+
+.body {
+    margin-top: 121px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 56px;
+
+    width: 650px;
+
+    color: var(--color-black);
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.main-item {
+    display: flex;
+    gap: 56px;
+}
+
+.imgBlock {
+    width: 328px;
+    height: 360px;
+    border-radius: 18px;
+}
+
+.block1 {
+    background-image: url(/assets/images/img/salesPageImg/img1.svg);
+}
+
+.block2 {
+    background-image: url(/assets/images/img/salesPageImg/img2.svg);
+    position: relative;
+    left: 6px;
+}
+
+.block3 {
+    background-image: url(/assets/images/img/salesPageImg/img3.svg);
+}
+
+.block4 {
+    background-image: url(/assets/images/img/salesPageImg/img4.svg);
+}
+
+.block5 {
+    background-image: url(/assets/images/img/salesPageImg/img5.svg);
+}
+
+.block6 {
+    background-image: url(/assets/images/img/salesPageImg/img6.svg);
+}
+
+.block7 {
+    background-image: url(/assets/images/img/salesPageImg/img7.svg);
+}
+
+.block8 {
+    background-image: url(/assets/images/img/salesPageImg/img8.svg);
+    position: relative;
+    left: -20px;    
+}
+
+.block9 {
+    background-image: url(/assets/images/img/salesPageImg/img9.svg);
+}
+
+.block10 {
+    background-image: url(/assets/images/img/salesPageImg/img10.svg);
+    position: relative;
+    left: 10px;
+}
+
+
+.textBlock {
+    margin-top: 10px;
+}
+
+.textBlock.specialTextBlock {
+    position: relative;
+    left: -20px;
+}
+
+.textBlock.specialTextBlock2 {
+    position: relative;
+    left: 6px;
+}
+
+.textBlock.specialTextBlock3 {
+    position: relative;
+    left: 10px;
+}
+
+.textBlock h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-black);
+}
+
+.textBlock p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 10px;
+    color: var(--color-black);
+}
+
+.textBlock p a {
+    font-weight: 900;
+}
+
+.greenText {
+    color: var(--color-green);
+}
+
+.textBlock p:nth-child(5) {
+    width: 260px;
+    margin-top: 30px;
+}
+
+.link {
+    color: var(--color-green);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    position: relative;
+    top: 20px;
+    transition: all 0.05s linear;
+}
+
+.link:hover {
+    color: aquamarine;
+}
+
+.collab {
+    width: 250px;
+}
+
+.hats {
+    position: relative;
+    top: -25px;
+}
+
+.specialLink {
+    position: relative;
+    top: 50px;
+}
+
+.specialLink2 {
+    position: relative;
+    top: 115px;
+}
+
+.specialLink3 {
+    position: relative;
+    top: 130px;
+}
+
+.specialText {
+    position: relative;
+    top: 49px;
+}
+
+.slider {
+    margin: 50px 0px 160px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.slider-item {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #C0C9D7;
+    border-radius: 36px;
+    color: #C0C9D7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item:hover {
+    color: var(--color-green);
+    border-color: var(--color-green);
+
+    cursor: pointer;
+}
+
+.rotatedArrow {
+    transform: rotate(180deg);
+}
