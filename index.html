@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/mainNew.css">
 
+
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
 
@@ -101,9 +104,10 @@
                                 <div class="calc__chooseCountry">
                                     <div id="placeholder__inst">
                                         <img src="/assets/images/icons/delPage/iconsDel/global.svg" alt="globalImg">
-                                        <span id="placeholder__item">Украина</span>
+                                        <input type="text"  class="placeholder__item" placeholder="Украина" readonly="readonly">
                                     </div>
                                     <div id="chooseMenu__calc">
+                                        <p class="chooseMenu__calc-item">Украина</p>
                                         <p class="chooseMenu__calc-item">США</p>
                                         <p class="chooseMenu__calc-item">Великобритания</p>
                                         <p class="chooseMenu__calc-item">Португалия</p>
@@ -116,7 +120,7 @@
                                 <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/icons/delPage/iconsDel/Buildings.svg" alt="BuildingsImg">
-                                        <input class="inputInfoDel" type="text" placeholder="Киев">
+                                        <input class="inputInfoDel__town" type="text" placeholder="Киев">
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +129,7 @@
                                 <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/icons/delPage/iconsDel/Notebook.svg" alt="NotebookImg">
-                                        <input class="inputInfoDel" type="text" placeholder="Введите индекс">
+                                        <input class="inputInfoDel__index" type="text" placeholder="Введите индекс">
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +138,7 @@
                                 <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/icons/delPage/iconsDel/Barbell.svg" alt="BarbellImg">
-                                        <input class="inputInfoDel" type="text" placeholder="0,5">
+                                        <input class="inputInfoDel__weight" type="text" placeholder="0,5">
                                     </div>
                                 </div>
                             </div>
@@ -143,18 +147,18 @@
                                 <div class="calc__chooseCountry">
                                     <div id="placeholder__instNew">
                                         <img src="/assets/images/icons/delPage/iconsDel/FileText.svg" alt="FileTextImg">
-                                        <span id="placeholder__item">Выберите услуги</span>
+                                        <input type="text"  class="placeholder__itemOpt" placeholder="Выберите услуги" readonly="readonly">
                                     </div>
                                     <div id="chooseMenu__calcPlus">
-                                        <p class="chooseMenu__calc-item">Скорость доставки</p>
-                                        <p class="chooseMenu__calc-item">Хрупкий товар</p>
-                                        <p class="chooseMenu__calc-item">Дополнительная уповка</p>
-                                        <p class="chooseMenu__calc-item">Гарантия доставки</p>
+                                        <p class="chooseMenu__calc-itemAdd">Скорость доставки</p>
+                                        <p class="chooseMenu__calc-itemAdd">Хрупкий товар</p>
+                                        <p class="chooseMenu__calc-itemAdd">Доп уповка</p>
+                                        <p class="chooseMenu__calc-itemAdd">Гарантия доставки</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="calculator__button" href="#">Рассчитать</a>
+                        <a class="calculator__button">Рассчитать</a>
                     </div>
                 </div>
             </div>   
@@ -506,7 +510,6 @@
     </footer>
 
 
-    <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/choosemenu.js"></script>
 </body>
 </html>
