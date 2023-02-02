@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/Pages/deliveryPage/css/main.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
 
-
+    <!-- jQuery -->
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.min.js"></script>
 
 </head>
 <body>
@@ -263,68 +265,69 @@
                     <h1 class="delPage__Ukdelivery-title">OkeyPost удобная и быстрая доставка посылок из Великобритании</h1>
                     <p class="delPage__Ukdelivery-subTitle">Рассчитайте стоимость доставки из Англии к вам домой. Мы получим ваши посылки на складе, при необходимости объединим несколько доставок в одну и отправим их к вам надежно упакованными.</p>
                 </div>   
-                <div class="delPage__UkdelCount">
-                    <div class="delPage__UkdelCount-content">
-                        <div class="delPage__UkdelCount-content__chooseMenu">
-                            <div class="delPage__UkdelCount-content__item">
+                <div class="calc__chooseCount">
+                    <div class="calc__chooseCount-content">
+                        <div class="calc__chooseCount-content__chooseMenu">
+                            <div class="calc__chooseCount-content__item">
                                 <h1>Страна:</h1>
-                                <div class="del__chooseCountry">
+                                <div class="calc__chooseCountry">
                                     <div id="placeholder__inst">
                                         <img src="/assets/images/img/deliveryPage/iconsDel/global.svg" alt="globalImg">
-                                        <span id="placeholder__item">Украина</span>
+                                        <input type="text"  class="placeholder__item" placeholder="Украина" readonly="readonly">
                                     </div>
-                                    <div id="chooseMenu__delivery">
-                                        <p class="chooseMenu__delivery-item">США</p>
-                                        <p class="chooseMenu__delivery-item">Великобритания</p>
-                                        <p class="chooseMenu__delivery-item">Португалия</p>
-                                        <p class="chooseMenu__delivery-item">Испания</p>
+                                    <div id="chooseMenu__calc">
+                                        <p class="chooseMenu__calc-item">Украина</p>
+                                        <p class="chooseMenu__calc-item">США</p>
+                                        <p class="chooseMenu__calc-item">Великобритания</p>
+                                        <p class="chooseMenu__calc-item">Португалия</p>
+                                        <p class="chooseMenu__calc-item">Испания</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="delPage__UkdelCount-content__item">
+                            <div class="calc__chooseCount-content__item">
                                 <h1>Город:</h1>
-                                <div class="del__chooseCountry">
+                                <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/img/deliveryPage/iconsDel/Buildings.svg" alt="BuildingsImg">
-                                        <input class="inputInfoDel" type="text" placeholder="Киев">
+                                        <input class="inputInfoDel__town" type="text" placeholder="Киев">
                                     </div>
                                 </div>
                             </div>
-                            <div class="delPage__UkdelCount-content__item">
+                            <div class="calc__chooseCount-content__item">
                                 <h1>Индекс:</h1>
-                                <div class="del__chooseCountry">
+                                <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/img/deliveryPage/iconsDel/Notebook.svg" alt="NotebookImg">
-                                        <input class="inputInfoDel" type="text" placeholder="Введите индекс">
+                                        <input class="inputInfoDel__index" type="text" placeholder="Введите индекс">
                                     </div>
                                 </div>
                             </div>
-                            <div class="delPage__UkdelCount-content__item">
+                            <div class="calc__chooseCount-content__item">
                                 <h1>Вес посылки:</h1>
-                                <div class="del__chooseCountry">
+                                <div class="calc__chooseCountry">
                                     <div class="placeholder__instwolist">
                                         <img src="/assets/images/img/deliveryPage/iconsDel/Barbell.svg" alt="BarbellImg">
-                                        <input class="inputInfoDel" type="text" placeholder="0,5">
+                                        <input class="inputInfoDel__weight" type="text" placeholder="0,5">
                                     </div>
                                 </div>
                             </div>
-                            <div class="delPage__UkdelCount-content__item">
+                            <div class="calc__chooseCount-content__item">
                                 <h1>Дополнительные услуги:</h1>
-                                <div class="del__chooseCountry">
+                                <div class="calc__chooseCountry">
                                     <div id="placeholder__instNew">
                                         <img src="/assets/images/img/deliveryPage/iconsDel/FileText.svg" alt="FileTextImg">
-                                        <span id="placeholder__item">Выберите услуги</span>
+                                        <input type="text"  class="placeholder__itemOpt" placeholder="Выберите услуги" readonly="readonly">
                                     </div>
-                                    <div id="chooseMenu__deliveryPlus">
-                                        <p class="chooseMenu__delivery-item">Скорость доставки</p>
-                                        <p class="chooseMenu__delivery-item">Хрупкий товар</p>
-                                        <p class="chooseMenu__delivery-item">Дополнительная уповка</p>
-                                        <p class="chooseMenu__delivery-item">Гарантия доставки</p>
+                                    <div id="chooseMenu__calcPlus">
+                                        <p class="chooseMenu__calc-itemAdd">Скорость доставки</p>
+                                        <p class="chooseMenu__calc-itemAdd">Хрупкий товар</p>
+                                        <p class="chooseMenu__calc-itemAdd">Доп уповка</p>
+                                        <p class="chooseMenu__calc-itemAdd">Гарантия доставки</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="counter__button" href="#">Рассчитать</a>
+                        <a class="calculator__button">Рассчитать</a>
                     </div>
                 </div>
                 <div class="delPage__delOpitons">

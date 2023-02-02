@@ -14,6 +14,7 @@ body, html {
     src: url(/assets/Gilroy/gilroy-regular.ttf);
 }
 
+
 a {
     text-decoration: none;
     color: var(--color-black);
