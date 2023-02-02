@@ -87,10 +87,13 @@
     font-size: 13px;
     line-height: 18px;
     cursor: pointer;
+
+    transition: .3s transform, .25s box-shadow;
 }
 
 .header__body-btn:hover {
-    transform: scale(1.05);
+    box-shadow: 0 0.5em 0.5em -0.4em #8dd3f1;
+    transform: translateY(-0.25em);
 }
 
 .pop-up-login {
