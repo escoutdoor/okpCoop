@@ -28,6 +28,8 @@
 .swiper {
     width: 1450px;
     height: 540px;
+
+    margin-top: 80px;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -186,4 +188,40 @@
 .timeBlock {
     display: flex;
     gap: 8px;
+}
+
+
+/* PREFOOTER */
+
+.delPage__prefooter {
+    display: block;
+    width: 1800px;
+    height: 280px;
+    background: var(--background-color);
+    padding: 112px 200px 0px 202px;
+    border-radius: 36px;
+    margin: 160px auto 0 auto;
+    color: #fff;
+}
+
+.delPage__prefooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delPage__prefooterContent h1 {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.delPage__prefooterContent-social {
+    display: flex;
+    gap:9px;
+}
+
+.delPage__prefooterContent-social img {
+    width: 66px;
+    height: 66px;
 }
