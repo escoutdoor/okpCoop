@@ -368,6 +368,35 @@
     border-radius: 16px;
 }
 
+/* DROPDOWN */
+
+.delOptions__dropDown {
+    width: 1400px;
+    position: relative;
+    z-index: 99;
+    height: 320px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(138, 138, 138, 0.1);
+    border-radius: 16px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: none;
+}
+
+.delOptions__dropDown {
+    text-align: center;
+    padding-top: 152px;
+}
+
+
+.calcPage__delOpitons__details-item.activeitem {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+/*  */
+
 .calcPage__delOpitons__details-item__content {
     display: flex;
     align-items: center;

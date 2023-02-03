@@ -118,7 +118,7 @@ $(".calculator__button").click(function() {
         }
 
     }
-    alert(`Приблезительная стоимость доставки адресату - ${counter(dataObject.obj1)}$`);
+    alert(`Приблизительная стоимость доставки адресату - ${counter(dataObject.obj1)}$`);
 })
 
 
