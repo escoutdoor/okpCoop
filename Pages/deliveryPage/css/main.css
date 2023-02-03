@@ -677,7 +677,7 @@
 }
 
 
-.calcPage__delOpitons__details-item.activeitem {
+.delPage__delOpitons__details-item.activeitem {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
