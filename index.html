@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/assets/css/root.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/mainNew.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
 
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
@@ -51,468 +51,97 @@
         </div>
     </header>
 
-    <main class="calcPage">
-        <div class="calcPage__postheader">
-            <div class="calcPage__postheaderContent">
-                <div class="postheader__links">
-                    <a href="#">Главная </a>/
-                    <a href="#"> Цены</a>
+    <main class="persAcc">
+        <div class="persAcc__header">
+            <div class="persAcc__headerCont">
+                <div class="persAcc__headerCont-left">
+                    <div class="persAcc__headerCont-londonReal__time">
+                        <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                        <div class="realTime">
+                            <a href="#">Лондон: </a>
+                            <p>19: 10 : 36</p>
+                        </div>
+                    </div>
+                    <div class="persAcc__headerCont-schedule__work">
+                        <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                        <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                    </div>
+                    <div class="persAcc__headerCont-exchange__rate">
+                        <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                        <a href="#">Курс валют</a>
+                    </div>
+                    <div class="persAcc__headerCont-bonus">
+                        <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                        <a href="#">Бонусный счет: $ 0</a>
+                    </div>
                 </div>
-
-                <h1>Услуги доставки из Великобритании</h1>
+                <div class="persAcc__headerCont-right">
+                    <div class="persAcc__headerCont-balance">
+                        <a href="#">Ваш баланс: </a>
+                        <a href="#">$0</a>
+                    </div>
+                    <div class="persAcc__headerCont-right__buttons">
+                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="wrap">
-            <div class="pricewrapperBox">
-                <div class="pricewrapperBox-item">
-                    <img src="/assets/images/img/calcPage/home.svg" alt="homeImg">
-                    <h1>Ваш личный адрес для покупок</h1>
-                    <p>на нашем современном автоматизированном складе в безналоговом Делавэре</p>
-                    <a href="#">Бесплатно</a>
-                </div>
-                <div class="pricewrapperBox-item">
-                    <img src="/assets/images/img/calcPage/packages.svg" alt="packagesImg">
-                    <h1>Объединение нескольких посылок в одну</h1>
-                    <p>ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной</p>
-                    <a href="#">от $10.00</a>
-                </div>
-                <div class="pricewrapperBox-item">
-                    <img src="/assets/images/img/calcPage/task.svg" alt="taskImg">
-                    <h1>Усиленная упаковка по запросу</h1>
-                    <p>Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.</p>
-                    <a href="#">от $0.25</a>
-                </div>
-                <div class="pricewrapperBox-item">
-                    <img src="/assets/images/img/calcPage/grow.svg" alt="growImg">
-                    <h1>Хранение входящих посылок 30 дней</h1>
-                    <p>чем больше срок хранения посылок на складе – тем больше вы сможете собрать</p>
-                    <a href="#">Бесплатно</a>
-                </div>
-            </div>
-
-            <div class="calc__choose">
-                <div class="calc__choose-headtext">
-                    <h1 class="calc__choose-title">Онлайн-калькулятор стоимости доставки товара</h1>
-                    <p class="calc__choose-subTitle">Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.</p>
-                </div>   
-                <div class="calc__chooseCount">
-                    <div class="calc__chooseCount-content">
-                        <div class="calc__chooseCount-content__chooseMenu">
-                            <div class="calc__chooseCount-content__item">
-                                <h1>Страна:</h1>
-                                <div class="calc__chooseCountry">
-                                    <div id="placeholder__inst">
-                                        <img src="/assets/images/icons/delPage/iconsDel/global.svg" alt="globalImg">
-                                        <input type="text"  class="placeholder__item" placeholder="Украина" readonly="readonly">
-                                    </div>
-                                    <div id="chooseMenu__calc">
-                                        <p class="chooseMenu__calc-item">Украина</p>
-                                        <p class="chooseMenu__calc-item">США</p>
-                                        <p class="chooseMenu__calc-item">Великобритания</p>
-                                        <p class="chooseMenu__calc-item">Португалия</p>
-                                        <p class="chooseMenu__calc-item">Испания</p>
-                                    </div>
-                                </div>
+        <div class="wrapacc">
+            <div class="persAcc__data">
+                <div class="persAcc__dataBr">
+                    <div class="persAcc__dataBr__content">
+                        <img src="/assets/images/img/personalacc/personAcc.svg" alt="personaccImg">
+                        <div class="persAcc__dataBr__contentInfo">
+                            <div class="persAcc__dataBr__contentInfo-top">
+                                <ul class="persAcc__nameInfo">
+                                    <li>Имя:</li>
+                                    <li>Логин:</li>
+                                    <li>E-mail:</li>
+                                    <li>Телефон:</li>
+                                    <li>Адрес:</li>
+                                </ul>
+                                <ul class="persAcc__nameInfo-person">
+                                    <li>Dmitro Karimov</li>
+                                    <li>dmitro.uxui</li>
+                                    <li>dmitro.uxui@gmail.com</li>
+                                    <li>+38 098 898 96 66</li>
+                                    <li>Москва. Проспект Гонгадзе, 3а/98</li>
+                                </ul>
                             </div>
-                            <div class="calc__chooseCount-content__item">
-                                <h1>Город:</h1>
-                                <div class="calc__chooseCountry">
-                                    <div class="placeholder__instwolist">
-                                        <img src="/assets/images/icons/delPage/iconsDel/Buildings.svg" alt="BuildingsImg">
-                                        <input class="inputInfoDel__town" type="text" placeholder="Киев">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calc__chooseCount-content__item">
-                                <h1>Индекс:</h1>
-                                <div class="calc__chooseCountry">
-                                    <div class="placeholder__instwolist">
-                                        <img src="/assets/images/icons/delPage/iconsDel/Notebook.svg" alt="NotebookImg">
-                                        <input class="inputInfoDel__index" type="text" placeholder="Введите индекс">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calc__chooseCount-content__item">
-                                <h1>Вес посылки:</h1>
-                                <div class="calc__chooseCountry">
-                                    <div class="placeholder__instwolist">
-                                        <img src="/assets/images/icons/delPage/iconsDel/Barbell.svg" alt="BarbellImg">
-                                        <input class="inputInfoDel__weight" type="text" placeholder="0,5">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="calc__chooseCount-content__item">
-                                <h1>Дополнительные услуги:</h1>
-                                <div class="calc__chooseCountry">
-                                    <div id="placeholder__instNew">
-                                        <img src="/assets/images/icons/delPage/iconsDel/FileText.svg" alt="FileTextImg">
-                                        <input type="text"  class="placeholder__itemOpt" placeholder="Выберите услуги" readonly="readonly">
-                                    </div>
-                                    <div id="chooseMenu__calcPlus">
-                                        <p class="chooseMenu__calc-itemAdd">Скорость доставки</p>
-                                        <p class="chooseMenu__calc-itemAdd">Хрупкий товар</p>
-                                        <p class="chooseMenu__calc-itemAdd">Доп уповка</p>
-                                        <p class="chooseMenu__calc-itemAdd">Гарантия доставки</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="calculator__button">Рассчитать</a>
-                    </div>
-                </div>
-            </div>   
-            
-            <div class="calcPage__delOpitons">
-                <h1 class="calcPage__delOpitons-title">Варианты доставки:</h1>
-                <div class="calcPage__delOpitons__details">
-                    <div class="calcPage__delOpitons__details-item">
-                        <div class="calcPage__delOpitons__details-item__content">
-                            <div class="calcPage__delOptions__contentName">
-                                <img src="/assets/images/icons/delPage/deliveryOptions/delUkr.svg" alt="delUkrimg">
-                                <h1>Укрпочта</h1>
-                            </div>
-                            <div class="calcPage__delOptions__contentPrice">
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Сроки:</span>
-                                    <h1>10-14 дней</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Стоимость доставки:</span>
-                                    <h1>от 27.00$</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Итого:</span>
-                                    <h1>41.99$</h1>
-                                </div>
-                                <div class="delOptions__arrowButton">
-                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="delOptions__dropDown">
-                            <p>Кино будет на следующей части меню</p>
-                        </div>
-                    </div>
-                    <div class="calcPage__delOpitons__details-item">
-                        <div class="calcPage__delOpitons__details-item__content">
-                            <div class="calcPage__delOptions__contentName">
-                                <img src="/assets/images/icons/delPage/deliveryOptions/delEMS.svg" alt="delEMSimg">
-                                <h1>EMS Укрпочта</h1>
-                            </div>
-                            <div class="calcPage__delOptions__contentPrice">
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Сроки:</span>
-                                    <h1>10-12 дней</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Стоимость доставки:</span>
-                                    <h1>от 40.00$</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Итого:</span>
-                                    <h1>41.99$</h1>
-                                </div>
-                                <div class="delOptions__arrowButton">
-                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="delOptions__dropDown">
-                            <p>Кина не будет, обманул</p>
-                        </div>
-                    </div>
-                    <div class="calcPage__delOpitons__details-item">
-                        <div class="calcPage__delOpitons__details-item__content">
-                            <div class="calcPage__delOptions__contentName">
-                                <img src="/assets/images/icons/delPage/deliveryOptions/delSmall.svg" alt="delSmallimg">
-                                <h1>Укрпочта МЕЛКИЕ ПАКЕТЫ</h1>
-                            </div>
-                            <div class="calcPage__delOptions__contentPrice">
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Сроки:</span>
-                                    <h1>10-14 дней</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Стоимость доставки:</span>
-                                    <h1>от 13.00$</h1>
-                                </div>
-                                <div class="calcPage__delOptions__contentPrice-item">
-                                    <span>Итого:</span>
-                                    <h1>41.99$</h1>
-                                </div>
-                                <div class="delOptions__arrowButton">
-                                    <img src="/assets/images/icons/delPage/arrows/arrGreenDown.svg" alt="arrGreenDownImg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="delOptions__dropDown">
-                            <p>Ну и что ты здесь забыл</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="warehouse__service">
-                <h1 class="warehouse__service-title">Услуги склада</h1>
-                <div class="warehouse__service-container">
-                    <div class="warehouse__serviceTop">
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Консолидация</h1>
-                            <div class="serviceRbox">
-                                <span>$1.00/1 трек</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Заполнение декларации</h1>
-                            <div class="serviceRbox">
-                                <span>$1.00</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Дополнительная упаковка</h1>
-                            <div class="serviceRbox">
-                                <span>$5.00</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Упаковка xрупкиx предметов</h1>
-                            <div class="serviceRbox">
-                                <span>$10.00</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Заполнение декларации</h1>
-                            <div class="serviceRbox">
-                                <span>$1.00</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceTop-item">
-                            <h1>Разделение заказа</h1>
-                            <div class="serviceRbox">
-                                <span>$2.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="warehouse__serviceBottom">
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Сборка исходящей посылки вне очереди или экспресс сборка</h1>
-                                <p>Чтобы сэкономить время</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>$2.00</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Фото содержимого входящей посылки</h1>
-                                <p>3 фото за $5 или 10 фото за $8, а ещё можно попросить сфотографировать бирку или подарочный сертификат</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>$1.00 за 1 фото</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Возврат вещей в магазин</h1>
-                                <p>В случае, если вещи нельзя отправить в страну назначения, возврат в магазин для услуги "Виртуальный адрес"</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>$10 + почтовые расходы</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Проверка техники на работоспособность</h1>
-                                <p>Проверка электроники на включение/выключение (запрос через тикеты).</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>$10</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Удаление инвойса</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>Бесплатно</span>
-                            </div>
-                        </div>
-                        <div class="warehouse__serviceBottom-item">
-                            <div class="warehouse__serviceBottom-itemName">
-                                <h1>Дополнительная упаковка</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div class="serviceR__bottombox">
-                                <span>По договоренности</span>
+                            <div class="persAcc__dataBr__contentInfo-change">
+                                <a href="#" class="edit__butt">Редактировать</a>
+                                <a href="#" class="changepass">Изменить пароль</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="warehouse__serviceFooter">
-                    <h1 class="warehouse__service-title">Покупки с операторами Okeypost.com</h1>
-                    <div class="warehouse__serviceFooterContainer">
-                        <div class="warehouse__serviceFooter-item">
-                            <div class="warehouse__serviceFooter-itemName">
-                                <h1>Быстрое оформление покупок в интернет-магазинах</h1>
-                                <p>Вы присылаете ссылки, а оформлением заказов занимаются операторы Почтой.ком. Они сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.</p>
-                            </div>
-                            <div class="serviceR__Footer-box">
-                                <span>5% от стоимости товаров минимум $7 для каждого магазина Но не менее $7 для каждого лота eBay</span>
-                            </div>
+                <div class="persAcc__data-details">
+                    <div class="persAcc__data-details__slider">
+                        <p>Виртуальный адрес</p>
+                        <p>Информация о работе</p>
+                        <p>Реквизиты для оплаты</p>
+                    </div>
+                    <div class="persAcc__data-details__sliderInfo">
+                        <div class="persAcc__data-details__sliderItem">
+                            
                         </div>
-                        <div class="warehouse__serviceFooter-item">
-                            <div class="warehouse__serviceFooter-itemName">
-                                <h1>Фото товара по услуге "Покупка с операторами"</h1>
-                                <p>Три фото выбранного вами товара, приобретенного по услуге "Полное сопровождение"</p>
-                            </div>
-                            <div class="serviceR__Footer-box">
-                                <span>$2</span>
-                            </div>
+                        <div class="persAcc__data-details__sliderItem">
+                            
+                        </div>
+                        <div class="persAcc__data-details__sliderItem">
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="order__banner">
-            <div class="order__banner-content">
-                <img src="/assets/images/img/calcPage/illustrBannerImg.svg" alt="orderBannerImg">
-                <div class="order__banner-connect">
-                    <h1>Попробуйте заказывать с оператором прямо сейчас. Пришлите ссылку на товар, его купят и доставят на наш склад в кратчайшие сроки.</h1>
-                    <input class="order__bannerInput" placeholder="Введите ссылку на товар" type="text">
-                    <div class="order__banner-connectSend">
-                        <a href="#" onClick="window.location.reload();">Отправить</a>
-                        <p>Нажимая на кнопку вы подтверждаете согласие с правилами предоставления услуги и политикой конфиденциальности</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="insuranceBlock">
-            <div class="wrap">
-                <h1 class="warehouse__service-title">Страхование</h1>
-                <div class="insuranceBlockbox">
-                    <div class="insuranceBlockbox-item">
-                        <div class="insuranceBlockbox-itemName">
-                            <h1>Дополнительное страxование</h1>
-                        </div>
-                        <span>5% от суммы на которую xотите застраxовать</span>
-                    </div>
-                    <div class="insuranceBlockbox-item">
-                        <div class="insuranceBlockbox-itemName">
-                            <h1>Укрпочта и ЕМС</h1>
-                        </div>
-                        <span>Застраxовано по умолчанию на $50.00</span>
-                    </div>
-                    <div class="insuranceBlockbox-item">
-                        <div class="insuranceBlockbox-itemName">
-                            <h1>Мелкие пакеты</h1>
-                        </div>
-                        <span>Застраxовано на $20.00</span>
-                    </div>
-                </div>
-                <div class="insuranceBlock__extrap">
-                    <h1 class="warehouse__service-title">Дополнительная упаковка</h1>
-                    <div class="insuranceBlock__extaPack">
-                        <div class="insuranceBlock__extaPack-item">
-                            <div class="insuranceBlock__extaPack-itemName">
-                                <h1>Многослойная пленка</h1>
-                                <p>Дополнительная защита покупок</p>
-                            </div>
-                            <span>$3.99</span>
-                        </div>
-                        <div class="insuranceBlock__extaPack-item">
-                            <div class="insuranceBlock__extaPack-itemName">
-                                <h1>Упаковка в пакет</h1>
-                                <p>Надежно защищает от влаги</p>
-                            </div>
-                            <span>$1.99</span>
-                        </div>
-                        <div class="insuranceBlock__extaPack-item">
-                            <div class="insuranceBlock__extaPack-itemName">
-                                <h1>Упаковка в коробку с двойными стенками</h1>
-                                <p>Надежно защищает от влаги</p>
-                            </div>
-                            <span>$4.99</span>
-                        </div>
-                        <div class="insuranceBlock__extaPack-item">
-                            <div class="insuranceBlock__extaPack-itemName">
-                                <h1>Наклейка “Обращаться с осторожностью”</h1>
-                                <p>Дополнительная защита покупок</p>
-                            </div>
-                            <span>$0.25</span>
-                        </div>
-                        <div class="insuranceBlock__extaPack-item">
-                            <div class="insuranceBlock__extaPack-itemName">
-                                <h1>Наклейка “Хрупкий груз”</h1>
-                                <p>Дополнительная защита покупок</p>
-                            </div>
-                            <span>$0.25</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="delPage__prefooter">
-            <div class="delPage__prefooterContent">
-                <h1>Остались вопросы? Спросите нас в соцсетях!</h1>
-                <div class="delPage__prefooterContent-social">
-                    <a href="#"><img src="/assets/images/img/calcPage/whatsUp.svg" alt="whatsupImg"></a>
-                    <a href="#"><img src="/assets/images/img/calcPage/viber.svg" alt="viberImg"></a>
-                    <a href="#"><img src="/assets/images/img/calcPage/chat.svg" alt="chatImg"></a>
-                </div>
-            </div>
-        </div>
-
-
     </main>
+
+
     
     <footer class="footer">
-        <div class="wrap">
-            <div class="footer__content">
-                <div class="footer__content-social">
-                    <a href="#"><img src="/assets/images/logo/logo.svg" alt="logoImgfooter"></a>
-                    <div class="footer__content-socialLinks">
-                        <a href="#"><img src="/assets/images/icons/socFooter/whats.svg" alt="whatsUpImg"></a>
-                        <a href="#"><img src="/assets/images/icons/socFooter/viber.svg" alt="ViberImg"></a>
-                        <a href="#"><img src="/assets/images/icons/socFooter/chat.svg" alt="ChatImg"></a>
-                    </div>
-                </div>
-                <div class="footer__content-links">
-                    <ul>
-                        <li>О компании</li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Цены</a></li>
-                        <li><a href="#">Oтзывы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Соглашение о персональных данных</a></li>
-                        <li><a href="#">Условия использования</a></li>
-                    </ul>
-                    <ul>
-                        <li>Полезное</li>
-                        <li><a href="#">Как работает наш сервис</a></li>
-                        <li><a href="#">Как покупать с оператором</a></li>
-                        <li><a href="#">Ответы на частые вопросы</a></li>
-                        <li><a href="#">Популярные магазины</a></li>
-                        <li><a href="#">Черный список магазинов</a></li>
-                        <li><a href="#">Актуальные распродажи</a></li>
-                    </ul>
-                    <ul>
-                        <li>Спецпроекты</li>
-                        <li><a href="#">50% на первую доставку</a></li>
-                        <li><a href="#">Скидки для постоянных клиентов</a></li>
-                        <li><a href="#">Реферальная программа</a></li>
-                        <li><a href="#">Кэшбек Mr. Rebates и Rakuten</a></li>
-                        <li><a href="#">Stop Fraud</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <div class="underFooter">
             <a href="#">© 2021 Okeypost . Все права защищены.</a>
         </div>
