@@ -179,6 +179,16 @@
     transition: .2s background-image;
 }
 
+.placeholder__item,
+.placeholder__itemOpt {
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;    
+    user-select: none;
+    cursor: pointer;
+}
+
 .inputInfoDel,
 .inputInfoDel__town,
 .inputInfoDel__index,
