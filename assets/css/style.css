@@ -14,7 +14,6 @@ body, html {
     src: url(/assets/Gilroy/gilroy-regular.ttf);
 }
 
-
 a {
     text-decoration: none;
     color: var(--color-black);
@@ -35,13 +34,15 @@ ul, ol {
     width: 1410px;
     margin: 0 auto;
     padding: 0 5px;
-
-    min-width: 0;
 }
 
 .background-wrap {
-    background: var(--background-color);
-    border-radius: 36px;
-    max-width: 1800px;
+    width: 1810px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.wrapacc {
+    width: 1720px;
     margin: 0 auto;
 }
