@@ -39,6 +39,7 @@
 
 .realTime {
     display: flex;
+    width: 140px;
     flex-direction: row;
     gap: 5px;
     color: #fff;
@@ -46,7 +47,7 @@
 
 
 .realTime a,
-.realTime p,
+.realClock,
 .persAcc__headerCont-schedule__work p, 
 .persAcc__headerCont-exchange__rate a,
 .persAcc__headerCont-bonus a,
