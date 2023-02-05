@@ -266,8 +266,7 @@
 .persAcc__data-details {
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 .persAcc__data-details__slider {
@@ -304,13 +303,16 @@
 
 .persAcc__data-details__sliderInfo {
     display: block;
-    margin-top: 47px;
 }
 
 .persAcc__data-details__sliderItem {
     display: none;
     flex-direction: column;
     gap: 18px;
+}
+
+.persAcc__data-details__sliderItem:nth-child(1) {
+    margin-bottom: 30px;
 }
 
 .sliderItem__title {
@@ -333,11 +335,6 @@
     border-radius: 6px;
     padding: 21px 0px 0px 40px;
 }
-
-.persAcc__data-details__sliderItem.active {
-    display: flex;
-}
-
 
 .persAcc__data-details__sliderItem-infoItem:nth-child(odd) {
     background-color: #F2F6FC;
@@ -362,7 +359,11 @@
 .topUl-title {
     font-size: 20px;
     line-height: 36px;
-    margin-bottom: 3px;
+    margin: 30px 0px 3px 0px;
+}
+
+.topUl-title:first-child {
+    margin-top: 16px;
 }
 
 .persAcc__data-details__sliderItem ul {
@@ -374,3 +375,82 @@
     font-size: 18px;
     line-height: 36px;
 }
+
+/* pay slider box */
+
+
+.sliderPay-title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 40px;
+}
+
+.sliderPay-title:first-child {
+    margin-top: 0;
+}
+
+.sliderPay__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.sliderPay__box-item {
+    display: flex;
+    gap: 143px;
+    align-items: center;
+    padding: 0px 0px 0px 40px;
+    height: 68px;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.sliderPay__box-item:nth-child(2n+1) {
+    background-color: #F2F6FC;
+}
+
+.sliderPay__box .sliderPay__box-item:nth-child(4) h1,
+.sliderPay__box .sliderPay__box-item:nth-child(6) h1 {
+    width: 335px;
+}
+
+.sliderPay__box .sliderPay__box-item:nth-child(4),
+.sliderPay__box .sliderPay__box-item:nth-child(6) {
+    gap: 38px;
+}
+
+.sliderPay__box-item h1 {
+    display: block;
+    width: 230px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.sliderPay__box-item span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.paypal__buttSlider,
+.visa__buttSlider {
+    display: block;
+    width: 128px;
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.1);
+    border-radius: 36px;
+    margin-top: 10px;
+    transition: .3s transform, .25s box-shadow;
+}
+
+.paypal__buttSlider:hover,
+.visa__buttSlider:hover,
+.paypal__buttSlider:focus,
+.visa__buttSlider:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #ccc;
+    transform: translateY(-0.25em);
+}
+
+
