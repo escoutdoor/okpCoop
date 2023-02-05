@@ -267,17 +267,17 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-bottom: 150px;
 }
 
 .persAcc__data-details__slider {
     display: flex;
     width: 820px;
     flex-direction: row;
-    /* gap: 80px; */
     padding-bottom: 37px;
 }
 
-.persAcc__data-details__slider p {
+.persAcc__data-details__slider-nav {
     font-weight: 700;
     width: 213px;
     display: block;
@@ -285,19 +285,92 @@
     line-height: 23px;
     cursor: pointer;
     border-bottom: 1px solid #222;
+    padding-bottom: 37px;
 }
 
-.persAcc__data-details__slider p:first-child {
+.persAcc__data-details__slider-nav:first-child {
     display: block;
     width: 213px;
     color: var(--color-green);
-    border-bottom: 1px solid var(--color-green);
+    border-bottom: 2px solid var(--color-green);
+}
+
+.persAcc__data-details__slider-nav:nth-child(2),
+.persAcc__data-details__slider p:nth-child(3) {
+    display: block;
+    width: 279px;
+    padding-left: 40px;
 }
 
 .persAcc__data-details__sliderInfo {
-
+    display: block;
+    margin-top: 47px;
 }
 
 .persAcc__data-details__sliderItem {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+}
 
+.sliderItem__title {
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.persAcc__data-details__sliderItem-infoItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.persAcc__data-details__sliderItem-infoItem {
+    display: flex;
+    gap: 120px;
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 21px 0px 0px 40px;
+}
+
+.persAcc__data-details__sliderItem.active {
+    display: flex;
+}
+
+
+.persAcc__data-details__sliderItem-infoItem:nth-child(odd) {
+    background-color: #F2F6FC;
+}
+
+.persAcc__data-details__sliderItem-infoItem h1 {
+    display: block;
+    width: 230px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.persAcc__data-details__sliderItem-infoItem span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+/* Info about work slide */
+
+.topUl-title {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.persAcc__data-details__sliderItem ul {
+    list-style-type: disc;
+}
+
+.persAcc__data-details__sliderItem ul li {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
 }
