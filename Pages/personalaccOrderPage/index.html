@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalaccOrder</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/Pages/personalaccOrderPage/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start of Main -->
+    <div class="main-block">
+        <div class="backgroundacc-wrap">
+            <div class="main-block__body">
+                <div class="main-block__body-block1">
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/schedule.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">
+                            <input type="text" value="Лондон: 19 : 10 : 36" disabled>
+                        </div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/clock.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/Bank.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Курс валют</div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Бонусный счет: £ 0</div>
+                    </div>
+                </div>
+                <div class="main-block__body-block2">
+                    <div class="main-block__body-information">Ваш баланс: £ 0</div>
+                    <button class="main-blocl__body-button">Добавить транзакцию</button>
+                    <div class="main-block__body-card">
+                        <img src="/assets/images/img/personalacc/paypal.svg" alt="">
+                    </div>
+                    <div class="main-block__body-card">
+                        <img src="/assets/images/img/personalacc/visa.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__content">
+                <div class="footer__content-social">
+                    <a href="#"><img src="/assets/images/logo/logo.svg" alt="logoImgfooter"></a>
+                    <div class="footer__content-socialLinks">
+                        <a href="#"><img src="/assets/images/img/footer/whats.svg" alt="whatsUpImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/viber.svg" alt="ViberImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/chat.svg" alt="ChatImg"></a>
+                    </div>
+                </div>
+                <div class="footer__content-links">
+                    <ul>
+                        <li>О компании</li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Oтзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Соглашение о персональных данных</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                    <ul>
+                        <li>Полезное</li>
+                        <li><a href="#">Как работает наш сервис</a></li>
+                        <li><a href="#">Как покупать с оператором</a></li>
+                        <li><a href="#">Ответы на частые вопросы</a></li>
+                        <li><a href="#">Популярные магазины</a></li>
+                        <li><a href="#">Черный список магазинов</a></li>
+                        <li><a href="#">Актуальные распродажи</a></li>
+                    </ul>
+                    <ul>
+                        <li>Спецпроекты</li>
+                        <li><a href="#">50% на первую доставку</a></li>
+                        <li><a href="#">Скидки для постоянных клиентов</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+                        <li><a href="#">Кэшбек Mr. Rebates и Rakuten</a></li>
+                        <li><a href="#">Stop Fraud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="underFooter">
+            <a href="#">© 2021 Okeypost . Все права защищены.</a>
+        </div>
+    </footer>
+</body>
+</html>
