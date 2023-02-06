@@ -45,5 +45,43 @@ function RealtimeClock() {
 
     $('.realClock').html(h + " : " + m + " : " + s);
 }
-
+RealtimeClock();
 setInterval(() => RealtimeClock(), 1000)
+
+
+
+// CHANGE 
+
+let inputName = $('#persAcc__name');
+let inputSurName = $('#persAcc__surname');
+let inputAddress = $('#persAcc__address');
+let inputLogin = $('#persAcc__login');
+let inputTel = $('#persAcc__tel');
+let inputEmail = $('#persAcc__email');
+let saveButt = $('.save__butt');
+
+function saveButtoncheck() {
+
+    saveButt.click(function() {
+        if(!inputName.val()) {
+            alert("Введите имя")
+        } else if(!inputSurName.val()) {
+            alert("Введите фамилию")
+        }else if(!inputAddress.val()) {
+            alert("Введите адресс")
+        }else if(!inputLogin.val()) {
+            alert("Введите ваш логин")
+        } else if(!inputTel.val()) {
+            alert("Введите ваш номер телефона")
+        } else if(!inputEmail.val()) {
+            alert("Введите ваш номер телефона email")
+        }   
+    })
+
+}
+
+saveButtoncheck();
+
+// if(!inputName.val()) {
+//     console.log
+// }
