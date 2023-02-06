@@ -40,6 +40,9 @@ ul, ol {
     width: 1810px;
     margin: 0 auto;
     padding: 0 5px;
+    border-radius: 36px;
+
+    background: var(--background-color);
 }
 
 .wrapacc {
