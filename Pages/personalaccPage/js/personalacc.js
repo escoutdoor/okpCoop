@@ -46,4 +46,5 @@ function RealtimeClock() {
     $('.realClock').html(h + " : " + m + " : " + s);
 }
 
+RealtimeClock()
 setInterval(() => RealtimeClock(), 1000)
