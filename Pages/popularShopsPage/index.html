@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="background-wrap">
+            <div class="wrap">
+                <div class="background-container">
+                    <p class="background-links">
+                        <a href="#">Главная⠀</a>
+                        <a>/</a>
+                        <a href="#">⠀Популярные магазины</a>
+                    </p>
+                    <h1 class="background-title">Популярные магазины</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img1.svg" alt="Primark">
+                            </div>
+                            <p>Primark (Форма заказа)</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img2.svg" alt="H&M">
+                            </div>
+                            <p>H&M</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img3.svg" alt="Mango">
+                            </div>
+                            <p>Mangooutlet</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img4.svg" alt="Next">
+                            </div>
+                            <p>Next</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img5.svg" alt="Sportdirect">
+                            </div>
+                            <p>Sportdirect</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img6.svg" alt="ClothingatTesco">
+                            </div>
+                            <p>Clothing at Tesco</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img7.svg" alt="George at ASDA">
+                            </div>
+                            <p>George at ASDA</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img8.svg" alt="Accessorize">
+                            </div>
+                            <p>Accessorize</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img9.svg" alt="AdidasUK">
+                            </div>
+                            <p>Adidas UK</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img10.svg" alt="Amazon">
+                            </div>
+                            <p>Amazon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img11.svg" alt="ASOS">
+                            </div>
+                            <p>ASOS</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img12.svg" alt="Boohoo">
+                            </div>
+                            <p>Boohoo</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img13.svg" alt="Crocs">
+                            </div>
+                            <p>Crocs</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img14.svg" alt="Ebay">
+                            </div>
+                            <p>Ebay</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img15.svg" alt="Matalan">
+                            </div>
+                            <p>Matalan</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img16.svg" alt="Mothercare">
+                            </div>
+                            <p>Mothercare</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img17.svg" alt="NewLook">
+                            </div>
+                            <p>New Look</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img18.svg" alt="Puma">
+                            </div>
+                            <p>Puma</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img19.svg" alt="Timberland">
+                            </div>
+                            <p>Timberland</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img20.svg" alt="Showroomprive">
+                            </div>
+                            <p>Showroomprive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img21.svg" alt="BrandAlley">
+                            </div>
+                            <p>Brand Alley</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img22.svg" alt="M&S">
+                            </div>
+                            <p>M&S</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img23.svg" alt="Clarks">
+                            </div>
+                            <p>Clarks</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img24.svg" alt="Zara">
+                            </div>
+                            <p>Zara</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img25.svg" alt="Mango">
+                            </div>
+                            <p>Mango</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img26.svg" alt="Zulily">
+                            </div>
+                            <p>Zulily</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img27.svg" alt="Panachekids">
+                            </div>
+                            <p>Panachekids</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img28.svg" alt="Betterware">
+                            </div>
+                            <p>Betterware</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img29.svg" alt="TucciStore">
+                            </div>
+                            <p>Tucci Store</p>
+                        </div>
+                        <div class="main-block">
+                            <div class="img-block">
+                                <img src="/assets/images/img/popularShopsPage/Img30.svg" alt="MiniMode">
+                            </div>
+                            <p>Mini Mode</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </main>
+
+    <div class="delPage__prefooter">
+        <div class="delPage__prefooterContent">
+            <h1>Остались вопросы? Спросите нас в соцсетях!</h1>
+            <div class="delPage__prefooterContent-social">
+                <a href="#"><img src="/assets/images/img/calcPage/whatsUp.svg" alt="whatsupImg"></a>
+                <a href="#"><img src="/assets/images/img/calcPage/viber.svg" alt="viberImg"></a>
+                <a href="#"><img src="/assets/images/img/calcPage/chat.svg" alt="chatImg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__content">
+                <div class="footer__content-social">
+                    <a href="#"><img src="/assets/images/logo/logo.svg" alt="logoImgfooter"></a>
+                    <div class="footer__content-socialLinks">
+                        <a href="#"><img src="/assets/images/img/footer/whats.svg" alt="whatsUpImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/viber.svg" alt="ViberImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/chat.svg" alt="ChatImg"></a>
+                    </div>
+                </div>
+                <div class="footer__content-links">
+                    <ul>
+                        <li>О компании</li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Oтзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Соглашение о персональных данных</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                    <ul>
+                        <li>Полезное</li>
+                        <li><a href="#">Как работает наш сервис</a></li>
+                        <li><a href="#">Как покупать с оператором</a></li>
+                        <li><a href="#">Ответы на частые вопросы</a></li>
+                        <li><a href="#">Популярные магазины</a></li>
+                        <li><a href="#">Черный список магазинов</a></li>
+                        <li><a href="#">Актуальные распродажи</a></li>
+                    </ul>
+                    <ul>
+                        <li>Спецпроекты</li>
+                        <li><a href="#">50% на первую доставку</a></li>
+                        <li><a href="#">Скидки для постоянных клиентов</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+                        <li><a href="#">Кэшбек Mr. Rebates и Rakuten</a></li>
+                        <li><a href="#">Stop Fraud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="underFooter">
+            <a href="#">© 2021 Okeypost . Все права защищены.</a>
+        </div>
+    </footer>
+
+    <!-- Start of js -->
+    <script src="/assets/js/app.js"></script>
+
+    
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
