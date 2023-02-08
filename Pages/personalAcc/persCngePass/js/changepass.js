@@ -42,7 +42,13 @@ function newPassword() {
             alert("Повторите ваш новый пароль");
             newPassAgain.css({'border-color': "rgba(255,153,153, .7)"});
         } else {newPassAgain.css({'border-color': "#C0C9D7"});}
+
+        if(newPass.val() != newPassAgain.val()) {
+            alert("Ошибка при введении нового пароля, повторите пожалуйста еще раз")
+        }
     })
+
+
 }
 
 
