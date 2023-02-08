@@ -160,85 +160,50 @@
     transform: translateY(-0.25em);
 }
 
-/* DATA ACCOUT */
+
+/* Profile */
 
 .persAcc__data {
-    width: 100%;
-    height: 660px;
     display: flex;
-    flex-direction: row;
-    gap: 80px;
-    padding: 25px 366px 0px 28px;
+    width: 100%;
+    height: 570px;
+    padding: 25px 0px 0px 28px;
     box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
     border-radius: 16px;
-    margin-bottom: 749px;
+    gap: 80px;
+    margin-bottom: 839px;
 }
 
-.persAcc__profile {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-}
-
-.persAcc__profile img {
+.persAcc__data img {
     width: 330px;
     height: 330px;
 }
 
-#persAcc__profile-butt {
-    position: absolute;
-    opacity: 0;
-
-}
-.persAcc__profile label {
-    width: 163px;
-    color: #fff;
-    height: 48px;
-    text-align: center;
-    padding-top: 15px;
-    background: var(--color-buttGreenColor);
-    box-shadow: 0px 4px 4px rgba(122, 122, 122, 0.2);
-    border-radius: 36px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 18px;
-    transition: .3s transform, .25s box-shadow;    
-}
-
-.persAcc__profile label:hover,
-.persAcc__profile label:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #ccc;
-    transform: translateY(-0.25em);
-}
-
-.persAcc__info {
+.persAcc__changeSide {
     display: flex;
     flex-direction: column;
+    gap: 31px;
 }
 
-.persAcc__info-inputs {
+.persAcc__data-inputs {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 25px 20px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.persAcc__info-item {
+.persAcc__data-inputsItem {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.persAcc__info-item label {
+.persAcc__data-inputsItem label {
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
 }
 
-.persAcc__info-item input {
+.persAcc__data-inputsItem input {
     width: 448px;
     padding: 0px 0px 0px 20px;
     font-size: 20px;
@@ -249,34 +214,14 @@
     border-radius: 6px;
 }
 
-.persAcc__info-sign {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-    margin-bottom: 35px;
-}
 
-.persAcc__info-sign input {
-    width: 31px;
-    height: 42px;
-    background: #FCFDFF;
-    border: 1px solid #C0C9D7;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-.persAcc__info-sign p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.save__butt {
+.savePass__butt {
     width: 200px;
     height: 60px;
-    font-weight: 700;
-    line-height: 18px;
     font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
     background: var(--color-buttGreenColor);
     box-shadow: var(--shadow-buttShadow);
     border-radius: 36px;
@@ -286,8 +231,8 @@
     transition: .3s transform, .25s box-shadow;
 }
 
-.save__butt:hover,
-.save__butt:focus {
+.savePass__butt:hover,
+.savePass__butt:focus {
     box-shadow: 0 0.5em 0.5em -0.4em #ccc;
     transform: translateY(-0.25em);
 }

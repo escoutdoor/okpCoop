@@ -52,36 +52,119 @@ setInterval(() => RealtimeClock(), 1000)
 
 // CHANGE 
 
-let inputName = $('#persAcc__name');
-let inputSurName = $('#persAcc__surname');
-let inputAddress = $('#persAcc__address');
-let inputLogin = $('#persAcc__login');
-let inputTel = $('#persAcc__tel');
-let inputEmail = $('#persAcc__email');
-let saveButt = $('.save__butt');
+let name = $('#persAcc__name');
+let surName = $('#persAcc__surname');
+let address = $('#persAcc__address');
+let login = $('#persAcc__login');
+let tel = $('#persAcc__tel');
+let email = $('#persAcc__email');
+let butt = $('.save__butt');
 
 function saveButtoncheck() {
 
-    saveButt.click(function() {
-        if(!inputName.val()) {
-            alert("Введите имя")
-        } else if(!inputSurName.val()) {
-            alert("Введите фамилию")
-        }else if(!inputAddress.val()) {
-            alert("Введите адресс")
-        }else if(!inputLogin.val()) {
-            alert("Введите ваш логин")
-        } else if(!inputTel.val()) {
-            alert("Введите ваш номер телефона")
-        } else if(!inputEmail.val()) {
-            alert("Введите ваш номер телефона email")
-        }   
-    })
+    if(!name.val() && !surName.val()) {
+        if(!address.val() && !login.val()) {
+            if(!tel.val() && !email.val()) {
+                alert("Введите все данные")
+                name.css({'border-color': "rgba(255,153,153, .7)"});
+                surName.css({'border-color': "rgba(255,153,153, .7)"});
+                address.css({'border-color': "rgba(255,153,153, .7)"});
+                login.css({'border-color': "rgba(255,153,153, .7)"});
+                tel.css({'border-color': "rgba(255,153,153, .7)"});
+                email.css({'border-color': "rgba(255,153,153, .7)"});
+                return;
+            }
+        }
+    }
+
+
+    if(!name.val()) {
+        alert("Введите имя");
+        name.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    } 
+    if(!surName.val()) {
+        alert("Введите фамилию")
+        surName.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    }
+    if(!address.val()) {
+        alert("Введите адресс")
+        address.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    }
+    if(!login.val()) {
+        alert("Введите ваш логин")
+        login.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    } 
+    if(!tel.val()) {
+        alert("Введите ваш номер телефона")
+        tel.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    } 
+    if(!email.val()) {
+        alert("Введите ваш номер телефона email")
+        email.css({'border-color': "rgba(255,153,153, .7)"});
+        $(".persAcc__info-sign>input").prop('checked', false);
+    }   
+
+
+
+    let data = new WeakMap();
+    data.set(name, name.val());
+    data.set(surName, surName.val());
+    data.set(address, address.val());
+    data.set(login, login.val());
+    data.set(tel, tel.val());
+    data.set(email, email.val());
+
+    console.log(data.get(name));
+    console.log(data.get(surName));
+    console.log(data.get(address));
+    console.log(data.get(login));
+    console.log(data.get(tel));
+    console.log(data.get(email));
+
+    if(name.val()) {
+        name.css({'border-color': "#C0C9D7"});
+    }
+    if(surName.val()) {
+        surName.css({'border-color': "#C0C9D7"});
+    } 
+    if(address.val()) {
+        address.css({'border-color': "#C0C9D7"});
+    } 
+    if(login.val()) {
+        login.css({'border-color': "#C0C9D7"});
+    } 
+    if(tel.val()) {
+        tel.css({'border-color': "#C0C9D7"});
+    } 
+    if(email.val()) {
+        email.css({'border-color': "#C0C9D7"});
+    }   
 
 }
 
-saveButtoncheck();
+butt.click(function() {
+    try {
+        saveButtoncheck();
+        if ($(".persAcc__info-sign>input").is(':checked')) { 
+            alert("Вы подписались на нашу рассылку")
+        }
+    } catch(err) {
+        throw new Error("Mistake in fucntion which is reading data from Inputs");
+    }
+})
 
-// if(!inputName.val()) {
-//     console.log
-// }
+// ADDING FILE
+
+let buttImg = $('#persAcc__profile-butt');
+const img = $('.persAcc__profile>img');
+
+buttImg.change(function(event) {
+    var newImage = URL.createObjectURL(event.target.files[0]);
+    img.attr('src', newImage)
+    console.log(event);
+})
