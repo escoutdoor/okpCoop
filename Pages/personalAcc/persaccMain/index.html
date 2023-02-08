@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style links -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="persAcc">
+        <div class="persAcc__header">
+            <div class="persAcc__headerCont">
+                <div class="persAcc__headerCont-left">
+                    <div class="persAcc__headerCont-londonReal__time">
+                        <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                        <div class="realTime">
+                            <a href="#">Лондон: </a>
+                            <p class="realClock">19: 10 : 36</p>
+                        </div>
+                    </div>
+                    <div class="persAcc__headerCont-schedule__work">
+                        <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                        <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                    </div>
+                    <div class="persAcc__headerCont-exchange__rate">
+                        <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                        <a href="#">Курс валют</a>
+                    </div>
+                    <div class="persAcc__headerCont-bonus">
+                        <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                        <a href="#">Бонусный счет: $ 0</a>
+                    </div>
+                </div>
+                <div class="persAcc__headerCont-right">
+                    <div class="persAcc__headerCont-balance">
+                        <a href="#">Ваш баланс: </a>
+                        <a href="#">$0</a>
+                    </div>
+                    <div class="persAcc__headerCont-right__buttons">
+                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapacc">
+            <div class="persAcc__data">
+                <div class="persAcc__dataBr">
+                    <div class="persAcc__dataBr__content">
+                        <img src="/assets/images/img/personalacc/personAcc.svg" alt="personaccImg">
+                        <div class="persAcc__dataBr__contentInfo">
+                            <div class="persAcc__dataBr__contentInfo-top">
+                                <ul class="persAcc__nameInfo">
+                                    <li>Имя:</li>
+                                    <li>Логин:</li>
+                                    <li>E-mail:</li>
+                                    <li>Телефон:</li>
+                                    <li>Адрес:</li>
+                                </ul>
+                                <ul class="persAcc__nameInfo-person">
+                                    <li>Dmitro Karimov</li>
+                                    <li>dmitro.uxui</li>
+                                    <li>dmitro.uxui@gmail.com</li>
+                                    <li>+38 098 898 96 66</li>
+                                    <li>Днепр</li>
+                                </ul>
+                            </div>
+                            <div class="persAcc__dataBr__contentInfo-change">
+                                <a href="/Pages/personalAcc/persChangeInfo/index.html" class="edit__butt">Редактировать</a>
+                                <a href="/Pages/personalAcc/persCngePass/index.html" class="changepass">Изменить пароль</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="persAcc__data-details">
+                    <div class="persAcc__data-details__slider">
+                        <p class="persAcc__data-details__slider-nav">Виртуальный адрес</p>
+                        <p class="persAcc__data-details__slider-nav">Информация о работе</p>
+                        <p class="persAcc__data-details__slider-nav">Реквизиты для оплаты</p>
+                    </div>
+                    <div class="persAcc__data-details__sliderInfo">
+                        <div class="persAcc__data-details__sliderItem">
+                            <h1 class="sliderItem__title">Ваш виртуальный адрес:</h1>
+                            <div class="persAcc__data-details__sliderItem-infoItems">
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Ваш ID Клиента:</h1>
+                                    <span>ОК65564654654</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Name, Surname:</h1>
+                                    <span>Karimov Dmitro ОК65564654654</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>First line of address:</h1>
+                                    <span>Unit 5 Cromwell Estate ОК65564654654</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Second line of address:</h1>
+                                    <span>Staffa road UK16988</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>County:</h1>
+                                    <span>London</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Postcode:</h1>
+                                    <span>E10 7QZ</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Town, City:</h1>
+                                    <span>London</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Country:</h1>
+                                    <span>Great Britain</span>
+                                </div>
+                                <div class="persAcc__data-details__sliderItem-infoItem">
+                                    <h1>Telephone:</h1>
+                                    <span>07308187545</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="persAcc__data-details__sliderItem">
+                            <h1 class="sliderItem__title">Информация по работе с сайтом</h1>
+                            <h1 class="topUl-title">Как оформить заказ через нас</h1>
+                            <ul>
+                                <li>В вашем личном кабинете находится кнопка оформить заказ, нажимая на нее вы переходите на форму оформления заказа, заполняете все поля ( магазин, ссылка на страницу с товаром, название товара, цвет, размер, количество). Если вы хотите заказать несколько товаров то внизу формы находиться кнопка добавить, нажимаете на нее и добавляете другие позиции по такому же принципы. В одном заказе можете оформлять заказы на разные магазины, можете и на один. Как вам удобнее Вы можете добавить комментарии как к конкретной позиции так и к целому заказу. Все условия выкупа, пром кода, акции просьба указывать в комментариях</li>
+                                <li>Заказ вы можете сразу не отправлять, если вы хотите что то добавить позже. При нажатии кнопки сохранить , заказ только сохранится. Вы можете к нему вернуться и добавить новые позиции или внести изменения</li>
+                                <li>После того как вы готовы оформить заказ, нажмите кнопку отправить, далее вы увидите список всех позиций с общей суммой заказа, после того как вы убедитесь что все правильно, нажмите кнопку подтвердить и мы моментально получим Ваш заказ</li>
+                                <li>Заказ выкупается только после получения предоплаты или наличия положительного баланса на вашем счету у нас</li>
+                                <li>Все оформленные заказы ( отправленные нам на выкуп) вы можете найти разделе В ОБРАБОТКЕ, где указана дата и статус заказа. Если Ваш заказ не выкуплен ( не собралось компашки на фри шип) вы можете переслать заказ, нажав на кнопку продублировать</li>
+                                <li>Как только Ваш заказ будет выкуплен, вам на почту придет емайл, подтверждающий выкуп. Очень часто заказы оформляться в компашках для того чтобы вы не тратились на доставку по Англии, так как многие магазины доставляют бесплатно в зависимости от суммы заказа. Наши сотрудники всегда стараются оформить заказ с бесплатной доставкой. Если заказ выкуплен в компашке, сумма вашего заказа будет указана теме емайла В дальнейшем заказ отобразиться в Вашем личном кабинете, в разделе ВЫКУПЛЕННЫЕ заказы. Вы можете посмотреть какие именно товары выкупились при нажатии кнопки Просмотр Товара</li>
+                            </ul>
+                            <h1 class="topUl-title">Как оформить самостоятельный выкуп ( виртуальный заказ)</h1>
+                            <ul>
+                                <li>В вашем личном кабинете есть кнопочка Ваш виртуальный адрес. Это адрес доставки ваших заказов. При регистрации в магазинах Англии вы указываете ваш биллинг адрес , а наш адрес доставки. Обязательно указываете ФИО. Адрес должен быть указан так как в вашем кабинете.</li>
+                                <li>После отгрузки заказа, магазин пришлет Вам трек номер. Внесите трек номер на сайт, нажав на кнопочку Оформить виртуальный заказ.</li>
+                                <li>Как только мы получим Ваш заказ, вы получите уведомление о приходе к нам на склад</li>
+                            </ul>
+                            <h1 class="topUl-title">Оплата</h1>
+                            <ul>
+                                <li>В разделе Посылки есть кнопочка сформировать посылку, при нажатии на нее вы сможете выбрать заказы, которые вы хотите упаковать в конкретную посылку и выбрать способ доставки. Мы получим запрос и в течении рабочего дня мы выполнит Ваш запрос</li>
+                                <li>Как только мы соберем посылку, внесем вес и стоимость доставки Вы получите емайл, уведомлявший вас о оплате доставки и просьбе заполнить таможенную декларацию</li>
+                                <li>На каждую отправляемую посылку оформляться таможенная декларация, ее вы можете найти справа возле каждой Посылки. Выберите Адрес доставки из адресной книги, заполнить все поля и укажите таможенную стоимость Посылки Если вы хотите чтобы мы заполонили таможенную декларация вы можете сделать запрос на заполнение, только обязательно выберите данные для доставки , остальное мы можем сделать за Вас</li>
+                                <li>После получения нами оплаты, посылка будет отправлена</li>
+                                <li>Просим обратить внимания на дни отправки. Пожалуйста оформляйте и оплачивайте Посылки вовремя</li>
+                                <li>Очень важный раздел Адресная книга. Все получатели должны быть внесены именно в адресную книгу, так как данные для отправки посылок система выбирает именно из адресной книги</li>
+                            </ul>
+                            <h1 class="topUl-title">Заказы</h1>
+                            <ul>
+                                <li>В обработке - это заказы, отправленные вами</li>
+                                <li>Выкупленные заказы - заказы, уже Выкупленные нами или Ваши виртуальные заказы</li>
+                                <li>Пришедшие заказы - заказы, поступившие на склад, указана дата прихода и вес</li>
+                                <li>Упакованные заказы - заказы, упакованные в Посылки, ожидающие отправки</li>
+                                <li>Отправленные заказы - заказы, высланные нами</li>
+                            </ul>
+                            <h1 class="topUl-title">Посылки</h1>
+                            <ul>
+                                <li>Запрос отправлен - Вы отправили запрос на формирование Посылки</li>
+                                <li>В обработке - наши работники, собирают и упаковывают Ваши заказы</li>
+                                <li>Ожидает оплаты и заполнения деклараций - посылка упакована и ждет оплаты и заполнения деклараций</li>
+                                <li>Сформированные</li>
+                                <li>Отправленные - Посылки, отправленные с нашего склада с указанием трек номера</li>
+                            </ul>
+                        </div>
+                        <div class="persAcc__data-details__sliderItem">
+                            <h1 class="sliderPay-title">Privat 24</h1>
+                            <div class="sliderPay__box">
+                                <div class="sliderPay__box-item">
+                                    <h1>Номер карточки:</h1>
+                                    <span>4462617345592244</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>ФИО:</h1>
+                                    <span>Jelena Boikova</span>
+                                </div>
+                            </div>
+                            <h1 class="sliderPay-title">Тинькофф</h1>
+                            <div class="sliderPay__box">
+                                <div class="sliderPay__box-item">
+                                    <h1>Номер карточки:</h1>
+                                    <span>4462617345592244</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>ФИО:</h1>
+                                    <span>Jelena Boikova</span>
+                                </div>
+                            </div>
+                            <h1 class="sliderPay-title">Paypal</h1>
+                            <a href="#" class="paypal__buttSlider"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                            <h1 class="sliderPay-title">Card-PayZone</h1>
+                            <a href="#" class="visa__buttSlider"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                            <h1 class="sliderPay-title">Unistream</h1>
+                            <div class="sliderPay__box">
+                                <div class="sliderPay__box-item">
+                                    <h1>Name:</h1>
+                                    <span>Mykhaylo Prykhodko</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Tel:</h1>
+                                    <span>00447782164776</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Branch:</h1>
+                                    <span>London-Unistream</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Adress:</h1>
+                                    <span>Canary Wharf Beatty House, Admirals Way 5 E14 9UF</span>
+                                </div>
+                            </div>
+                            <h1 class="sliderPay-title">SWIFT</h1>
+                            <div class="sliderPay__box">
+                                <div class="sliderPay__box-item">
+                                    <h1>ФИО:</h1>
+                                    <span>Mykhaylo Prykhodko</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Адрес проживания:	</h1>
+                                    <span>Unit 1 Cromwell industrial Estate, Staffa Road, E10 7QZ, London</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Branch:</h1>
+                                    <span>London-Unistream</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Aдрес и название отделения банка:</h1>
+                                    <span>Westfiled Stratford City, E20</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Branch:</h1>
+                                    <span>40-43-65</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Номер счета (Account number):	</h1>
+                                    <span>60019836</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>IBAN:	</h1>
+                                    <span>GB46HBUK40436560019836</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>SWIFTBIC:	</h1>
+                                    <span>HBUKGB4194C</span>
+                                </div>
+                                <div class="sliderPay__box-item">
+                                    <h1>Телефон получателя:</h1>
+                                    <span>00447782164776</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="./js/menuOptions.js"></script>
+    <script src="./js/personalacc.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style links -->
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="persAcc">
+        <div class="persAcc__header">
+            <div class="persAcc__headerCont">
+                <div class="persAcc__headerCont-left">
+                    <div class="persAcc__headerCont-londonReal__time">
+                        <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                        <div class="realTime">
+                            <a href="#">Лондон: </a>
+                            <p class="realClock">19: 10 : 36</p>
+                        </div>
+                    </div>
+                    <div class="persAcc__headerCont-schedule__work">
+                        <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                        <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                    </div>
+                    <div class="persAcc__headerCont-exchange__rate">
+                        <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                        <a href="#">Курс валют</a>
+                    </div>
+                    <div class="persAcc__headerCont-bonus">
+                        <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                        <a href="#">Бонусный счет: $ 0</a>
+                    </div>
+                </div>
+                <div class="persAcc__headerCont-right">
+                    <div class="persAcc__headerCont-balance">
+                        <a href="#">Ваш баланс: </a>
+                        <a href="#">$0</a>
+                    </div>
+                    <div class="persAcc__headerCont-right__buttons">
+                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapacc">
+            <div class="persAcc__data">
+                <div class="persAcc__profile">
+                    <img src="/assets/images/img/personalacc/personAcc.svg" alt="personAccImg">
+                    <label for="persAcc__profile-butt">Выбрать файл</label>
+                    <input type="file" id="persAcc__profile-butt"></input>
+                </div>
+                <div class="persAcc__info">
+                    <div class="persAcc__info-inputs">
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__name">Имя:</label>
+                            <input type="text" name="persAcc__name" id="persAcc__name" required>
+                        </div>
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__surname">Фамилия:</label>
+                            <input type="text" name="persAcc__surname" id="persAcc__surname" required>
+                        </div>
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__address">Адрес:</label>
+                            <input type="text" name="persAcc__address" id="persAcc__address" required>
+                        </div>
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__login">Логин:</label>
+                            <input type="text" name="persAcc__login" id="persAcc__login" required>
+                        </div>
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__tel">Номер телефона:</label>
+                            <input type="tel" name="persAcc__tel" id="persAcc__tel" required>
+                        </div>
+                        <div class="persAcc__info-item">
+                            <label for="persAcc__email">E-mail:</label>
+                            <input type="email" name="persAcc__email" id="persAcc__email" required>
+                        </div>
+                    </div>
+                    <div class="persAcc__info-sign">
+                        <input type="checkbox">
+                        <p>Подписаться на рассылку</p>
+                    </div>
+                    <a href="#" class="save__butt">Сохранить</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
+
+    <script src="/assets/js/app.js"></script>
+    <script src="./js/personalacc.js"></script>
+</body>
+</html>
