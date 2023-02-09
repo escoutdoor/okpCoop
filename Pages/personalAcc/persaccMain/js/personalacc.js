@@ -111,6 +111,7 @@ function saveButtoncheck() {
 
 
 
+
     let data = new WeakMap();
     data.set(name, name.val());
     data.set(surName, surName.val());
@@ -168,3 +169,6 @@ buttImg.change(function(event) {
     img.attr('src', newImage)
     console.log(event);
 })
+
+
+
