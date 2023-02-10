@@ -80,7 +80,7 @@
     </header>
 
     <!-- Start of Main -->
-    <div class="main-block">
+    <!-- <div class="main-block">
         <div class="backgroundacc-wrap">
             <div class="main-block__body">
                 <div class="main-block__body-block1">
@@ -89,7 +89,8 @@
                             <img src="/assets/images/img/personalacc/schedule.svg" alt="">
                         </div>
                         <div class="main-block__body-information">
-                            <input type="text" value="Лондон: 19 : 10 : 36" disabled>
+                            <p>Лондон: </p> 
+                            <input id="exactTime" type="text" value="19 : 10 : 36" disabled>
                         </div>
                     </div>
                     <div class="main-block__body-item">
@@ -123,8 +124,182 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="persAcc__header">
+        <div class="persAcc__headerCont">
+            <div class="persAcc__headerCont-left">
+                <div class="persAcc__headerCont-londonReal__time">
+                    <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                    <div class="realTime">
+                        <a href="#">Лондон: </a>
+                        <p class="realClock">19: 10 : 36</p>
+                    </div>
+                </div>
+                <div class="persAcc__headerCont-schedule__work">
+                    <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                    <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                </div>
+                <div class="persAcc__headerCont-exchange__rate">
+                    <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                    <a href="#">Курс валют</a>
+                </div>
+                <div class="persAcc__headerCont-bonus">
+                    <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                    <a href="#">Бонусный счет: $ 0</a>
+                </div>
+            </div>
+            <div class="persAcc__headerCont-right">
+                <div class="persAcc__headerCont-balance">
+                    <a href="#">Ваш баланс: </a>
+                    <a href="#">$0</a>
+                </div>
+                <div class="persAcc__headerCont-right__buttons">
+                    <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                    <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                    <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="orders">
+        <div class="wrapacc">
+            <div class="orders__body">
+                <div class="orders__body-main-block">
+                    <div class="orders__body-title">Заказы пользователя Dmitro Karimov</div>
+                    <div class="orders__body-btn">Добавить новый заказ</div>
+                </div>
+                <div class="orders__body-menu">
+                    <div class="orders__body-right-block">
+                        <p>Все</p>
+                        <p>Мои заказы</p>
+                    </div>
+                    <div class="orders__body-left-block">
+                        <div class="orders__body-search-block">
+                            <input type="text" value="Поиск по трек номеру">
+                            <div class="orders__body-search-icon">
+                                <img src="/assets/images/icon/search.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="orders__body-filter">
+                            <div class="orders__body-filter-icon">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orders__body-block">
+                    <div class="orders__body-header">
+                        <div class="orders__body-header-item">
+                            <p>Дата</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>ID Заказа</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>ID Заказа</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Магазин</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Вес</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Сумма</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Статус</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Выкуплен</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                        <div class="orders__body-header-item">
+                            <p>Комментарии</p>
+                            <img src="/assets/images/icon/arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="orders__body-row">
+                        <div class="orders__body-row-item">
+                            <input type="text" value="11.11.2021">
+                        </div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                    </div>
+                    <div class="orders__body-row">
+                        <div class="orders__body-row-item">
+                            <input type="text" value="11.11.2021">
+                        </div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                    </div>
+                    <div class="orders__body-row">
+                        <div class="orders__body-row-item">
+                            <input type="text" value="11.11.2021">
+                        </div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                    </div>
+                    <div class="orders__body-row">
+                        <div class="orders__body-row-item">
+                            <input type="text" value="11.11.2021">
+                        </div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                    </div>
+                    <div class="orders__body-row">
+                        <div class="orders__body-row-item">
+                            <input type="text" value="11.11.2021">
+                        </div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                        <div class="orders__body-row-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
 
     <footer class="footer">
@@ -173,5 +348,8 @@
             <a href="#">© 2021 Okeypost . Все права защищены.</a>
         </div>
     </footer>
+    <!-- Start of JS  -->
+    <script src="/assets/js/app.js"></script>
+    <script src="/Pages/personalaccOrderPage/js/app.js"></script>
 </body>
 </html>
