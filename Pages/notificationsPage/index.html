@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уведомления</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/Pages/calculatorPage/jquery/node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="persAcc__header">
+            <div class="persAcc__headerCont">
+                <div class="persAcc__headerCont-left">
+                    <div class="persAcc__headerCont-londonReal__time">
+                        <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                        <div class="realTime">
+                            <a href="#">Лондон: </a>
+                            <p class="realClock">19: 10 : 36</p>
+                        </div>
+                    </div>
+                    <div class="persAcc__headerCont-schedule__work">
+                        <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                        <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                    </div>
+                    <div class="persAcc__headerCont-exchange__rate">
+                        <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                        <a href="#">Курс валют</a>
+                    </div>
+                    <div class="persAcc__headerCont-bonus">
+                        <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                        <a href="#">Бонусный счет: $ 0</a>
+                    </div>
+                </div>
+                <div class="persAcc__headerCont-right">
+                    <div class="persAcc__headerCont-balance">
+                        <a href="#">Ваш баланс: </a>
+                        <a href="#">$0</a>
+                    </div>
+                    <div class="persAcc__headerCont-right__buttons">
+                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapacc">
+            <h2 class="main-title">Уведомления</h2>
+            <div class="main-content">
+                <div class="main-item">
+                    <h5>На складе в четверг 25 ноября выходной!</h5>
+                    <p class="content">Здравствуйте уважаемые клиенты! Напоминаем вам, что в этот четверг 25 ноября в США праздник День Благодарения и у сотрудников склада будет выходной день.</p>
+                    <p class="date">23 Ноября</p>
+                    <a href="#">
+                        <svg width="24" height="12" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="main-item">
+                    <h5>Выкупаем БЕСПЛАТНО с промокодом BF2021</h5>
+                    <p class="content">Уважаемые клиенты! С 20 до 31 ноября ВКЛЮЧИТЕЛЬНО мы выкупаем БЕСПЛАТНО из магазинов Америки. Для выкупа используйте ПРОМОКОД: BF2021. </p>
+                    <p class="date">23 Ноября</p>
+                    <a href="#">
+                        <svg width="24" height="12" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="main-item">
+                    <h5>Как оформлять декларации в тарифах «Суперфаст», «Фастбокс» и «Экспресс».</h5>
+                    <p class="content">Скоро черная пятница и каждая минута будет на счету. Чтобы посылки как можно скорее вылетели к вам, мы напоминаем про важность правильного оформления деклараций ваших посылок.</p>
+                    <p class="date">23 Ноября</p>
+                    <a href="#">
+                        <svg width="24" height="12" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="main-item">
+                    <h5>3 дня выкупаем БЕСПЛАТНО с промокодом LOCKDOWN</h5>
+                    <p class="content">Уважаемые клиенты! С 4 по 6 ноября включительно мы выкупаем БЕСПЛАТНО из магазинов Америки. Для выкупа используйте ПРОМОКОД: LOCKDOWN.</p>
+                    <p class="date">23 Ноября</p>
+                    <a href="#">
+                        <svg width="24" height="12" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L8 8L15 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="main-specialItem">
+                    <img src="/assets/images/icon/Warning.svg" alt="warning">
+                    <div class="textBlock">
+                        <h5>Про таможенные лимиты:</h5>
+                        <p>С 1 января 2020 года беспошлинный лимит в России составляет 200 евро и 31 кг на одну посылку или несколько посылок, если они проходят таможню одновременно, в один день. При превышении беспошлинного порога необходимо оплатить пошлину в размере 15% от суммы превышения и таможенный сбор в размере 500 рублей, а также брокерский сбор в размере 5% от их суммы.</p>
+                        <button>Посчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
+    
+</body>
+</html>

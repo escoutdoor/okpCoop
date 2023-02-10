@@ -1,0 +1,160 @@
+.background-container {
+    padding: 45px 0px 62px;
+}
+
+
+.background-links {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    
+    display: flex;
+}
+
+.background-links a, 
+.background-links p {
+    color: #FFFFFF;
+}
+
+
+.background-title {
+    margin-top: 29px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+}
+
+.swiper {
+    width: 1450px;
+    height: 540px;
+
+    z-index: 1;
+
+    margin-top: 80px;
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 42px;
+    height: 42px;
+    border-radius: 36px;
+
+    background-color: #fff;
+    border: 1px solid var(--color-green);
+    color: var(--color-green);
+}
+
+
+.swiper .swiper-pagination-bullet:nth-child(1)::after {
+    content: '1';
+    position: relative;
+    top: 12px;
+}
+
+.swiper .swiper-pagination-bullet:nth-child(2)::after {
+    content: '2';
+    position: relative;
+    top: 12px;
+}
+
+.swiper .swiper-pagination-bullet:nth-child(3)::after {
+    content: '3';
+    position: relative;
+    top: 12px;
+}
+
+.swiper .swiper-pagination-bullet:nth-child(4)::after {
+    content: '4';
+    position: relative;
+    top: 12px;
+}
+
+
+.swiper-slide {
+    display: flex;
+    gap: 20px;
+
+    position: relative;
+    left: 22.5px;
+    top: 20px;
+
+    flex-wrap: wrap;
+}
+
+.main-block {
+    width: 270px;
+    height: 200px;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+
+    padding: 35px 32px 30px 29px;
+
+    background-color: #fff;
+}
+
+.main-block .img-block {
+    position: relative;
+    top: -10px;
+
+    display: flex;
+    align-items: center;
+
+
+    width: 209px;
+    height: 85px;
+}
+
+.main-block p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: var(--color-black);
+}
+
+.row {
+    display: flex;
+    gap: 13px;
+}
+
+.row:last-child {
+    position: relative;
+    top: -67px;
+}
+
+
+/* PREFOOTER */
+
+.delPage__prefooter {
+    display: block;
+    width: 1800px;
+    height: 280px;
+    background: var(--background-color);
+    padding: 112px 200px 0px 202px;
+    border-radius: 36px;
+    margin: 160px auto 0 auto;
+    color: #fff;
+}
+
+.delPage__prefooterContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delPage__prefooterContent h1 {
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 800;
+}
+
+.delPage__prefooterContent-social {
+    display: flex;
+    gap:9px;
+}
+
+.delPage__prefooterContent-social img {
+    width: 66px;
+    height: 66px;
+}
