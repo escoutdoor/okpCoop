@@ -317,7 +317,7 @@ h2.main-title {
     border-bottom-right-radius: 16px;
 
     position: absolute;
-    overflow-x: hidden;
+    overflow: hidden;
 
     transition: 0.5s;
 }
