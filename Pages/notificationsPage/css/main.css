@@ -284,3 +284,57 @@ h2.main-title {
     box-shadow: 0 0.5em 0.5em -0.4em #ccc;
     transform: translateY(-0.25em);
 }
+
+.main-item a::after {
+    width: 24px;
+    height: 12px;
+
+    cursor: pointer;
+    
+    position: absolute;
+    transition: transform 0.5s linear;
+    content: url(/assets/images/icon/arrow.svg);
+}
+
+.main-item a.rotated::after {
+    transform: rotateX(180deg);
+}
+
+
+/* ADDITION BLOCK */
+
+.additionBlock {
+    width: 845px;
+    height: 0;
+
+    background-color: #fff;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    z-index: 1;
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    position: absolute;
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+.additionBlock-content {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newBorder {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.opened {
+    height: 180px;
+}
