@@ -40,23 +40,63 @@ fourthDropdownBlock = document.getElementById("dropdownBlock4");
 button1.onclick = function() {
     dropdownBlock1.classList.toggle("opened");
     button1.classList.toggle("rotated");
-    block1.classList.toggle("newBorder")
+    block1.classList.toggle("newBorder");
+
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder")
+    thirdDropdownBlock.classList.remove("opened");
+    thirdButton.classList.remove("rotated");
+    thirdBlock.classList.remove("newBorder");
+    fourthDropdownBlock.classList.remove("opened");
+    fourthButton.classList.remove("rotated");
+    fourthBlock.classList.remove("newBorder");
 }
 
 secondButton.onclick = function() {
     secondDropdownBlock.classList.toggle("opened");
     secondButton.classList.toggle("rotated");
-    secondBlock.classList.toggle("newBorder")
+    secondBlock.classList.toggle("newBorder");
+
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    thirdDropdownBlock.classList.remove("opened");
+    thirdButton.classList.remove("rotated");
+    thirdBlock.classList.remove("newBorder");
+    fourthDropdownBlock.classList.remove("opened");
+    fourthButton.classList.remove("rotated");
+    fourthBlock.classList.remove("newBorder");
 }
 
 thirdButton.onclick = function() {
     thirdDropdownBlock.classList.toggle("opened");
     thirdButton.classList.toggle("rotated");
-    thirdBlock.classList.toggle("newBorder")
+    thirdBlock.classList.toggle("newBorder");
+
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder");
+    fourthDropdownBlock.classList.remove("opened");
+    fourthButton.classList.remove("rotated");
+    fourthBlock.classList.remove("newBorder");
 }
 
 fourthButton.onclick = function() {
     fourthDropdownBlock.classList.toggle("opened");
     fourthButton.classList.toggle("rotated");
-    fourthBlock.classList.toggle("newBorder")
+    fourthBlock.classList.toggle("newBorder");
+
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder");
+    thirdDropdownBlock.classList.remove("opened");
+    thirdButton.classList.remove("rotated");
+    thirdBlock.classList.remove("newBorder");
 }
