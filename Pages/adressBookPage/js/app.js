@@ -41,18 +41,18 @@ button.onclick = function() {
                 if(!street.value && !building.value) {
                     if(!flat.value && !index.value) {
                         if(!phone.value) {
-                            alert("Введите все данные")
-                            name.classList.add('redBorder');
-                            surname.classList.add('redBorder');
-                            country.classList.add('redBorder');
-                            region.classList.add('redBorder');
-                            district.classList.add('redBorder');
-                            city.classList.add('redBorder');
-                            street.classList.add('redBorder');
-                            building.classList.add('redBorder');
-                            flat.classList.add('redBorder');
-                            index.classList.add('redBorder');
-                            phone.classList.add('redBorder');
+                            openAlert();
+                            name.style.border = '1px solid rgba(255,153,153, .7)';
+                            surname.style.border = '1px solid rgba(255,153,153, .7)';
+                            country.style.border = '1px solid rgba(255,153,153, .7)';
+                            region.style.border = '1px solid rgba(255,153,153, .7)';
+                            district.style.border = '1px solid rgba(255,153,153, .7)';
+                            city.style.border = '1px solid rgba(255,153,153, .7)';
+                            street.style.border = '1px solid rgba(255,153,153, .7)';
+                            building.style.border = '1px solid rgba(255,153,153, .7)';
+                            flat.style.border = '1px solid rgba(255,153,153, .7)';
+                            index.style.border = '1px solid rgba(255,153,153, .7)';
+                            phone.style.border = '1px solid rgba(255,153,153, .7)';
                             return;
                         }
                     }

@@ -287,7 +287,7 @@ input::-webkit-inner-spin-button {
 
 .alert {
     width: 0;
-    height: 55px;
+    height: 80px;
     border-radius: 5px;
     border: transparent;
 
@@ -299,20 +299,21 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
 
     background-color: #e16867;
-    transition: 0.5s;
+    transition: 0.7s;
 
     overflow: hidden;
 
     z-index: 100;
-
-    
 }
 
 .alert-content {
-    width: 300px;
+    width: 350px;
     height: 100%;
 
     position: relative;
+    left: 5px;
+
+    font-size: 18px;
 
     display: flex;
     align-items: center;
@@ -320,17 +321,16 @@ input::-webkit-inner-spin-button {
 }
 
 .alert a {
-    font-size: 12px;
     position: relative;
-    left: 15px;
-    bottom: 15px;
+    left: 17px;
+    bottom: 25px;
     cursor: pointer;
 
     color: #fff;
 }
 
 .opened {
-    width: 300px;
+    width: 350px;
 
     border: 1px solid #d72f2f;
 
