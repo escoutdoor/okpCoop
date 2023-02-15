@@ -303,7 +303,7 @@ input::-webkit-inner-spin-button {
 
     overflow: hidden;
 
-    z-index: 100;
+    z-index: 99;
 }
 
 .alert-content {
