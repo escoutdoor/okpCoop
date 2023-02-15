@@ -292,8 +292,8 @@ input::-webkit-inner-spin-button {
     border: transparent;
 
     position: fixed;
-    left: 10px;
-    top: 10px;
+    right: 10px;
+    bottom: 10px;
 
     color: #fff;
     font-weight: 700;
@@ -311,7 +311,7 @@ input::-webkit-inner-spin-button {
     height: 100%;
 
     position: relative;
-    left: 5px;
+    left: -12px;
 
     font-size: 18px;
 
@@ -322,7 +322,7 @@ input::-webkit-inner-spin-button {
 
 .alert a {
     position: relative;
-    left: 20px;
+    left: -18px;
     bottom: 25px;
     cursor: pointer;
 
