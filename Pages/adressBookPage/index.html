@@ -125,7 +125,7 @@
         <div class="wrapacc">
             <div class="main-container">
                 <h2>Адресная пользователя Dmitro Karimov</h2>
-                <form class="inputBlock">
+                <div class="inputBlock">
                     <div class="input-item">
                         <label for="surname">Фамилия<span>*</span></label>
                         <input type="text" id="surname" required>
@@ -143,8 +143,8 @@
                         <input type="text" id="region" required>
                     </div>
                     <div class="input-item">
-                        <label for="district">Район</label>
-                        <input type="text" id="district">
+                        <label for="district">Район<span>*</span></label>
+                        <input type="text" id="district" required>
                     </div>
                     <div class="input-item">
                         <label for="city">Город<span>*</span></label>
@@ -171,11 +171,17 @@
                         <input type="tel" id="phone" required>
                     </div>
                     <div class="underBlock">
-                        <input type="submit" value="Сохранить">
+                        <input type="submit" value="Сохранить" id="saveButton">
                         <p>+ Добавить еще адрес</p>
                     </div>
-                </form>
+                </div>
                 <a href="#"></a>
+            </div>
+        </div>
+
+        <div class="alert" id="alert">
+            <div class="alert-content">
+                <p>Введите недостающие данные <a id="closeBtn">&#10006</a></p>
             </div>
         </div>
     

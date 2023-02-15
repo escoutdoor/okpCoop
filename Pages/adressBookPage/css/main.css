@@ -281,3 +281,58 @@ input::-webkit-inner-spin-button {
 .footeracc {
     margin-top: 1300px;
 }
+
+
+/* ALERT */
+
+.alert {
+    width: 0;
+    height: 55px;
+    border-radius: 5px;
+    border: transparent;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    color: #fff;
+    font-weight: 700;
+
+    background-color: #e16867;
+    transition: 0.5s;
+
+    overflow: hidden;
+
+    z-index: 100;
+
+    
+}
+
+.alert-content {
+    width: 300px;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert a {
+    font-size: 12px;
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    cursor: pointer;
+
+    color: #fff;
+}
+
+.opened {
+    width: 300px;
+
+    border: 1px solid #d72f2f;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
