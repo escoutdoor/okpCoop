@@ -313,7 +313,7 @@
     line-height: 24px;
     text-align: center;
 }
-.orders__body-row_item,
+.orders__body-row_item:nth-child(11n-11),
 .orders__body-header_item:first-child,
 .user-parcels__body-header_item:first-child {
     margin-left: 25px;
