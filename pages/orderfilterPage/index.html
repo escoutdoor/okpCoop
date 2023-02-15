@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>orderFilter Page</title>
 
-    <!-- style links -->
-
+    <!-- css links  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/root.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="./css/main.css">
 
-
-    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
-
+    
     <!-- Start of Header  -->
     <header>
         <div class="wrap">
@@ -86,95 +82,72 @@
         </div>
     </header>
 
-    <main class="persAcc">
-        <div class="persAcc__header">
-            <div class="persAcc__headerCont">
-                <div class="persAcc__headerCont-left">
-                    <div class="persAcc__headerCont-londonReal__time">
+    <main class="filterPage">
+        <div class="subheader">
+            <div class="subheader-content">
+                <div class="subheader__left">
+                    <div class="subleft-time">
                         <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
                         <div class="realTime">
                             <a href="#">Лондон: </a>
                             <p class="realClock">19: 10 : 36</p>
                         </div>
                     </div>
-                    <div class="persAcc__headerCont-schedule__work">
+                    <div class="subleft-schedule">
                         <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
                         <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
                     </div>
-                    <div class="persAcc__headerCont-exchange__rate">
+                    <div class="subleft-exchange">
                         <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
                         <a href="#">Курс валют</a>
                     </div>
-                    <div class="persAcc__headerCont-bonus">
+                    <div class="subleft-bonus">
                         <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
                         <a href="#">Бонусный счет: $ 0</a>
                     </div>
                 </div>
-                <div class="persAcc__headerCont-right">
-                    <div class="persAcc__headerCont-balance">
+                <div class="subheader__right">
+                    <div class="subright-balance">
                         <a href="#">Ваш баланс: </a>
                         <a href="#">$0</a>
                     </div>
-                    <div class="persAcc__headerCont-right__buttons">
-                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
-                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
-                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
-                    </div>
+                    <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                    <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                    <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
                 </div>
             </div>
         </div>
         <div class="wrapacc">
-            <div class="persAcc__data">
-                <div class="persAcc__profile">
-                    <img src="/assets/images/img/personalacc/personAcc.svg" alt="personAccImg">
-                    <label for="persAcc__profile-butt">Выбрать файл</label>
-                    <input type="file" id="persAcc__profile-butt"></input>
+            <div class="filter__content">
+                <div class="filter-header">
+                    <h1>Заказы пользователя Dmitro Karimov</h1>
+                    <div class="filter-header__links">
+                        <a class="addvirtual__butt" href="#">Добавить новый виртуальный заказ</a>
+                        <a class="add__butt" href="#">Добавить новый заказ</a>
+                    </div>
                 </div>
-                <div class="persAcc__info">
-                    <div class="persAcc__info-inputs">
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__name">Имя:</label>
-                            <input type="text" name="persAcc__name" id="persAcc__name" required>
+                <div class="filter-categories">
+                    <div class="filter-categories__header">
+                        <div class="filter-slider">
+                            <h1 class="filt-slider__item1">Все</h1>
+                            <h1 class="filt-slider__item2">Мои заказы</h1>
                         </div>
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__surname">Фамилия:</label>
-                            <input type="text" name="persAcc__surname" id="persAcc__surname" required>
-                        </div>
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__address">Адрес:</label>
-                            <input type="text" name="persAcc__address" id="persAcc__address" required>
-                        </div>
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__login">Логин:</label>
-                            <input type="text" name="persAcc__login" id="persAcc__login" required>
-                        </div>
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__tel">Номер телефона:</label>
-                            <input type="tel" name="persAcc__tel" id="persAcc__tel" required>
-                        </div>
-                        <div class="persAcc__info-item">
-                            <label for="persAcc__email">E-mail:</label>
-                            <input type="email" name="persAcc__email" id="persAcc__email" required>
+                        <div class="filter-search">
+                            <input class="search-num" type="text" placeholder="Поиск по номеру накладной...">
+                            <a class="filter-filt__butt" href="#"></a>
                         </div>
                     </div>
-                    <div class="persAcc__info-sign">
-                        <input type="checkbox">
-                        <p>Подписаться на рассылку</p>
-                    </div>
-                    <a href="#" class="save__butt">Сохранить</a>
                 </div>
             </div>
         </div>
     </main>
 
 
+
     
-    <footer class="footeracc">
-        <a href="#">© 2021 Okeypost . Все права защищены.</a>
-    </footer>
 
 
-    <script src="/assets/js/personalacc.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
