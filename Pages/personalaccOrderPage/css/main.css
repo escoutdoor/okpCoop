@@ -160,78 +160,242 @@
     transform: translateY(-0.25em);
 }
 
-/* .main-block {
-    width: 100%;
-}
-.main-block__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 43px 104px;
-}
-.main-block__body-block1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 25px;
-}
-.main-block__body-item {
-    display: flex;
-    align-items: center;
-    gap: 17px;
-}
 
-.main-block__body-icon {
-    width: 32px;
-    height: 32px;
-}
-.main-block__body-icon img {
+
+.orders {
     width: 100%;
-    height: 100%;
 }
-.main-block__body-information {
-    color: #FFFFFF;
+.orders__body {
+    width: 1720px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 16px;
-    text-align: center;
+    flex-direction: column;
 }
-.main-block__body-information input{
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 16px;
-    margin-left: 4px;
-}
-.main-block__body-block2 {
+.orders__body-main-block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
 }
-.main-blocl__body-button {
+.orders__body-title {
+    color: #1F2428;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+}
+.orders__body-btn {
     color: #FFFFFF;
     background: var(--color-buttGreenColor);
     box-shadow: var(--shadow-buttShadow);
     border-radius: 36px;
-    margin: 0px 20px 0px 11px;
-    padding: 15px 35px;
 
+    padding: 16px 20px;
     font-weight: 700;
     font-size: 13px;
     line-height: 18px;
-    text-align: center;
 }
-.main-block__body-card {
-    background: #FFFFFF;
-    box-shadow: var(--shadow-buttShadow);
-    border-radius: 36px;
-    padding: 10px 20px;
-} */
+.orders__body-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+.orders__body-right_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orders__body-right_block p {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 36px;
+}
+.orders__body-right_block p:nth-child(1) {
+    color: var(--color-green);
+    border-bottom: 3px solid var(--color-green);
+    padding-right: 50px;
+}
+.orders__body-right_block p:nth-child(2) {
+    padding: 0px 30px 36px;
+}
+.orders__body-right_block-p_color {
+    color: var(--color-green);
+    border-bottom: 3px solid var(--color-green);
+}
+.orders__body-left_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.orders__body-search_block {
+    background: #FCFDFF;
+    border: 1px solid #C0C9D7;
+    border-radius: 120px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 420px;
+    padding: 15px 20px;
+}
+.orders__body-search_block input {
+    color: var(--color-black);
+    opacity: 0.6;
+}
+.orders__body-search_icon {
+    width: 28px;
+    height: 28px;
+}
+.orders__body-search_icon img {
+    width: 100%;
+    height: 100%;
+}
+.orders__body-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    border: 1px solid var(--color-green);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.orders__body-filter_icon {
+    width: 28px;
+    height: 28px;
+}
+.orders__body-filter_icon img {
+    width: 100%;
+    height: 100%;
+}
+.orders__body-block {
+    margin-top: 44px;
+    width: 1720px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    overflow-x: scroll;
+}
+.orders__body-header_item {
+    background: #F2F6FC;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    padding: 18px 25px;
+}
+.orders__body-header_item svg {
+    width: 9px;
+    height: 5px;
+    margin-top: 3px;
+}
+.orders__body-header_item svg path{
+    stroke: #000000;
+}
+.orders__body-row_item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 7px;
+    padding: 18px 25px;
+    border-bottom: 1px solid #D8E1EF ;
+}
+.orders__body-row_item button {
+    width: 120px;
+    padding: 13px 0px;
+    border-radius: 36px;
+}
+.orders__body-row_btn-gray {
+    color: #C0C9D7;
+    border: 1px solid #C0C9D7;
+}
+.orders__body-row_btn-green {
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
+
+.user-parcels {
+    width: 100%;
+}
+.user-parcels__body {
+    width: 1720px;
+    display: flex;
+    flex-direction: column;
+}
+.user-parcels__body-main_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-parcels__body-right_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-parcels__body-title {
+    color: #1F2428;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+}
+.user-parcels__body-left_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.user-parcels__body-btn {
+}
+.user-parcels__body-filter_icon {
+}
+.user-parcels__body-block {
+}
+.user-parcels__body-header {
+}
+.user-parcels__body-header_item {
+}
+.user-parcels__body-row {
+}
+.user-parcels__body-row_item {
+}
+.user-parcels__body-row_btn {
+}
+.user-transactions {
+}
+.user-transactions__body {
+}
+.user-transactions__body-main_block {
+}
+.user-transactions__body-left_block {
+}
+.user-transactions__body-title {
+}
+.user-transactions__body-right_block {
+}
+.user-transactions__body-btn {
+}
+.user-transactions__body-filter_block {
+}
+.user-transactions__body-filter_date {
+}
+.user-transactions__body-filter_search {
+}
+.user-transactions__body-filter_btn {
+}
+.user-transactions__body-block {
+}
+.user-transactions__body-header {
+}
+.user-transactions__body-header_item {
+}
+.user-transactions__body-row {
+}
+.user-transactions__body-row_item {
+}
+.user-transactions__body-row_btn {
+}
