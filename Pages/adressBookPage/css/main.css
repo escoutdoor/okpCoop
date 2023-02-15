@@ -291,7 +291,7 @@ input::-webkit-inner-spin-button {
     border-radius: 5px;
     border: transparent;
 
-    position: absolute;
+    position: fixed;
     left: 10px;
     top: 10px;
 
@@ -330,8 +330,6 @@ input::-webkit-inner-spin-button {
 }
 
 .opened {
-    position: fixed;
-
     width: 350px;
 
     border: 1px solid #d72f2f;
