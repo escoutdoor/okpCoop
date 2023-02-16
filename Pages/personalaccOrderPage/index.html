@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalaccOrder</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/Pages/personalaccOrderPage/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="#" class="header__body-item">Как покупать</a>
+                        <a href="#" class="header__body-item">Распродажи</a>
+                        <a href="#" class="header__body-item">Цены</a>
+                        <a href="#" class="header__body-item">Помощь</a>
+                        <a href="#" class="header__body-item">Бонусы</a>
+                        <a href="#" class="header__body-item">Блог</a>
+                        <a href="#" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start of Main -->
+    <!-- <div class="main-block">
+        <div class="backgroundacc-wrap">
+            <div class="main-block__body">
+                <div class="main-block__body-block1">
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/schedule.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">
+                            <p>Лондон: </p> 
+                            <input id="exactTime" type="text" value="19 : 10 : 36" disabled>
+                        </div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/clock.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/Bank.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Курс валют</div>
+                    </div>
+                    <div class="main-block__body-item">
+                        <div class="main-block__body-icon">
+                            <img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="">
+                        </div>
+                        <div class="main-block__body-information">Бонусный счет: £ 0</div>
+                    </div>
+                </div>
+                <div class="main-block__body-block2">
+                    <div class="main-block__body-information">Ваш баланс: £ 0</div>
+                    <button class="main-blocl__body-button">Добавить транзакцию</button>
+                    <div class="main-block__body-card">
+                        <img src="/assets/images/img/personalacc/paypal.svg" alt="">
+                    </div>
+                    <div class="main-block__body-card">
+                        <img src="/assets/images/img/personalacc/visa.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="persAcc__header">
+        <div class="persAcc__headerCont">
+            <div class="persAcc__headerCont-left">
+                <div class="persAcc__headerCont-londonReal__time">
+                    <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                    <div class="realTime">
+                        <a href="#">Лондон: </a>
+                        <p class="realClock">19: 10 : 36</p>
+                    </div>
+                </div>
+                <div class="persAcc__headerCont-schedule__work">
+                    <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                    <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                </div>
+                <div class="persAcc__headerCont-exchange__rate">
+                    <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                    <a href="#">Курс валют</a>
+                </div>
+                <div class="persAcc__headerCont-bonus">
+                    <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                    <a href="#">Бонусный счет: $ 0</a>
+                </div>
+            </div>
+            <div class="persAcc__headerCont-right">
+                <div class="persAcc__headerCont-balance">
+                    <a href="#">Ваш баланс: </a>
+                    <a href="#">$0</a>
+                </div>
+                <div class="persAcc__headerCont-right__buttons">
+                    <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                    <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                    <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orders">
+        <div class="wrapacc">
+            <div class="orders__body">
+                <div class="orders__body-main-block">
+                    <h1 class="orders__body-title">Заказы пользователя Dmitro Karimov</h1>
+                    <button class="orders__body-btn">Добавить новый заказ</и>
+                </div>
+                <div class="orders__body-menu">
+                    <div class="orders__body-right_block">
+                        <p>Все</p>
+                        <p>Мои заказы</p>
+                    </div>
+                    <div class="orders__body-left_block">
+                        <div class="orders__body-search_block">
+                            <input type="text" value="Поиск по трек номеру">
+                            <div class="orders__body-search_icon">
+                                <img src="/assets/images/icon/search.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="orders__body-filter">
+                            <div class="orders__body-filter_icon">
+                                <img src="/assets/images/img/personalaccOrderPage/funnel.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orders__body-block">
+                    <div class="orders__body-header">
+                        <div class="orders__body-header_item">
+                            <p>Дата</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>ID Заказа</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Трек номер</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Магазин</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Вес</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Сумма</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Статус</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Выкуплен</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item">
+                            <p>Комментарии</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="orders__body-header_item"></div>
+                    </div>
+                    <div class="orders__body-rows_container">
+                        <div class="orders__body-rows">
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/clockClockwise.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/user.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"></div>
+        
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/currencyCircleDollar.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/OK.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"><button class="orders__body-row_btn-gray">В обработке</button></div>
+        
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/mapPin.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/user.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"></div>
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/package.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/user.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"></div>
+        
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/checkCircle.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/OK.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"><button class="orders__body-row_btn-green">Оплатить</button></div>
+        
+                            <div class="orders__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>35657</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>231234234234234</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>Levis</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>152.33 kg</p>
+                            </div>
+                            <div class="orders__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/checkCircle.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/OK.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="orders__body-row_item"><button class="orders__body-row_btn-green">Оплатить</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-parcels">
+        <div class="wrapacc">
+            <div class="user-parcels__body">
+                <div class="user-parcels__body-main_block">
+                    <div class="user-parcels__body-right_block">
+                        <h1 class="user-parcels__body-title">Посылки пользователя Dmitro Karimov</h1>
+                    </div>
+                    <div class="user-parcels__body-left_block">
+                        <button class="user-parcels__body-btn">Запрос на формирование посылки</button>
+                        <div class="user-parcels__body-filter">
+                            <div class="user-parcels__body-filter_icon">
+                                <img src="/assets/images/img/personalaccOrderPage/funnel.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-parcels__body-block">
+                    <!-- <div class="user-parcels__body-header"> -->
+                        <div class="user-parcels__body-header_item">
+                            <p>Дата</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Трек номер </p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Доставка</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>ФИО</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Параметры груза</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Вес</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Сумма</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Статус</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-parcels__body-header_item">
+                            <p>Дополнительные услуги</p>
+                        </div>
+                        <div class="user-parcels__body-header_item"></div>
+                    <!-- </div> -->
+                    <!-- <div class="users-parcels__body-rows_container"> -->
+                        <!-- <div class="user-parcels__body-rows"> -->
+                            <div class="user-parcels__body-row_item">
+                                <p>11.11.2021</p>
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>35657455466446</p>
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>Почта России</p>
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>Karimov D. V.</p>
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>5 посылок</p>
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>12.36 кг</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <p>£568.00</p>
+                                <img src="/assets/images/img/personalaccOrderPage/info.svg" alt="">
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/user.svg" alt="">
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <img src="/assets/images/img/personalaccOrderPage/fileText.svg" alt="">
+                            </div>
+                            <div class="user-parcels__body-row_item">
+                                <button class="user-parcels__body-row_btn orders__body-row_btn-green">Оплатить</button>
+                            </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-transactions">
+        <div class="wrapacc">
+            <div class="user-transactions__body">
+                <div class="user-transactions__body-main_block">
+                    <div class="user-transactions__body-left_block">
+                        <h1 class="user-transactions__body-title">Транзакции пользователя Dmitro Karimov</h1>
+                    </div>
+                    <div class="user-transactions__body-right_block">
+                        <button class="user-transactions__body-btn orders__body-row_btn-green">Пополнить счет</button>
+                        <button class="user-transactions__body-btn">Запрос на формирование посылки</button>
+                    </div>
+                </div>
+                <div class="user-transactions__body-filter_block">
+                    <div class="user-transactions__body-filter_date">
+                        <input type="text" placeholder="От и до">
+                        <img src="/assets/images/img/personalaccOrderPage/calendarBlank.svg" alt="">
+                    </div>
+                    <div class="user-transactions__body-filter_search">
+                        <input type="text" placeholder="Все транзакции">
+                        <img src="/assets/images/icon/arrow.svg" alt="">
+                    </div>
+                    <div class="user-transactions__body-filter_btn">Показать</div>
+                </div>
+                <tabdiv class="user-transactions__body-block">
+                    <!-- <div class="user-transactions__body-header"> -->
+                        <div class="user-transactions__body-header_item">
+                            <p>Дата:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Тип оплаты:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Описание транзакции:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Зачисление:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Кешбэк:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Статус</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Остаток:</p>
+                            <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L13 13L25 1" stroke="#01CD7D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="user-transactions__body-header_item">
+                            <p>Счет:</p>
+                        </div>
+                        <div class="user-transactions__body-header_item"></div>
+                    <!-- </div> -->
+                    <!-- <div class="user-transactions__body-row"> -->
+                        <div class="user-transactions__body-row_item">
+                            <p>2017-08-10</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <p>Банковский перевод</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <p>Оплата за посылку ID і46546544</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <p>0£</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <p>0£</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <img src="/assets/images/img/personalaccOrderPage/clockClockwise.svg" alt="">
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <p>0£</p>
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <img src="/assets/images/img/personalaccOrderPage/downloadSimple.svg" alt="">
+                        </div>
+                        <div class="user-transactions__body-row_item">
+                            <button class="user-transactions__body-row_btn orders__body-row_btn-green">Оплатить</button>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__content">
+                <div class="footer__content-social">
+                    <a href="#"><img src="/assets/images/logo/logo.svg" alt="logoImgfooter"></a>
+                    <div class="footer__content-socialLinks">
+                        <a href="#"><img src="/assets/images/img/footer/whats.svg" alt="whatsUpImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/viber.svg" alt="ViberImg"></a>
+                        <a href="#"><img src="/assets/images/img/footer/chat.svg" alt="ChatImg"></a>
+                    </div>
+                </div>
+                <div class="footer__content-links">
+                    <ul>
+                        <li>О компании</li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Oтзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Соглашение о персональных данных</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                    <ul>
+                        <li>Полезное</li>
+                        <li><a href="#">Как работает наш сервис</a></li>
+                        <li><a href="#">Как покупать с оператором</a></li>
+                        <li><a href="#">Ответы на частые вопросы</a></li>
+                        <li><a href="#">Популярные магазины</a></li>
+                        <li><a href="#">Черный список магазинов</a></li>
+                        <li><a href="#">Актуальные распродажи</a></li>
+                    </ul>
+                    <ul>
+                        <li>Спецпроекты</li>
+                        <li><a href="#">50% на первую доставку</a></li>
+                        <li><a href="#">Скидки для постоянных клиентов</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+                        <li><a href="#">Кэшбек Mr. Rebates и Rakuten</a></li>
+                        <li><a href="#">Stop Fraud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="underFooter">
+            <a href="#">© 2021 Okeypost . Все права защищены.</a>
+        </div>
+    </footer>
+    <!-- Start of JS  -->
+    <script src="/assets/js/app.js"></script>
+    <script src="/Pages/personalaccOrderPage/js/app.js"></script>
+</body>
+</html>

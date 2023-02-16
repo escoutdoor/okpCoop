@@ -45,6 +45,15 @@ ul, ol {
     background: var(--background-color);
 }
 
+.backgroundacc-wrap {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0 5px;
+    border-radius: 36px;
+
+    background: var(--background-color);
+}
+
 .wrapacc {
     width: 1720px;
     margin: 0 auto;
