@@ -166,30 +166,35 @@
 .user-parcels {
     width: 100%;
 }
-.orders__body {
+.orders__body,
+.user-transactions__body {
     width: 1720px;
     display: flex;
     flex-direction: column;
 }
-.orders__body-main-block, .user-parcels__body-main_block {
+.orders__body-main-block, .user-parcels__body-main_block,
+.user-transactions__body-main_block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.orders__body-title, .user-parcels__body-title {
+.orders__body-title, .user-parcels__body-title,
+.user-transactions__body-title {
     color: #1F2428;
     font-weight: 700;
     font-size: 26px;
     line-height: 36px;
 }
-.orders__body-btn, .user-parcels__body-btn {
+.orders__body-btn, .user-parcels__body-btn,
+.user-transactions__body-btn:last-child,
+.user-transactions__body-filter_btn {
     color: #FFFFFF;
     background: var(--color-buttGreenColor);
     box-shadow: var(--shadow-buttShadow);
     border-radius: 36px;
 
-    padding: 16px 20px;
+    padding: 16px 30px;
     font-weight: 700;
     font-size: 13px;
     line-height: 18px;
@@ -202,7 +207,8 @@
     margin-top: 56px;
 }
 .orders__body-right_block,
-.user-parcels__body-right_block {
+.user-parcels__body-right_block,
+.user-transactions__body-right_block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,8 +289,7 @@
     width: 100%;
     height: 100%;
 }
-.orders__body-block,
-.user-parcels__body-block{
+.orders__body-block {
     margin-top: 44px;
     width: 1720px;
     display: flex;
@@ -300,36 +305,33 @@
     padding-right: 18px;
 }
 .orders__body-header_item,
-.user-parcels__body-header_item {
+.user-parcels__body-header_item,
+.user-transactions__body-header_item {
     color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 8px;
-    margin: 18px 0px;
+    padding: 18px 25px;
 
     font-weight: 700;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
+
+    white-space: nowrap;
 }
-.orders__body-row_item,
-.orders__body-header_item:first-child,
-.user-parcels__body-header_item:first-child {
-    margin-left: 25px;
-}
-.user-parcels__body-header_item:nth-child(5),
-.user-parcels__body-header_item:nth-child(9) {
-    width: 171px;
-}
+
 .orders__body-header_item svg,
-.user-parcels__body-header_item svg {
+.user-parcels__body-header_item svg, 
+.user-transactions__body-header_item svg {
     width: 9px;
     height: 5px;
     margin-top: 3px;
 }
 .orders__body-header_item svg path, 
-.user-parcels__body-header_item path{
+.user-parcels__body-header_item path,
+.user-transactions__body-header_item path {
     stroke: #000000;
 }
 .orders__body-rows_container
@@ -344,14 +346,15 @@
     width: 1702px;
 }
 .orders__body-row_item,
-.user-parcels__body-row_item {
+.user-parcels__body-row_item,
+.user-transactions__body-row_item {
     color: var(--color-black);
     border-bottom: 1px solid #D8E1EF ;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 7px;
-    margin: 8px 0px;
+    padding: 8px 25px;
     height: 60px;
 
     
@@ -359,12 +362,18 @@
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+
+    white-space: nowrap;
+}
+.orders__body-row_item p,
+.user-parcels__body-row_item p {
+    max-width: 169px;
 }
 
-.user-parcels__body-row_item:not(:first-child) {
-    padding: 0;
-}
-.orders__body-row_item button {
+.orders__body-row_item button,
+.user-parcels__body-row_btn,
+.user-transactions__body-row_btn,
+.user-transactions__body-btn:first-child {
     width: 120px;
     padding: 13px 0px;
     border-radius: 36px;
@@ -394,37 +403,91 @@
     border-radius: 36px;
 }
 
-.user-transactions {
+.user-parcels__body-block {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    margin: 44px 0px 100px;
 }
-.user-transactions__body {
+.user-parcels__body-header_item,
+.user-transactions__body-header_item {
+    background: #F2F6FC;
 }
-.user-transactions__body-main_block {
+.user-parcels__body-header_item:first-child,
+.user-transactions__body-header_item:first-child {
+    border-radius: 6px 0 0 0 ;
 }
-.user-transactions__body-left_block {
-}
-.user-transactions__body-title {
-}
-.user-transactions__body-right_block {
-}
-.user-transactions__body-btn {
-}
-.user-transactions__body-filter_block {
-}
-.user-transactions__body-filter_date {
-}
-.user-transactions__body-filter_search {
-}
-.user-transactions__body-filter_btn {
+.user-parcels__body-header_item:last-child,
+.user-transactions__body-header_item:last-child {
+    border-radius: 0 6px 0 0;
 }
 .user-transactions__body-block {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    margin: 44px 0px 100px;
 }
-.user-transactions__body-header {
+
+.user-transactions__body-right_block{
+    gap: 14px;
 }
-.user-transactions__body-header_item {
+.user-transactions__body-filter_block {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 34px;
 }
-.user-transactions__body-row {
+.user-transactions__body-filter_date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    height: 60px;
+    padding: 22px 25px;
+    border: 1px solid #C0C9D7;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
 }
-.user-transactions__body-row_item {
+.user-transactions__body-filter_date input {
+    color: var(--color-black);
+    opacity: 0.6;
 }
-.user-transactions__body-row_btn {
+.user-transactions__body-filter_date img {
+    width: 28px;
+    height: 28px;
+}
+.user-transactions__body-filter_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    height: 60px;
+    padding: 22px 25px;
+    border: 1px solid #C0C9D7;
+    
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+.user-transactions__body-filter_search input {
+    color: var(--color-black);
+    opacity: 0.6;
+}
+.user-transactions__body-filter_search img {
+    width: 17px;
+    height: 8px;
+}
+
+.orders__body-btn:hover, .user-parcels__body-btn:hover,
+.user-transactions__body-btn:last-child:hover,
+.user-transactions__body-filter_btn:hover,
+.orders__body-btn:focus, .user-parcels__body-btn:focus,
+.user-transactions__body-btn:last-child:focus,
+.user-transactions__body-filter_btn:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
+    transform: translateY(-0.25em);
+    cursor: pointer;
 }
