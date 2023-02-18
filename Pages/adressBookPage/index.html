@@ -172,10 +172,45 @@
                     </div>
                     <div class="underBlock">
                         <input type="submit" value="Сохранить" id="saveButton">
-                        <p>+ Добавить еще адрес</p>
+                        <p id="openBlockBtn">+ Добавить еще адрес</p>
                     </div>
                 </div>
-                <a href="#"></a>
+                <div class="inputBlock invisible" id="secondBlock">
+                    <div class="input-item">
+                        <label for="region">Область<span>*</span></label>
+                        <input type="text" id="secondRegion" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="district">Район<span>*</span></label>
+                        <input type="text" id="secondDistrict" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="city">Город<span>*</span></label>
+                        <input type="text" id="secondCity" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="street">Улица<span>*</span></label>
+                        <input type="text" id="secondStreet" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="building">Дом<span>*</span></label>
+                        <input type="number" id="secondBuilding" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="flat">Квартира<span>*</span></label>
+                        <input type="number" id="secondFlat" required>
+                    </div>
+                    <div class="input-item">
+                        <label for="index">Индекс<span>*</span></label>
+                        <input type="number" id="secondIndex" required>
+                    </div>
+                    <div class="underBlock secondBlock">
+                        <div class="buttonBlock">
+                            <input type="submit" value="Сохранить" id="secondSaveButton">
+                            <button id="closeBlockBtn">Удалить адрес</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

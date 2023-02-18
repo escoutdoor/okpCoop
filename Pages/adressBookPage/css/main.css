@@ -336,3 +336,45 @@ input::-webkit-inner-spin-button {
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+.invisible {
+    display: none !important;
+}
+
+#secondBlock {
+    position: relative;
+    top: 130px;
+}
+
+.underBlock.secondBlock {
+    position: relative;
+    left: -480px;
+    top: 100;
+}
+
+.buttonBlock {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonBlock button {
+    padding: 18px 65px;
+
+    border: 1px solid var(--color-green);
+    box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
+    border-radius: 36px;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--color-green);
+
+    cursor: pointer;
+
+    transition: .3s transform, .25s box-shadow;
+}
+
+.buttonBlock button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #ccc;
+    transform: translateY(-0.25em);
+}

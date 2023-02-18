@@ -186,6 +186,136 @@ button.onclick = function() {
 
 }
 
+// OPEN BLOCK 2
+
+let openBlockBtn = document.getElementById('openBlockBtn')
+let secondBlock = document.getElementById('secondBlock')
+let closeBlockBtn = document.getElementById('closeBlockBtn')
+
+openBlockBtn.onclick = function() {
+    secondBlock.classList.remove('invisible');
+    closeBlockBtn.onclick = function() {
+        secondBlock.classList.add('invisible');
+    }
+}
+
+// INPUTS 2
+
+let secondRegion = document.getElementById('secondRegion');
+let secondDistrict = document.getElementById('secondDistrict');
+let secondCity = document.getElementById('secondCity');
+let secondStreet = document.getElementById('secondStreet');
+let secondBuilding = document.getElementById('secondBuilding');
+let secondFlat = document.getElementById('secondFlat');
+let secondIndex = document.getElementById('secondIndex');
+
+let secondButton = document.getElementById('secondSaveButton')
+
+
+secondButton.onclick = function() {
+
+    if(!secondRegion.value) {
+        if(!secondDistrict.value && !secondCity.value) {
+            if(!secondStreet.value && !secondBuilding.value) {
+                if(!secondFlat.value && !secondIndex.value)  {
+                    openAlert();
+                    secondRegion.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondDistrict.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondCity.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondStreet.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondBuilding.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondFlat.style.border = '1px solid rgba(255,153,153, .7)';
+                    secondIndex.style.border = '1px solid rgba(255,153,153, .7)';
+                    return;
+                }
+            }
+        }
+    }
+
+
+    if(!secondRegion.value) {
+        openAlert();
+        secondRegion.style.border = '1px solid rgba(255,153,153, .7)';
+        secondRegion.setAttribute('checked', false);
+    } 
+    if(!secondDistrict.value) {
+        openAlert();
+        secondDistrict.style.border = '1px solid rgba(255,153,153, .7)';
+        secondDistrict.setAttribute('checked', false);
+    } 
+    if(!secondCity.value) {
+        openAlert();
+        secondCity.style.border = '1px solid rgba(255,153,153, .7)';
+        secondCity.setAttribute('checked', false);
+    } 
+    if(!secondStreet.value) {
+        openAlert();
+        secondStreet.style.border = '1px solid rgba(255,153,153, .7)';
+        secondStreet.setAttribute('checked', false);
+    } 
+    if(!secondBuilding.value) {
+        openAlert();
+        secondBuilding.style.border = '1px solid rgba(255,153,153, .7)';
+        secondBuilding.setAttribute('checked', false);
+    } 
+    if(!secondFlat.value) {
+        openAlert();
+        secondFlat.style.border = '1px solid rgba(255,153,153, .7)';
+        secondFlat.setAttribute('checked', false);
+    } 
+    if(!secondIndex.value) {
+        openAlert();
+        secondIndex.style.border = '1px solid rgba(255,153,153, .7)';
+        secondIndex.setAttribute('checked', false);
+    } 
+
+
+
+    let secondData = new WeakMap();
+    secondData.set(secondRegion, secondRegion.value);
+    secondData.set(secondDistrict, secondDistrict.value);
+    secondData.set(secondCity, secondCity.value);
+    secondData.set(secondStreet, secondStreet.value);
+    secondData.set(secondBuilding, secondBuilding.value);
+    secondData.set(secondFlat, secondFlat.value);
+    secondData.set(secondIndex, secondIndex.value);
+
+
+
+    console.log(secondData.get(secondRegion));
+    console.log(secondData.get(secondDistrict));
+    console.log(secondData.get(secondCity));
+    console.log(secondData.get(secondStreet));
+    console.log(secondData.get(secondBuilding));
+    console.log(secondData.get(secondFlat));
+    console.log(secondData.get(secondIndex));
+
+
+
+    if(secondRegion.value) {
+        secondRegion.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondDistrict.value) {
+        secondDistrict.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondCity.value) {
+        secondCity.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondStreet.value) {
+        secondStreet.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondBuilding.value) {
+        secondBuilding.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondFlat.value) {
+        secondFlat.style.border = '1px solid #C0C9D7';
+    } 
+    if(secondIndex.value) {
+        secondIndex.style.border = '1px solid #C0C9D7';
+    }
+
+}
+
 
 // ALERT
 
