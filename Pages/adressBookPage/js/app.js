@@ -35,33 +35,6 @@ let button = document.getElementById('saveButton')
 
 button.onclick = function() {
 
-    if(!name.value && !surname.value) {
-        if(!country.value && !region.value) {
-            if(!district.value && !city.value) {
-                if(!street.value && !building.value) {
-                    if(!flat.value && !index.value) {
-                        if(!phone.value) {
-                            openAlert();
-                            name.style.border = '1px solid rgba(255,153,153, .7)';
-                            surname.style.border = '1px solid rgba(255,153,153, .7)';
-                            country.style.border = '1px solid rgba(255,153,153, .7)';
-                            region.style.border = '1px solid rgba(255,153,153, .7)';
-                            district.style.border = '1px solid rgba(255,153,153, .7)';
-                            city.style.border = '1px solid rgba(255,153,153, .7)';
-                            street.style.border = '1px solid rgba(255,153,153, .7)';
-                            building.style.border = '1px solid rgba(255,153,153, .7)';
-                            flat.style.border = '1px solid rgba(255,153,153, .7)';
-                            index.style.border = '1px solid rgba(255,153,153, .7)';
-                            phone.style.border = '1px solid rgba(255,153,153, .7)';
-                            return;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
     if(!name.value) {
         openAlert();
         name.style.border = '1px solid rgba(255,153,153, .7)';
@@ -213,25 +186,6 @@ let secondButton = document.getElementById('secondSaveButton')
 
 
 secondButton.onclick = function() {
-
-    if(!secondRegion.value) {
-        if(!secondDistrict.value && !secondCity.value) {
-            if(!secondStreet.value && !secondBuilding.value) {
-                if(!secondFlat.value && !secondIndex.value)  {
-                    openAlert();
-                    secondRegion.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondDistrict.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondCity.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondStreet.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondBuilding.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondFlat.style.border = '1px solid rgba(255,153,153, .7)';
-                    secondIndex.style.border = '1px solid rgba(255,153,153, .7)';
-                    return;
-                }
-            }
-        }
-    }
-
 
     if(!secondRegion.value) {
         openAlert();
