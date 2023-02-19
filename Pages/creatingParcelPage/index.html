@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Адресная книга</title>
+    <title>Создание посылки</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/root.css">
@@ -124,104 +124,55 @@
 
         <div class="wrapacc">
             <div class="main-container">
-                <h2>Адресная пользователя Dmitro Karimov</h2>
-                <div class="inputBlock">
-                    <div class="input-item">
-                        <label for="surname">Фамилия<span>*</span></label>
-                        <input type="text" id="surname" required>
+                <h2>Создание посылки</h2>
+                <h4>Заказы</h4>
+                <p>Нет ни одной записи по текущему состоянию</p>
+                <hr>
+                <h4>Выберите получателя:</h4>
+                <div class="recipientAdressBlock">
+                    <div class="inputBlock">
+                        <input type="text" placeholder="Не выбрано (Заполню позже)">
+                        <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
                     </div>
-                    <div class="input-item">
-                        <label for="name">Имя<span>*</span></label>
-                        <input type="text" id="name" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="country">Страна<span>*</span></label>
-                        <input type="text" id="country" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="region">Область<span>*</span></label>
-                        <input type="text" id="region" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="district">Район<span>*</span></label>
-                        <input type="text" id="district" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="city">Город<span>*</span></label>
-                        <input type="text" id="city" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="street">Улица<span>*</span></label>
-                        <input type="text" id="street" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="building">Дом<span>*</span></label>
-                        <input type="number" id="building" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="flat">Квартира<span>*</span></label>
-                        <input type="number" id="flat" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="index">Индекс<span>*</span></label>
-                        <input type="number" id="index" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="phone">Телефон<span>*</span></label>
-                        <input type="tel" id="phone" required>
-                    </div>
-                    <div class="underBlock">
-                        <input type="submit" value="Сохранить" id="saveButton">
-                        <p id="openBlockBtn">+ Добавить еще адрес</p>
-                    </div>
+                    <button>Добавить новый адрес</button>
                 </div>
-                <div class="inputBlock invisible" id="secondBlock">
-                    <div class="input-item">
-                        <label for="region">Область<span>*</span></label>
-                        <input type="text" id="secondRegion" required>
+                <hr>
+                <div class="orderBlock">
+                    <div class="typeBlock">
+                        <h4>Выберите тип:</h4>
+                        <div class="inputBlock">
+                            <input type="text" placeholder="Укрпошта">
+                            <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
+                        </div>
                     </div>
-                    <div class="input-item">
-                        <label for="district">Район<span>*</span></label>
-                        <input type="text" id="secondDistrict" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="city">Город<span>*</span></label>
-                        <input type="text" id="secondCity" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="street">Улица<span>*</span></label>
-                        <input type="text" id="secondStreet" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="building">Дом<span>*</span></label>
-                        <input type="number" id="secondBuilding" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="flat">Квартира<span>*</span></label>
-                        <input type="number" id="secondFlat" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="index">Индекс<span>*</span></label>
-                        <input type="number" id="secondIndex" required>
-                    </div>
-                    <div class="underBlock secondBlock">
-                        <div class="buttonBlock">
-                            <input type="submit" value="Сохранить" id="secondSaveButton">
-                            <button id="closeBlockBtn">Удалить адрес</button>
+                    <div class="orderInputBlock">
+                        <h4>Заказ:</h4>
+                        <div class="inputBlock">
+                            <input type="text" placeholder="ID 312312312312312">
+                            <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
                         </div>
                     </div>
                 </div>
+                <hr>
+                <div class="inputsBlock">
+                    <input type="checkbox" id="firstCheckbox">
+                    <label for="firstCheckbox">Консолидация </label>
+                    <input type="checkbox" id="secondCheckbox">
+                    <label for="secondCheckbox">Удаление инвойса </label>
+                    <input type="checkbox" id="thirdCheckbox">
+                    <label for="thirdCheckbox">Дополнительная упаковка </label>
+                    <input type="checkbox" id="fourthCheckbox">
+                    <label for="fourthCheckbox">Упаковка xрупкиx предметов </label>
+                    <input type="checkbox" id="fifthCheckbox">
+                    <label for="fifthCheckbox">Заполнение декларации </label>
+                    <input type="checkbox" id="sixthCheckbox">
+                    <label for="sixthCheckbox">Разделение заказа </label>
+                </div>
+                <button id="sendBtn">Отправить запрос</button>
             </div>
         </div>
 
-        <div class="alert" id="alert">
-            <div class="alert-content">
-                <p><a id="closeBtn">&#10006</a>Введите недостающие данные</p>
-            </div>
-        </div>
-    
     </main>
-    
 
     <footer class="footeracc">
         <a href="#">© 2021 Okeypost . Все права защищены.</a>
@@ -229,5 +180,6 @@
 
     <script src="./js/app.js"></script>
     <script src="/assets/js/app.js"></script>
+    
 </body>
 </html>
