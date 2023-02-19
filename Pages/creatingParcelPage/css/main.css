@@ -223,13 +223,17 @@ html {
     margin-bottom: 64px;
 }
 
-.recipientAdressBlock button,
+.recipientAdressBlock .link,
 #sendBtn {
     width: 250px;
     height: 60px;
 
     position: relative;
     top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
     box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
@@ -246,7 +250,7 @@ html {
 }
 
 
-.recipientAdressBlock button:hover,
+.recipientAdressBlock .link:hover,
 #sendBtn:hover {
     box-shadow: 0 0.5em 0.5em -0.4em #ccc;
     transform: translateY(-0.25em);
