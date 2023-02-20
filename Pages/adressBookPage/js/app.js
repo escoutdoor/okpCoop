@@ -38,57 +38,46 @@ button.onclick = function() {
     if(!name.value) {
         openAlert();
         name.style.border = '1px solid rgba(255,153,153, .7)';
-        name.setAttribute('checked', false);
     } 
     if(!surname.value) {
         openAlert();
         surname.style.border = '1px solid rgba(255,153,153, .7)';
-        surname.setAttribute('checked', false);
     }
     if(!country.value) {
         openAlert();
         country.style.border = '1px solid rgba(255,153,153, .7)';
-        country.setAttribute('checked', false);
     }
     if(!region.value) {
         openAlert();
         region.style.border = '1px solid rgba(255,153,153, .7)';
-        region.setAttribute('checked', false);
     } 
     if(!district.value) {
         openAlert();
         district.style.border = '1px solid rgba(255,153,153, .7)';
-        district.setAttribute('checked', false);
     } 
     if(!city.value) {
         openAlert();
         city.style.border = '1px solid rgba(255,153,153, .7)';
-        city.setAttribute('checked', false);
     } 
     if(!street.value) {
         openAlert();
         street.style.border = '1px solid rgba(255,153,153, .7)';
-        street.setAttribute('checked', false);
     } 
     if(!building.value) {
         openAlert();
         building.style.border = '1px solid rgba(255,153,153, .7)';
-        building.setAttribute('checked', false);
     } 
     if(!flat.value) {
         openAlert();
         flat.style.border = '1px solid rgba(255,153,153, .7)';
-        flat.setAttribute('checked', false);
     } 
     if(!index.value) {
         openAlert();
         index.style.border = '1px solid rgba(255,153,153, .7)';
-        index.setAttribute('checked', false);
     } 
     if(!phone.value) {
         openAlert();
         phone.style.border = '1px solid rgba(255,153,153, .7)';
-        phone.setAttribute('checked', false);
     } 
 
 
@@ -190,37 +179,30 @@ secondButton.onclick = function() {
     if(!secondRegion.value) {
         openAlert();
         secondRegion.style.border = '1px solid rgba(255,153,153, .7)';
-        secondRegion.setAttribute('checked', false);
     } 
     if(!secondDistrict.value) {
         openAlert();
         secondDistrict.style.border = '1px solid rgba(255,153,153, .7)';
-        secondDistrict.setAttribute('checked', false);
     } 
     if(!secondCity.value) {
         openAlert();
         secondCity.style.border = '1px solid rgba(255,153,153, .7)';
-        secondCity.setAttribute('checked', false);
     } 
     if(!secondStreet.value) {
         openAlert();
         secondStreet.style.border = '1px solid rgba(255,153,153, .7)';
-        secondStreet.setAttribute('checked', false);
     } 
     if(!secondBuilding.value) {
         openAlert();
         secondBuilding.style.border = '1px solid rgba(255,153,153, .7)';
-        secondBuilding.setAttribute('checked', false);
     } 
     if(!secondFlat.value) {
         openAlert();
         secondFlat.style.border = '1px solid rgba(255,153,153, .7)';
-        secondFlat.setAttribute('checked', false);
     } 
     if(!secondIndex.value) {
         openAlert();
         secondIndex.style.border = '1px solid rgba(255,153,153, .7)';
-        secondIndex.setAttribute('checked', false);
     } 
 
 
