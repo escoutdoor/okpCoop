@@ -304,8 +304,6 @@ html {
 
     color: #222222;
 
-    opacity: 0.6;
-
     border: 1px solid #C0C9D7;
 
     margin-top: 16px;
@@ -313,9 +311,15 @@ html {
     border-radius: 6px;
 }
 
+
 .startBlock a {
     position: absolute;
     left: 620px;
+}
+
+.specialArrow {
+    position: absolute;
+    left: 1200px !important;
 }
 
 .inputBlock {
@@ -359,4 +363,8 @@ html {
 .border {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+
+.startBlock span {
+    opacity: 0.6;
 }
