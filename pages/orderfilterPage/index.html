@@ -126,6 +126,7 @@
                         <a class="add__butt" href="#">Добавить новый заказ</a>
                     </div>
                 </div>
+
                 <div class="filter-categories">
                     <div class="filter-categories__header">
                         <div class="filter-slider">
@@ -133,8 +134,159 @@
                             <h1 class="filt-slider__item2">Мои заказы</h1>
                         </div>
                         <div class="filter-search">
-                            <input class="search-num" type="text" placeholder="Поиск по номеру накладной...">
-                            <a class="filter-filt__butt" href="#"></a>
+                            <div class="search-plusbtn">
+                                <input class="search-num" type="text" placeholder="Поиск по номеру накладной...">
+                                <a id="search__butt" href="#"><img src="/assets/images/img/filt/loop.svg" alt="searchIcon"></a>
+                            </div>
+                            <a class="filter-filt__butt" href="#"><img src="/assets/images/img/filt/filterButt.svg" alt="filterButt"></a>
+                        </div>
+                    </div>
+                    <div class="filter-orderdet">
+                        <div class="filter-month">
+                            <input id="month__check" type="radio">
+                            <div class="filt-choosemonth">
+                                <input name="datafilter" type="text" id="filtmnh" placeholder="Этот месяц">
+                                <div id="moth__dropmenu">
+                                    <p class="moth__dropmenu-item1">Февраль(этот месяц)</p>
+                                    <p class="moth__dropmenu-item2">Январь</p>
+                                    <p class="moth__dropmenu-item3">Апрель</p>
+                                    <p class="moth__dropmenu-item4">Сентябрь</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filer-date">
+                            <input name="datafilter" id="date__check" type="radio">
+                            <div class="filtdate__boxes">
+                                <div class="filtdate-box">
+                                    <p class="realDate">01.11.2021</p>
+                                    <input type="date" name="date1" placeholder="01.11.2021" id="date__firstB">
+                                </div> -
+                                <div class="filtdate-box">
+                                    <p class="futureDate">01.11.2021</p>
+                                    <input type="date" name="date2" placeholder="01.11.2021" id="date__secondB">
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="filter-wodate">
+                            <input name="datafilter" id="wodate"type="radio">
+                            <p>Без учета даты</p>
+                        </div>
+                        <input id="filter__id" type="text" placeholder="ID заказа">
+                        <div class="filter-result">
+                            <a href="#" class="show__butt">Показать</a>
+                            <a href="#" class="reset__butt">Сбросить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-main">
+                    <div class="filter__table">
+                        <div class="filter__table-header">
+                            <div class="filter__table-headerContent">
+                                <h1>Дата</h1>
+                                <h1>ID Заказа</h1>
+                                <h1>Трек номер</h1>
+                                <h1>Магазин</h1>
+                                <h1>Вес</h1>
+                                <h1>Сумма</h1>
+                                <h1>Статус</h1>
+                                <h1>Выкуплен</h1>
+                                <h1>Комментарии</h1>
+                            </div>
+                        </div>
+                        <div class="filter__table-main">
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/clock.svg" alt="clockstatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                                <a class="buyit__butt">Оплатить</a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/CurrencyCircleDollar.svg" alt="CurrencyCircleDollarstatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/MapPin.svg" alt="MapPinstatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/Package.svg" alt="PackagestatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                                <a href="#" id="inprocessing__butt">В обработке</a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/CheckCircle.svg" alt="CheckCirclestatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/Package.svg" alt="PackagestatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                                <a href="#" id="inprocessing__butt">В обработке</a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/CheckCircle.svg" alt="CheckCirclestatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                            </div>
+                            <div class="filter__table-item">
+                                <span class="table__item-date">11.11.2021</span>
+                                <p class="table__item-id">35657</p>
+                                <p class="table__item-number">231234234234234</p>
+                                <p class="table__item-shop">Levis</p>
+                                <p class="table__item-weight">152.33 kg</p>
+                                <p class="table__item-sum" title="sum">$568.00</p>
+                                <a href="#" class="table__item-status"><img src="/assets/images/img/filt/status/Package.svg" alt="PackagestatusImg"></a>
+                                <a href="#" class="table__item-person"><img src="/assets/images/img/filt/person.svg" alt="personImg"></a>
+                                <a href="#" class="table__item-review"><img src="/assets/images/img/filt/review.svg" alt="reiewImg"></a>
+                                <a href="#" id="inprocessing__butt">В обработке</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -143,11 +295,51 @@
     </main>
 
 
+    <div class="notification-buy"></div>
+    <div class="notification-buy__inside">
+        <div class="notification-buyContent">
+            <h1 class="choose__method-title">Выберите метод оплаты:</h1>
+            <div class="choose__method">
+                <div id="choose__method-radio">   
+                    <div class="choose__method-radioItem">
+                        <input type="radio" id="visaradio" name="method" value="masterOrVisa">
+                        <div class="choose__method-radioItem__details">
+                            <img class="imgVisa" src="/assets/images/img/filt/visaMaster.svg" alt="mastercardVisaImg">
+                            <div class="choose__method-radioItem__details-txt">
+                                <h1>VISA/MASTERCARD</h1>
+                                <p>максимальная сумма платежа за раз 100 фунтов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose__method-radioItem">
+                        <input type="radio" name="method" id="paypalradio" value="paypal">
+                        <div class="choose__method-radioItem__details">
+                            <img class="imgPay" src="/assets/images/img/filt/paypal.svg" alt="paypalImg">
+                            <div class="choose__method-radioItem__details-txt">
+                                <h1>PAYPAL</h1>
+                                <p>максимальная сумма платежа за раз 250 фунтов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connect-wu">
+                <h1>Для большего платежа - свяжитесь с нами</h1>
+                <a href="#" id="connectwu" onclick="return false;">Связаться с нами</a>
+            </div>
+        </div>
+        <img id="cancelButt" src="/assets/images/img/filt/closebtn.svg" alt="closebtnBuyNot">
+    </div>
+
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
 
     
 
 
     <script src="/assets/js/app.js"></script>
     <script src="./js/app.js"></script>
-</body>
+    </body>
 </html>
