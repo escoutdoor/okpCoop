@@ -23,33 +23,44 @@ let newPassAgain = $('#newPassAgain');
 
 const butt = $('.savePass__butt');
 
+let newAlert = $('.alert')
+let closeBtn = $('#closeBtn')
+let txtAlert = $('.alert-content > p')
 
 function newPassword() {
 
     butt.click(function() {
 
         if(!oldPass.val()) {
-            alert("Введите старый пароль");
+            newAlert.addClass('opened');
+            txtAlert.html("Введите пароль");
             oldPass.css({'border-color': "rgba(255,153,153, .7)"});
         } else {oldPass.css({'border-color': "#C0C9D7"});}
 
         if(!newPass.val()) {
-            alert("Введите ваш новый пароль");
+            newAlert.addClass('opened');
+            txtAlert.html("Введите пароль");
             newPass.css({'border-color': "rgba(255,153,153, .7)"});
         } else {newPass.css({'border-color': "#C0C9D7"});}
 
         if(!newPassAgain.val()) {
-            alert("Повторите ваш новый пароль");
+            newAlert.addClass('opened');
+            txtAlert.html("Повторите пароль");
             newPassAgain.css({'border-color': "rgba(255,153,153, .7)"});
         } else {newPassAgain.css({'border-color': "#C0C9D7"});}
 
         if(newPass.val() != newPassAgain.val()) {
-            alert("Ошибка при введении нового пароля, повторите пожалуйста еще раз")
+            newAlert.addClass('opened');
+            txtAlert.html("Ошибка в новом");
         }
     })
 
 
 }
+
+closeBtn.click(function() {
+    newAlert.removeClass('opened');
+})
 
 
 
