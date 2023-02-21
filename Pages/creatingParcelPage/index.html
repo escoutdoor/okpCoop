@@ -130,9 +130,16 @@
                 <hr>
                 <h4>Выберите получателя:</h4>
                 <div class="recipientAdressBlock">
-                    <div class="inputBlock">
-                        <input type="text" placeholder="Не выбрано (Заполню позже)">
-                        <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
+                    <div class="recipientAdressBlock-content">
+                        <div class="startBlock" id="openBlock">
+                            <span id="text">Не выбрано (Заполню позже)</span>
+                            <a id="arrowImg"><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
+                        </div>
+                        <ul class="inputBlock" id="firstInputBlock">
+                            <li id="firstItem"><p>Владос</p></li>
+                            <li id="secondItem"><p>Ксюша</p></li>
+                            <li id="thirdItem"><p>Ванек</p></li>
+                        </ul>
                     </div>
                     <a class="link" href="/Pages/adressBookPage/index.html">Добавить новый адрес</a>
                 </div>

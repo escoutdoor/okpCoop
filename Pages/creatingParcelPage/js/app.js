@@ -15,3 +15,30 @@ function RealtimeClock() {
 }
 RealtimeClock();
 setInterval(() => RealtimeClock(), 1000)
+
+// DROPDOWN MENU
+
+let menu = document.getElementById('firstInputBlock')
+
+openBlock.onclick = function() {
+    menu.classList.toggle('opened')
+    openBlock.classList.toggle('border')
+}
+
+firstItem.onclick = function() {
+    text.innerHTML = 'Владос'
+    menu.classList.remove('opened')
+    openBlock.classList.remove('border')
+}
+
+secondItem.onclick = function() {
+    text.innerHTML = 'Ксюша'
+    menu.classList.remove('opened')
+    openBlock.classList.remove('border')
+}
+
+thirdItem.onclick = function() {
+    text.innerHTML = 'Ванек'
+    menu.classList.remove('opened')
+    openBlock.classList.remove('border')
+}

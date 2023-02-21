@@ -190,15 +190,6 @@ html {
     margin-bottom: 40px;
 }
 
-.inputBlock {
-    width: 566px;
-    height: 60px;
-
-    margin-top: 16px;
-
-    border: 1px solid #C0C9D7;
-    border-radius: 6px;
-}
 
 .main-container input[type=text] {
     width: 523px;
@@ -294,4 +285,78 @@ html {
 
 .footeracc {
     margin-top: 1250px;
+}
+
+
+
+
+.startBlock {
+    width: 566px;
+    height: 60px;
+
+    padding: 22px 0px 22px 30px;
+
+    cursor: pointer;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #222222;
+
+    opacity: 0.6;
+
+    border: 1px solid #C0C9D7;
+
+    margin-top: 16px;
+
+    border-radius: 6px;
+}
+
+.startBlock a {
+    position: absolute;
+    left: 620px;
+}
+
+.inputBlock {
+    width: 566px;
+    height: 0px;
+
+    position: absolute;
+    overflow: hidden;
+
+    z-index: 98;
+
+    transition: 0.5s;
+}
+
+.inputBlock li {
+    background-color: #fff;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    
+    border: 1px solid #C0C9D7;
+    border-top: transparent !important;
+
+    padding: 5px 0px 0px 30px;
+
+    cursor: pointer;
+
+    color: #9e9e9e;
+}
+
+.inputBlock li:last-child {
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.opened {
+    height: 155px !important;
+}
+
+.border {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
