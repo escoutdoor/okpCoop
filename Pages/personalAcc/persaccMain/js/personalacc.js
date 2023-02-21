@@ -60,6 +60,11 @@ let tel = $('#persAcc__tel');
 let email = $('#persAcc__email');
 let butt = $('.save__butt');
 
+
+let newAlert = document.getElementById('alert');
+let closeBtn = document.querySelector('#closeBtn')
+let txtAlert = document.querySelector('.alert-content > p');
+
 function saveButtoncheck() {
 
     if(!name.val() && !surName.val()) {
@@ -79,12 +84,14 @@ function saveButtoncheck() {
 
 
     if(!name.val()) {
-        alert("Введите имя");
+        newAlert.classList.add("opened");
+        txtAlert.innerHTML = "Введите имя";
         name.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     } 
     if(!surName.val()) {
-        alert("Введите фамилию")
+        newAlert.classList.add("opened");
+        txtAlert.innerHTML = "Введите фамилию";
         surName.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     }
@@ -172,3 +179,29 @@ buttImg.change(function(event) {
 
 
 
+
+
+confirm_btn.addEventListener('click', () => {
+    if(visa.checked) {
+        newAlert.classList.add("opened");
+        txtAlert.innerHTML = "visa card";
+        newAlert.style.backgroundColor = '';
+        newAlert.style.borderColor = ''
+    } 
+    if(pay.checked) {
+        newAlert.classList.add("opened");
+        txtAlert.innerHTML = "paypal card";
+        newAlert.style.backgroundColor = '';
+        newAlert.style.borderColor = ''
+    }
+    if(!pay.checked && !visa.checked) {
+        newAlert.classList.add("opened");
+        txtAlert.innerHTML = "Choose a payment method";
+        newAlert.style.backgroundColor = '#e16867';
+        newAlert.style.borderColor = '#d72f2f'
+    }
+})
+
+closeBtn.addEventListener('click', () => {
+    newAlert.classList.remove("opened");
+})

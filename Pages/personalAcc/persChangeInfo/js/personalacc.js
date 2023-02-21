@@ -60,12 +60,17 @@ let tel = $('#persAcc__tel');
 let email = $('#persAcc__email');
 let butt = $('.save__butt');
 
+let newAlert = $('.alert')
+let closeBtn = $('#closeBtn')
+let txtAlert = $('.alert-content > p')
+
 function saveButtoncheck() {
 
     if(!name.val() && !surName.val()) {
         if(!address.val() && !login.val()) {
             if(!tel.val() && !email.val()) {
-                alert("Введите все данные")
+                newAlert.addClass('opened');
+                txtAlert.html("Введите все данные");
                 name.css({'border-color': "rgba(255,153,153, .7)"});
                 surName.css({'border-color': "rgba(255,153,153, .7)"});
                 address.css({'border-color': "rgba(255,153,153, .7)"});
@@ -77,34 +82,42 @@ function saveButtoncheck() {
         }
     }
 
+    
+
 
     if(!name.val()) {
-        alert("Введите имя");
+        newAlert.addClass('opened');
+        txtAlert.html("Введите имя");
         name.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     } 
     if(!surName.val()) {
-        alert("Введите фамилию")
+        newAlert.addClass('opened');
+        txtAlert.html("Введите фамилию");
         surName.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     }
     if(!address.val()) {
-        alert("Введите адресс")
+        newAlert.addClass('opened');
+        txtAlert.html("Введите адресс");
         address.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     }
     if(!login.val()) {
-        alert("Введите ваш логин")
+        newAlert.addClass('opened');
+        txtAlert.html("Введите ваш логин");
         login.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     } 
     if(!tel.val()) {
-        alert("Введите ваш номер телефона")
+        newAlert.addClass('opened');
+        txtAlert.html("Введите ваш номер телефона");
         tel.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     } 
     if(!email.val()) {
-        alert("Введите ваш номер телефона email")
+        newAlert.addClass('opened');
+        txtAlert.html("Введите ваш email");
         email.css({'border-color': "rgba(255,153,153, .7)"});
         $(".persAcc__info-sign>input").prop('checked', false);
     }   
@@ -150,12 +163,13 @@ function saveButtoncheck() {
 butt.click(function() {
     try {
         saveButtoncheck();
-        if ($(".persAcc__info-sign>input").is(':checked')) { 
-            alert("Вы подписались на нашу рассылку")
-        }
     } catch(err) {
         throw new Error("Mistake in fucntion which is reading data from Inputs");
     }
+})
+
+closeBtn.click(function() {
+    newAlert.removeClass('opened');
 })
 
 // ADDING FILE
@@ -168,3 +182,6 @@ buttImg.change(function(event) {
     img.attr('src', newImage)
     console.log(event);
 })
+
+
+
