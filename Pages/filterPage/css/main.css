@@ -978,9 +978,9 @@ body.max {
 
 .alert a {
     font-size: 12px;
-    position: relative;
-    left: 65px;
-    bottom: 15px;
+    position: absolute;
+    right: 10px;
+    top: 4px;
     cursor: pointer;
 }
 
