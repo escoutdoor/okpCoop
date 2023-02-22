@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order place page</title>
+
+    <!-- css links  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+</head>
+<body>
+    
+     
+    <!-- Start of Header  -->
+    <header>
+        <div class="wrap">
+            <div class="header__body">
+                <div class="header__body-block1">
+                    <div class="header__body-logo">
+                        <img src="/assets/images/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__body-menu">
+                        <a href="/Pages/howToBuyPage/index.html" class="header__body-item">Как покупать</a>
+                        <a href="/Pages/salesPage/index.html" class="header__body-item">Распродажи</a>
+                        <a href="/Pages/deliveryPage/index.html" class="header__body-item">Цены</a>
+                        <a href="/Pages/answeringQuestionsPage/index.html" class="header__body-item">Помощь</a>
+                        <a href="/Pages/partnershipPage/index.html" class="header__body-item">Бонусы</a>
+                        <a href="/Pages/blogPage/index.html" class="header__body-item">Блог</a>
+                        <a href="/Pages/popularShopsPage/index.html" class="header__body-item">Магазины</a>
+                    </div>
+                </div>
+                <div class="header__body-block2">
+                    <div class="header__body-login login__body">
+                        <div class="login__body-icon">
+                            <img src="/assets/images/icon/User.svg" alt="">
+                        </div>
+                        <button onclick="openLoginWindow()" class="login__body-btn">Вход</button>
+                    </div>
+                    <button class="header__body-btn">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up-login" id="pop_up_login">
+            <div class="pop-up-login__cross-body">
+                <div class="pop-up-login__cross" onclick="closeLoginWindow()"></div>
+            </div>
+            <div class="pop-up-login__body">
+                <h1 class="pop-up-login__body-title">Выполните вход в ваш личный кабинет </h1>
+                <form action="#" class="pop-up-login__body-form">
+                    <label for="teleohone" class="pop-up-login__body-lable">Номер телефона:</label>
+                    <input type="tel" id="telephone" class="pop-up-login__body-item" required>
+                    <label for="email" class="pop-up-login__body-lable">Ваш email:</label>
+                    <input type="email" id="email" class="pop-up-login__body-item" required>
+                    <label for="password" class="pop-up-login__body-lable">Ваш пароль:</label>
+                    <input type="password" id="password" class="pop-up-login__body-item" required>
+                    <div class="pop-up-login__body-link">
+                        <a href="#">Восстановление пароля</a>
+                        <span>или</span> 
+                        <a href="#">быстрая регистрация</a>
+                    </div>
+                    <div class="pop-up-login__body-buttom">
+                        <button type ="submit" class="pop-up-login__body-btn">Войти</button>
+                        <div class="pop-up-login__body-social">
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Google.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="pop-up-login__body-socisl_icon">
+                                <img src="/assets/images/icon/Vkontakte.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="orderplacePage">
+        <div class="subheader">
+            <div class="subheader-content">
+                <div class="subheader__left">
+                    <div class="subleft-time">
+                        <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
+                        <div class="realTime">
+                            <a href="#">Лондон: </a>
+                            <p class="realClock">19: 10 : 36</p>
+                        </div>
+                    </div>
+                    <div class="subleft-schedule">
+                        <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
+                        <p>Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
+                    </div>
+                    <div class="subleft-exchange">
+                        <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
+                        <a href="#">Курс валют</a>
+                    </div>
+                    <div class="subleft-bonus">
+                        <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
+                        <a href="#">Бонусный счет: $ 0</a>
+                    </div>
+                </div>
+                <div class="subheader__right">
+                    <div class="subright-balance">
+                        <a href="#">Ваш баланс: </a>
+                        <a href="#">$0</a>
+                    </div>
+                    <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                    <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                    <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapacc">
+            <div class="order-content">
+                <h1 class="order-title">Оформление заказа</h1>
+                <p class="order-sub">Товар # 1</p>
+                <div class="order__getinfo">
+                    <div class="order__getinfo-item">
+                        <h1>Ссылка на страницу с товаром:</h1>
+                        <input id="linkpage" type="url">
+                    </div>
+                    <div class="order__getinfo-item">
+                        <h1>Название товара:</h1>
+                        <input id="nameitm" type="text">
+                    </div>
+                    <div class="order__getinfo-double">
+                        <div class="order__getinfo-double__item">
+                            <h1>Колличество:</h1>
+                            <input id="amountitm" type="number">
+                        </div>
+                        <div class="order__getinfo-double__item">
+                            <h1>Размер:</h1>
+                            <input id="sizetitm" type="text">
+                        </div>
+                    </div>
+                    <div class="order__getinfo-double">
+                        <div class="order__getinfo-double__item">
+                            <h1>Цвет:</h1>
+                            <input id="coloritm" type="color">
+                        </div>
+                        <div class="order__getinfo-double__item">
+                            <h1>Цена на сайте:</h1>
+                            <input id="priceitm" type="number">
+                        </div>
+                    </div>
+                    <div class="order-comment">
+                        <h1>Комментарий:</h1>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="order-confirm">
+                    <a onclick="return false" id="send">Отправить</a>
+                    <div class="order-confirmAdd">
+                        <a href="#" onclick="return false" id="dblProd">Дублировать</a>
+                        <a href="#" onclick="return false" id="addProd">Добавить товар</a>
+                        <a href="#" onclick="return false" id="saveProd">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="order-content__second">
+                <p class="order-sub">Товар # 2</p>
+                <div class="order__getinfo">
+                    <div class="order__getinfo-item">
+                        <h1>Ссылка на страницу с товаром:</h1>
+                        <input id="linkpage2" type="url">
+                    </div>
+                    <div class="order__getinfo-item">
+                        <h1>Название товара:</h1>
+                        <input id="nameitm2" type="text">
+                    </div>
+                    <div class="order__getinfo-double">
+                        <div class="order__getinfo-double__item">
+                            <h1>Колличество:</h1>
+                            <input id="amountitm2" type="number">
+                        </div>
+                        <div class="order__getinfo-double__item">
+                            <h1>Размер:</h1>
+                            <input id="sizetitm2" type="text">
+                        </div>
+                    </div>
+                    <div class="order__getinfo-double">
+                        <div class="order__getinfo-double__item">
+                            <h1>Цвет:</h1>
+                            <input id="coloritm2" type="color">
+                        </div>
+                        <div class="order__getinfo-double__item">
+                            <h1>Цена на сайте:</h1>
+                            <input id="priceitm2" type="number">
+                        </div>
+                    </div>
+                    <div class="order-comment">
+                        <h1>Комментарий:</h1>
+                        <textarea name="comment2" id="comment2"></textarea>
+                    </div>
+                </div>
+                <div class="order-confirm">
+                    <a onclick="return false" id="send2">Отправить</a>
+                    <div class="order-confirmAdd">
+                        <a href="#" onclick="return false" id="dblProd2">Дублировать</a>
+                        <a href="#" onclick="return false" id="saveProd2">Сохранить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
+
+    <div class="alert" id="alert">
+        <div class="alert-content">
+            <p>Text for alert </p><a id="closeBtn">&#10006</a>
+        </div>
+    </div>
+
+
+
+
+    <script src="/assets/js/app.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
