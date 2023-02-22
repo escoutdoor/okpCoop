@@ -94,3 +94,14 @@ thirdItem3.onclick = function() {
     menu3.classList.remove('opened')
     thirdOpenBlock.classList.remove('border')
 }
+
+// MODAL
+
+sendBtn.onclick = function(event) {
+    modal.classList.add('opened')
+}
+
+closeBlock.onclick = function() {
+    modal.classList.remove('opened')
+}
+
