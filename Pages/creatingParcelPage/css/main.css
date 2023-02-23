@@ -398,3 +398,7 @@
 .modal-content {
     border: transparent !important;
 }
+
+a:hover {
+    text-decoration: none;
+}
