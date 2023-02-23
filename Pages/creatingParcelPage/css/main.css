@@ -313,12 +313,12 @@
 
 .startBlock a {
     position: absolute;
-    left: 600px;
+    left: 620px;
 }
 
 .specialArrow {
     position: absolute;
-    left: 1180px !important;
+    left: 1200px !important;
 }
 
 .inputBlock {
