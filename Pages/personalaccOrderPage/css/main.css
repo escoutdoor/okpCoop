@@ -292,8 +292,10 @@
 .orders__body-block {
     margin-top: 44px;
     width: 1720px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: repeat(2, fit-content);
+    /* display: flex; */
+    /* flex-direction: column; */
     margin-bottom: 100px;
 }
 .orders__body-header,
@@ -364,10 +366,15 @@
     text-align: center;
 
     white-space: nowrap;
+    position: relative;
 }
 .orders__body-row_item p,
 .user-parcels__body-row_item p {
     max-width: 169px;
+}
+
+.user-parcels__body-row_item img {
+    cursor: pointer;
 }
 
 .orders__body-row_item button,
@@ -490,4 +497,29 @@
     box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
     transform: translateY(-0.25em);
     cursor: pointer;
+}
+
+.tooltip-text {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    width: 280px;
+    padding: 22px 35px 26px 26px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+.tooltip-text__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-parcels__body-row_item img:hover+.tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
