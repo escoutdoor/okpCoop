@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание посылки</title>
+    <title>Виртуальный заказ</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -86,112 +86,67 @@
     </header>
 
     <main>
-
-        <div class="persAcc__header">
-            <div class="persAcc__headerCont">
-                <div class="persAcc__headerCont-left">
-                    <div class="persAcc__headerCont-londonReal__time">
+        <div class="subheader">
+            <div class="subheader-content">
+                <div class="subheader__left">
+                    <div class="subleft-time">
                         <a href="#"><img src="/assets/images/img/personalacc/clock.svg" alt="clockImg"></a>
-                        <div class="realTime specialBlock">
-                            <a href="#">Лондон: </a>
-                            <p class="realClock">19: 10 : 36</p>
+                        <div class="realTime">
+                            <a href="#">Лондон:</a>
+                            <p class="realClock specialBlock">19: 10 : 36</p>
                         </div>
                     </div>
-                    <div class="persAcc__headerCont-schedule__work">
+                    <div class="subleft-schedule">
                         <a href="#"><img src="/assets/images/img/personalacc/schedule.svg" alt="clockScheduleImg"></a>
                         <p class="specialBlock">Пн.-Пт. 09:00-18:00 Сб. 09:00-14:00</p>
                     </div>
-                    <div class="persAcc__headerCont-exchange__rate">
+                    <div class="subleft-exchange">
                         <a href="#"><img src="/assets/images/img/personalacc/Bank.svg" alt="exchangeImg"></a>
                         <a href="#">Курс валют</a>
                     </div>
-                    <div class="persAcc__headerCont-bonus">
+                    <div class="subleft-bonus">
                         <a href="#"><img src="/assets/images/img/personalacc/CurrencyCircleDollar.svg" alt="bonusImg"></a>
                         <a href="#">Бонусный счет: $ 0</a>
                     </div>
                 </div>
-                <div class="persAcc__headerCont-right">
-                    <div class="persAcc__headerCont-balance">
+                <div class="subheader__right">
+                    <div class="subright-balance">
                         <a href="#">Ваш баланс: </a>
                         <a href="#">$0</a>
                     </div>
-                    <div class="persAcc__headerCont-right__buttons">
-                        <a href="#" class="addTrans__butt">Добавить транзакцию</a>
-                        <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
-                        <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
-                    </div>
+                    <a href="#" class="addTrans__butt">Добавить транзакцию</a>
+                    <a href="#" class="paypal__butt"><img src="/assets/images/img/personalacc/paypal.svg" alt="paypalImg"></a>
+                    <a href="#" class="visa__butt"><img src="/assets/images/img/personalacc/visa.svg" alt="visaImg"></a>
                 </div>
             </div>
         </div>
-
         <div class="wrapacc">
-            <div class="main-container">
-                <h2>Создание посылки</h2>
-                <h4>Заказы</h4>
-                <p>Нет ни одной записи по текущему состоянию</p>
-                <hr>
-                <h4>Выберите получателя:</h4>
-                <div class="recipientAdressBlock">
-                    <div class="recipientAdressBlock-content">
-                        <div class="startBlock" id="openBlock">
-                            <span id="text">Не выбрано (Заполню позже)</span>
-                            <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
-                        </div>
-                        <ul class="inputBlock" id="firstInputBlock">
-                            <li id="item1"><p>Владос</p></li>
-                            <li id="item2"><p>Ксюша</p></li>
-                            <li id="item3"><p>Ванек</p></li>
-                        </ul>
+            <div class="main__container">
+                <h2 class="main__title">Создание заказа, который Вы выкупаете самостоятельно</h2>
+                <div class="main__inputBlock">
+                    <div class="inputBlock__item">
+                        <label for="trackNum">Трек номер:</label>
+                        <input type="number" id="trackNum">
                     </div>
-                    <a class="link" href="/Pages/adressBookPage/index.html">Добавить новый адрес</a>
-                </div>
-                <hr>
-                <div class="orderBlock">
-                    <div class="typeBlock">
-                        <h4>Выберите тип:</h4>
-                        <div class="startBlock" id="secondOpenBlock">
-                            <span id="secondText">Укрпошта</span>
-                            <a><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
-                        </div>
-                        <ul class="inputBlock" id="secondInputBlock">
-                            <li id="secondItem1"><p>Владос</p></li>
-                            <li id="secondItem2"><p>Ксюша</p></li>
-                            <li id="secondItem3"><p>Ванек</p></li>
-                        </ul>
+                    <div class="inputBlock__item">
+                        <label for="orderPrice">Сумма заказа, £:</label>
+                        <input type="number" id="orderPrice">
                     </div>
-                    <div class="orderInputBlock">
-                        <h4>Заказ:</h4>
-                        <div class="startBlock" id="thirdOpenBlock">
-                            <span id="thirdText">ID 312312312312312</span>
-                            <a class="specialArrow"><img src="/assets/images/img/deliveryPage/arrows/arrGreenDown.svg" alt="greenArrow"></a>
-                        </div>
-                        <ul class="inputBlock" id="thirdInputBlock">
-                            <li id="thirdItem1"><p>Владос</p></li>
-                            <li id="thirdItem2"><p>Ксюша</p></li>
-                            <li id="thirdItem3"><p>Ванек</p></li>
-                        </ul>
+                    <div class="inputBlock__item">
+                        <label for="shopName">Магазин:</label>
+                        <input type="text" id="shopName">
                     </div>
                 </div>
-                <hr>
-                <div class="inputsBlock">
-                    <input type="checkbox" id="firstCheckbox">
-                    <label for="firstCheckbox">Консолидация </label>
-                    <input type="checkbox" id="secondCheckbox">
-                    <label for="secondCheckbox">Удаление инвойса </label>
-                    <input type="checkbox" id="thirdCheckbox">
-                    <label for="thirdCheckbox">Дополнительная упаковка </label>
-                    <input type="checkbox" id="fourthCheckbox">
-                    <label for="fourthCheckbox">Упаковка xрупкиx предметов </label>
-                    <input type="checkbox" id="fifthCheckbox">
-                    <label for="fifthCheckbox">Заполнение декларации </label>
-                    <input type="checkbox" id="sixthCheckbox">
-                    <label for="sixthCheckbox">Разделение заказа </label>
-                </div>
-                <button id="sendBtn" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Отправить запрос</button>
+                <button id="sendBtn" type="button" class="btn" data-target="#exampleModal">Сохранить</button>
             </div>
         </div>
-
     </main>
+
+    <footer class="footeracc">
+        <a href="#">© 2021 Okeypost . Все права защищены.</a>
+    </footer>
+
+    
 
     <div class="modal fade" id="exampleModal">
         <div class="modal-dialog">
@@ -201,15 +156,18 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <img src="/assets/images/icon/checkmark.png" alt="">
-                    <h3>Ваша посылка была успешно создана!</h3>
+                    <h3>Ваш заказ был успешно создан!</h3>
                 </div>
             </div>
         </div>
     </div>
-    
-    <footer class="footeracc">
-        <a href="#">© 2021 Okeypost . Все права защищены.</a>
-    </footer>
+
+    <div class="newAlert" id="alert">
+        <div class="alert-content">
+            <p><a id="closeBtn">&#10006</a>Введите недостающие данные</p>
+        </div>
+    </div>
+
 
     <script src="./js/app.js"></script>
     <script src="/assets/js/app.js"></script>
