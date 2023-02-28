@@ -321,7 +321,7 @@
 
         width: 650px;
 
-        margin: 100px 0px 40px 85px;
+        margin: 100px 0px 40px 125px;
     }
     .background-title {
         font-size: 40px;
@@ -331,16 +331,16 @@
     }
     .background-container {
         position: relative;
-        left: -80px;
+        left: -130px;
     }
     .imgBlock {
-        width: 280px;
-        height: 320px;
+        width: 230px;
+        height: 300px;
     }
     .main-item {
         gap: 40px;
         position: relative;
-        left: 80px;
+        left: 0;
     }
     .textBlock {
         margin-top: 0px;
@@ -349,12 +349,25 @@
         font-size: 22px;
     }
     .textBlock p:nth-child(5) {
-        margin-top: 20px;
+        margin-top: 0px;
     }
     .specialLink {
         top: 60px;
     }
+    .specialLink2 {
+        top: 100px;
+    }
     .specialLink3 {
-        top: 115px;
+        top: 100px;
+    }
+    .swiper {
+        width: 1150px;
+    }
+    .link {
+        display: inline-block;
+        width: 270px;
+    }
+    .hats {
+        top: 0;
     }
 }
