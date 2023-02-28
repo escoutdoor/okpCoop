@@ -311,3 +311,50 @@
     width: 66px;
     height: 66px;
 }
+
+@media screen and (max-width: 1440px) {
+    body {
+        overflow-x: hidden;
+    }
+    .main-title {
+        font-size: 36px;
+
+        width: 650px;
+
+        margin: 100px 0px 40px 85px;
+    }
+    .background-title {
+        font-size: 40px;
+    }
+    .background-subTitle {
+        font-size: 22px;
+    }
+    .background-container {
+        position: relative;
+        left: -80px;
+    }
+    .imgBlock {
+        width: 280px;
+        height: 320px;
+    }
+    .main-item {
+        gap: 40px;
+        position: relative;
+        left: 80px;
+    }
+    .textBlock {
+        margin-top: 0px;
+    }
+    .textBlock h3 {
+        font-size: 22px;
+    }
+    .textBlock p:nth-child(5) {
+        margin-top: 20px;
+    }
+    .specialLink {
+        top: 60px;
+    }
+    .specialLink3 {
+        top: 115px;
+    }
+}

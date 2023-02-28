@@ -58,3 +58,15 @@ ul, ol {
     width: 1720px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1440px) {
+    .wrap {
+        width: 900px;
+    }
+    .background-wrap {
+        width: 1320px;
+    }
+    /* PAGE TITLE: font-size 36px */
+    /* BACKGROUND TITLE: font-size 40px */
+    /* BACKGROUND SUBTITLE: font-sixe 22px */
+}
