@@ -481,15 +481,6 @@
     transition: .2s background-image;
 }
 
-.placeholder__item,
-.placeholder__itemOpt {
-    font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 300;    
-    user-select: none;
-    cursor: pointer;
-}
 
 
 #chooseMenu__calc {
@@ -1025,13 +1016,12 @@
 
 .delPage__prefooter {
     display: block;
-    margin: 0 auto;
+    margin: 150px auto 0;
     color: #fff;
     height: 250px;
     width: 1810px;
     background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
     border-radius: 36px;
-    margin-top: 150px;
     padding: 66px 200px 64px 200px;
 }
 
@@ -1048,6 +1038,9 @@
     background-image: url(/assets/images/img/deliveryPage/EnvelopeSimpleOpen.svg);
     background-repeat: no-repeat;
     padding: 0px 0px 28px 41px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .delPage__prefooterContent input::placeholder {
@@ -1088,3 +1081,109 @@
     transform: translateY(-0.25em);
 }
 
+
+
+/* ------------ADAPTATION------------*/
+
+@media screen and (max-width: 1440px) {
+    .wrap {margin: 0 auto auto auto;}
+    body { overflow-x: hidden;}
+    /* Poster settings */
+    .delPage__poster-det h1 {font-size: 36px; line-height: 47px;}
+    .delPage__poster-det p {font-size: 14px; line-height: 25px;}
+    .delPage__butt {width: 200px; height: 50px; font-size: 15px; line-height: 16px; padding-top: 17px; margin-top: 18px;}
+    .delPage__poster-content img { max-width: 400px; max-height: 400px; }
+    .delPage__poster { padding: 0; width: 1350px; height: 400px;}
+
+    /* slider and coat */
+    .delPage__prices-title {padding-right: 0; font-size: 36px; line-height: 42px;}
+    .delPage__prices{margin-top: 70px;}
+    .delPage__pricesContent-slider {max-width: 1050px}
+    .delPage__pricesContent-slider-item h1 {display: none;}
+    .delPage__pricesProducts {margin-top: 54px;}
+    .delPage__pricesProducts-itemDelivery {gap: 20px; align-items:start;}
+    .delPage__pricesProducts-itemDelivery-price {width: 300px;}
+    .delPage__pricesProducts-CenteredItem img {max-width: 250px;}
+    .delPage__pricesProducts-CenteredItem p, .delPage__pricesProducts-CenteredItem h1 {text-align: center;}
+    .desc__deliveryCent-item {display: none;}
+
+    /* after coat box info */
+    .delPage__pricesProducts-advantages {margin-top: 82px; max-width: 1050px; align-items: center;}  
+    .delPage__pricesProducts-advantages__content-item {padding-left: 20px;}
+    .delPage__pricesProducts-advantages__content-item:first-child {padding-left: 15px;}
+    .delPage__pricesProducts-advantages__content-item {gap: 15px;}
+    .delPage__pricesProducts-advantages__content-item h1 {padding-right: 0; font-size: 15px; line-height: 18px;}
+    
+    /* POSTER 2*/
+    .delPage__banner {width: 1350px; height: 400px; padding: 0 0 0 20px;}
+    .delPage__banner img { max-width: 300px; max-height: 400px;}
+    .delPage__banner-content {gap: 40px; justify-content: center;}
+    .delPage__banner-det h1 {font-size: 36px; line-height: 40px;}
+    .delPage__banner-det p {font-size: 14px; line-height: 25px; margin-top: 5px;}
+    .delPage__banner-butt {width: 200px; height: 50px; font-size: 15px; line-height: 16px; padding-top: 17px; margin-top: 8px;}
+
+    /* Delivery calculator */
+    .delPage__Ukdelivery-title { font-size: 36px; line-height: 47px;}
+    .delPage__Ukdelivery-subTitle {font-size: 16px; line-height: 25px;}
+    .delPage__Ukdelivery-headtext {padding-right: 0;}
+    .delPage__Ukdelivery {margin-top: 80px;}
+    .calc__chooseCount {margin-top: 30px;max-width: 1050px;height: 270px;padding: 46px 34px 51px 35px;}
+    .calc__chooseCount-content__item {gap: 8px;width: 157px;}
+    .calc__chooseCount-content__item h1 {font-size: 12px;line-height: 14px;}
+    .placeholder__item,.placeholder__itemOpt {font-size: 12px;line-height: 14px}
+    #placeholder__inst, #placeholder__instNew, .placeholder__instwolist{gap: 5px;};
+    .chooseMenu__calc-item {width: 157px;padding: 3px 0px 0px 20px;}
+    #chooseMenu__calc {width: 157px;top: 25px;}
+    #chooseMenu__calcPlus {width: 157px;top: 25px;}
+    .chooseMenu__calc-itemAdd {width: 157px; padding: 3px 0px 0px 20px;}
+    .inputInfoDel::placeholder,.inputInfoDel__town::placeholder,.inputInfoDel__index::placeholder,.inputInfoDel__weight::placeholder {font-size: 14px;line-height: 16px;}
+    .calculator__button {width: 200px;height: 50px;padding: 15px 0px 0 0;font-size: 16px;cursor: pointer;}
+    
+    /* DELIVERY OPTIONS */
+    .delPage__delOpitons {margin-top: 60px;}
+    .delPage__delOpitons-title {line-height: 42px;}
+    .delPage__delOptions__contentName {gap: 20px; width: 358px;}
+    .delPage__delOptions__contentName h1 {font-size: 16px; line-height: 18px;}
+    .delPage__delOptions__contentPrice-item h1 {font-size: 16px; line-height: 18px;}
+    .delPage__delOptions__contentPrice-item span { font-size: 12px; line-height: 16px;}
+    .delOptions__dropDown {width: 890px; height: 200px; padding-top: 95px;}
+
+    /* FOUR STEPS PART */
+    .delPage__foursteps { margin-top: 120px; }
+    .delPage__4steps-title { padding-right: 0; font-size: 36px; line-height: 42px;}
+    .foursteps__algorithm-item { width: 200px;}
+    .foursteps__algorithm-item h1, .foursteps__algorithm-item:nth-child(2) h1  { font-size: 16px; line-height: 18px; padding-right: 0;}
+    .foursteps__algorithm-item p { font-size: 14px;line-height: 30px;padding-right: 0; }
+    .foursteps__algorithm { align-items: start;}
+    .foursteps__desc { margin-top: 40px; font-size: 16px; line-height: 20px; padding-right: 0;}
+    .foursteps__butt {width: 200px; height: 50px; font-size: 16px; line-height: 18px; padding-top: 16px;}
+
+    /* BANNER 3 */
+    .delPage__banner { align-items: center; justify-content: center;}
+
+    /* REVIEWS */
+    .delPage__reviews { margin-top: 120px; }
+    .delPage__reviews-title { font-size: 36px;line-height: 42px; }
+    .delPage__reviews-headerText { gap: 15px; margin: 0; }
+    .delPage__reviews-subtitle { font-size: 16px; line-height: 24px; padding: 0;}
+    .delPage__reviewsAdavantages-item { padding-right: 20px; }
+    .delPage__reviewsAdavantages-item h1 { font-size: 16px;}
+    .delPage__reviewsAdavantages-item p { font-size: 14px; line-height: 20px;}
+
+    /* QUOTES */
+    .delPage__reviews__quotes { margin-top: 60px;}
+    .delPage__reviews__quotes-title {line-height: 42px;}
+    .delPage__reviews__quotesBox { margin-top: 25px; gap: 20px; }
+    .reviews__butt { width: 200px; height: 50px; font-size: 16px; line-height: 18px; padding: 16px;}
+
+    /* YOUR ADDRESS */
+    .delPage__yourAddress { margin-top: 120px; }
+    .delPage__yourAddress-content h1 { font-size: 36px;}
+    .delPage__yourAddress-content p { font-size: 16px; line-height: 28px; }
+
+    /* PREFOOTER */
+    .delPage__prefooter { margin-top: 120px; width: 1350px; padding: 46px 100px 64px 100px;}
+    .delPage__prefooterContent h1 { font-size: 28px; line-height: 42px; margin-right: 100px;}
+    .delPage__prefooterContent input { padding: 0 0 12px 41px; background-position-y: 8px;}
+    .prefooter__butt {width: 200px; height: 50px; font-size: 16px; line-height: 18px; padding: 16px;}
+}
