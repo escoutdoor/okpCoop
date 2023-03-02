@@ -117,7 +117,6 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 36px;
-    /* padding-right:200px; */
 }
 
 .calc__chooseCount {
@@ -179,20 +178,12 @@
     transition: .2s background-image;
 }
 
-.placeholder__item,
-.placeholder__itemOpt {
-    font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 300;    
-    user-select: none;
-    cursor: pointer;
-}
-
 .inputInfoDel,
 .inputInfoDel__town,
 .inputInfoDel__index,
-.inputInfoDel__weight {
+.inputInfoDel__weight,
+.placeholder__item,
+.placeholder__itemOpt  {
     font-weight: 300;
     font-family: 'Gilroy';
     color: #222222;
@@ -204,7 +195,9 @@
 .inputInfoDel::placeholder,
 .inputInfoDel__town::placeholder,
 .inputInfoDel__index::placeholder,
-.inputInfoDel__weight::placeholder {
+.inputInfoDel__weight::placeholder,
+.placeholder__itemOpt::placeholder,
+.placeholder__item::placeholder {
     font-weight: 300;
     font-family: 'Gilroy';
     color: #222222;
@@ -215,7 +208,7 @@
 
 
 #chooseMenu__calc {
-    width: 246px;
+    width: 0px;
     height: 125px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #F2F6FC;
@@ -231,6 +224,7 @@
 
 #chooseMenu__calc.activeMenu {
     visibility: visible;
+    width: 246px;
     transition: .2s visabilit, .3s opacity linear;
 }
 
@@ -265,28 +259,6 @@
     background-image: none;
 }
 
-.inputInfoDel,
-.inputInfoDel__town,
-.inputInfoDel__index,
-.inputInfoDel__weight {
-    font-weight: 300;
-    font-family: 'Gilroy';
-    color: #222222;
-    font-size: 16px;
-    line-height: 16px;
-}
-
-
-.inputInfoDel::placeholder,
-.inputInfoDel__town::placeholder,
-.inputInfoDel__index::placeholder,
-.inputInfoDel__weight::placeholder {
-    font-weight: 300;
-    font-family: 'Gilroy';
-    color: #222222;
-    font-size: 16px;
-    line-height: 16px;
-}
 
 
 #chooseMenu__calcPlus {
@@ -557,10 +529,11 @@
 }
 
 .serviceR__bottombox {
+    display: flex;
     border-left: 1px solid #c0c9d7;
     height: 82px;
     width: 305px;
-    padding: 33px 0px 0px 30px;
+    padding: 0px 0px 0px 30px;
     align-items: center;
 }
 
@@ -607,24 +580,25 @@
     border-right: 1px solid #c0c9d7;
     flex-direction: column;
     gap: 7px;
-    padding: 18px 227px 0px 0px;
-    padding-right: 227px;
+    justify-content: center;
+    padding: 0px 227px 0px 0px;
 }
 
 .warehouse__serviceFooter-item:nth-child(2) .warehouse__serviceFooter-itemName {
     height: 82px;
-    padding-top: 21px;
 }
 
 .serviceR__Footer-box {
+    display: flex;
     height: 104px;
     width: 327px;
-    padding: 14px 0px 16px 30px;
+    padding: 0 0 0 30px;
+    justify-content: center;
     align-items: center;
 }
 
 .warehouse__serviceFooter-item:nth-child(2) .serviceR__Footer-box {
-    padding: 34px 0px 0px 30px;
+    align-items: center;
 }
 
 .serviceR__Footer-box span {
@@ -649,13 +623,14 @@
 /* BANNER ORDER */
 
 .order__banner {
-    display: block;
+    display: flex;
     margin: 160px auto;
     width: 1800px;
     height: 530px;
     background: var(--background-color);
     border-radius: 36px;
-    padding: 61px 0px 64px 200px;
+    align-items: center;
+    padding: 61px 0px 64px 278px;
     color: #fff;
 }
 
@@ -665,10 +640,6 @@
     gap: 75px;
 }
 
-.order__banner-connect {
-    display: flex;
-    flex-direction: column;
-}
 
 .order__banner-connect h1 {
     font-size: 30px;
@@ -686,6 +657,10 @@
     background-repeat: no-repeat;
     background-position-y: center;
     background-size: 26px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .order__bannerInput::placeholder {
@@ -693,7 +668,7 @@
     font-family: 'Gilroy';
     font-weight: 300;
     font-size: 16px;
-    line-height: 16;
+    line-height: 16px;
 }
 
 .order__banner-connectSend {
@@ -834,19 +809,21 @@
 /* PREFOOTER */
 
 .delPage__prefooter {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 1800px;
     height: 280px;
     background: var(--background-color);
-    padding: 112px 200px 0px 202px;
     border-radius: 36px;
     margin: 160px auto 0 auto;
     color: #fff;
 }
 
 .delPage__prefooterContent {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 215px;
     align-items: center;
 }
 
@@ -864,4 +841,85 @@
 .delPage__prefooterContent-social img {
     width: 66px;
     height: 66px;
+}
+
+
+/* ------------------ADAPTATION------------------*/
+
+@media screen and (max-width: 1440px) {
+    .wrap {margin: 0 auto auto auto;}
+    body { overflow-x: hidden;} 
+
+    /* Banner 1 */
+    .calcPage__postheader h1 { font-size: 36px; line-height: 47px;}
+    .calcPage__postheaderContent { gap: 20px;}
+    .calcPage__postheader {width: 1350px; padding-top: 50px;}
+
+    /* price */
+    .pricewrapperBox-item{ width: 200px;}
+    .pricewrapperBox { align-items:end}
+    .pricewrapperBox-item img { width: 200px;height: 200px; }
+    .pricewrapperBox-item h1 { font-size: 16px; line-height: 18px;}
+    .pricewrapperBox-item p{ font-size: 14px;line-height: 30px;}
+
+    /* calc */
+    .calc__choose { margin-top: 120px; }
+    .calc__choose-headtext {padding: 0;}
+    .calc__choose-title {font-size: 36px;line-height: 42px; padding: 0;}
+    .calc__chooseCount {margin-top: 30px;max-width: 1050px;height: 270px;padding: 46px 34px 51px 35px;}
+    .calc__chooseCount-content__item {gap: 8px;width: 157px;}
+    .calc__chooseCount-content__item:last-child{width: 170px;}
+    .calc__chooseCount-content__item h1 {font-size: 12px;line-height: 14px;}
+    .placeholder__item,.placeholder__itemOpt {font-size: 14px;line-height: 16px;}
+    #placeholder__inst, #placeholder__instNew, .placeholder__instwolist{gap: 5px;};
+    #chooseMenu__calc {max-width: 157px;top: 25px;}
+    #chooseMenu__calc.activeMenu { width: 157px;}
+    #chooseMenu__calcPlus {width: 157px;top: 25px;}
+    .chooseMenu__calc-item, .chooseMenu__calc-itemAdd{max-width: 157px; padding: 3px 0px 0px 20px;}
+    .inputInfoDel::placeholder,.inputInfoDel__town::placeholder,.inputInfoDel__index::placeholder,.inputInfoDel__weight::placeholder, .placeholder__itemOpt::placeholder, .placeholder__item::placeholder{font-size: 14px;line-height: 16px;}
+    .calculator__button {width: 200px;height: 50px;padding: 15px 0px 0 0;font-size: 16px;cursor: pointer;}
+
+    /* DEL OPTIONS */
+    .calcPage__delOpitons {margin-top: 60px;}
+    .calcPage__delOpitons-title {line-height: 42px;}
+    .calcPage__delOptions__contentName {gap: 20px; width: 358px;}
+    .calcPage__delOptions__contentName h1 {font-size: 16px; line-height: 18px;}
+    .calcPage__delOptions__contentPrice-item h1 {font-size: 16px; line-height: 18px;}
+    .calcPage__delOptions__contentPrice-item span { font-size: 12px; line-height: 16px;}
+    .delOptions__dropDown {width: 890px; height: 200px; padding-top: 95px;}
+
+    /* plus ware */
+    .warehouse__service-title { height: 42px; font-size: 36px;}
+    .warehouse__service {margin-top: 120px;}
+    .warehouse__serviceTop-item {width: 100%;}
+    .warehouse__serviceBottom-item {width: 100%; }
+    .serviceR__bottombox { width: 120px;}
+    .serviceR__bottombox span { font-size: 14px;}
+    .warehouse__serviceBottom-itemName p{font-size: 12px; line-height: 16px;}
+    .warehouse__serviceFooter {margin-top: 180px;}
+    .warehouse__serviceFooter-item {width: 100%;}
+    .warehouse__serviceFooter-itemName{padding: 0 10px 0 0;}
+    .warehouse__serviceFooter-itemName p{font-size: 12px;}
+    .serviceR__Footer-box span {line-height: 20px;}
+
+    /* banner input*/
+    .order__banner { width: 1350px; padding: 0 100px 0 60px; margin: 160px auto 120px;}
+    .order__banner-connect h1 {padding: 0;}
+    .order__banner-content img {width: 300px;height: 400px;}
+    .order__banner-connectSend a {min-width: 200px;}
+    .order__banner-connectSend p {padding-left: 30px;}
+
+    /* insurance */
+    .insuranceBlockbox-item {width: 100%;}
+    .insuranceBlockbox-itemName{max-width: 545px;}
+
+    /* extra */
+    .insuranceBlock__extrap {margin-top: 120px;}
+    .insuranceBlock__extaPack-item{width: 100%;}
+    .insuranceBlock__extaPack-itemName p{font-size: 12px; line-height: 16px;}
+
+    /* prefooter */
+    .delPage__prefooter {width: 1350px;}
+    .delPage__prefooterContent h1 { font-size: 36px; line-height: 42px; }
+    .delPage__prefooterContent { gap: 140px;}
 }
