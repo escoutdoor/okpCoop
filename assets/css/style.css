@@ -66,6 +66,9 @@ ul, ol {
     .background-wrap {
         width: 1320px;
     }
+    body {
+        overflow-x: hidden;
+    }
     /* PAGE TITLE: font-size 36px */
     /* BACKGROUND TITLE: font-size 40px */
     /* BACKGROUND SUBTITLE: font-sixe 22px */
