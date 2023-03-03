@@ -198,21 +198,6 @@
 }
 
 
-.main-container input[type=text] {
-    width: 523px;
-    height: 100%;
-
-    padding: 22px 298px 22px 30px;
-}
-
-.main-container input[type=text]::placeholder {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #222;
-    opacity: 0.6;
-}
 
 .recipientAdressBlock {
     display: flex;
@@ -379,7 +364,10 @@
     opacity: 0.6;
 }
 
-
+.specialBlock {
+    position: relative;
+    top: 10px;
+}
 
 
 .modal img {
@@ -433,5 +421,29 @@ a:hover {
     .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
     .subheader__left img {width: 28px;height: 28px;} 
 
-    /*  */
+    /* MAIN */
+    .startBlock {
+        width: 500px;
+    }
+    .startBlock a {
+        left: 510px;
+    }
+    .specialArrow {
+        left: 1030px !important;
+    }
+    .inputBlock {
+        width: 500px;
+    }
+    .recipientAdressBlock .link,
+    #sendBtn {
+        width: 220px;
+    }
+    .inputsBlock {
+        flex-wrap: wrap;
+    }
+    .inputsBlock label {
+        margin-right: 15px;
+        display: inline-block;
+        width: 340px;
+    }
 }

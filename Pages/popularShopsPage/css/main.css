@@ -170,5 +170,17 @@
     .delPage__prefooterContent h1 { font-size: 36px; line-height: 42px; }
     .delPage__prefooterContent { gap: 140px;}
 
-    /*  */
+    /* MAIN */
+    .swiper {
+        width: 1150px;
+    }
+    .main-block {
+        width: 210px;
+    }
+    .main-block img {
+        width: 150px;
+    }
+    .background-title {
+        font-size: 40px;
+    }
 }

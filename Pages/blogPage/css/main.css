@@ -239,5 +239,28 @@
     .delPage__prefooterContent h1 { font-size: 36px; line-height: 42px; }
     .delPage__prefooterContent { gap: 140px;}
 
-    /*  */
+    /* MAIN */
+    .swiper {
+        width: 1150px;
+    }
+    .background-title {
+        font-size: 40px;
+    }
+    .main-block {
+        width: 350px;
+        height: 450px;
+    }
+    .main-block h4 {
+        width: 300px;
+    }
+    .imgBlock {
+        width: 350px;
+    }
+    .additionBlock {
+        margin-top: 60px;
+    }
+    .additionBlock.specialBlock {
+        position: relative;
+        top: -33px;
+    }
 }
