@@ -66,13 +66,11 @@ ul, ol {
     .background-wrap {
         width: 1320px;
     }
-<<<<<<< HEAD
     .wrapacc {
         width: 1290px;
-=======
+    }
     body {
         overflow-x: hidden;
->>>>>>> cc51cdd5ed005c49b02a36228ce3d2b3fee3dc2f
     }
     /* PAGE TITLE: font-size 36px */
     /* BACKGROUND TITLE: font-size 40px */

@@ -622,6 +622,7 @@
     background-repeat: no-repeat;
 }
 
+
 .filter__table-headerContent h1:nth-child(6) {
     margin-left: 15px;
 }
@@ -631,7 +632,6 @@
     width: 100%;
     flex-direction: column;
     overflow-y: scroll;
-    overflow-wrap: break-word;
     height: 300px;
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
@@ -645,7 +645,7 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     flex-direction: row;
     gap: 96px;
-    align-items: center;
+    align-items:center;
     padding: 0px 0px 0px 25px;
 }
 
@@ -671,7 +671,7 @@
 .table__item-shop,
 .table__item-weight,
 .table__item-sum {
-    display: block;
+    display: flex;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
@@ -987,4 +987,39 @@ body.max {
 .opened {
     width: 250px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* ------------------------ADAPTATION------------------------*/
+
+@media screen and (max-width: 1440px) {
+    body { overflow-x: hidden;}
+
+    /* subheader */
+    .realTime{gap: 3px;}
+    .subheader__left{gap: 20px;}
+    .addTrans__butt {margin-right: 20px;}
+    .subleft-schedule {display: none; visibility: hidden;}
+    .subleft-exchange, .subleft-bonus {gap: 8px;}
+    .realTime a,.subleft-bonus a, .subleft-exchange a{font-size: 13px; line-height: 13px;}
+    .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
+    .subheader__left img {width: 28px;height: 28px;}
+
+    /* sett */
+    .filer-date {gap: 10px; margin-left: 20px;}
+    .filtdate-box{width: 120px;}
+    .filter-wodate{margin-left: 30px;}
+    #wodate  {min-width: 28px;}
+    #filtmnh { width: 240px; background-position-x: 208.5px;}
+    #moth__dropmenu{width: 240px;}
+    .filter__table-header {padding: 19px 20px 17px  10px;}
+    .filter__table-item {padding: 0px 10px 0px 10px; justify-content: left; gap: 0;}
+    .filter__table-main{overflow-x: hidden;}
+    .table__item-number {padding-left: 5px;}
+    .table__item-date,.table__item-id,.table__item-number,.table__item-shop {line-height: 18px;font-size: 13px; margin-right: 65px;}
+    .table__item-sum {line-height: 18px;font-size: 13px; margin-right: 60px;}
+    .table__item-weight {line-height: 18px;font-size: 13px; margin-right: 75px;}
+    .table__item-status {margin-right: 75px;}
+    .table__item-review {min-width: 60px;}
+    .buyit__butt {min-width: 90px;}
 }
