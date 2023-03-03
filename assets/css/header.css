@@ -315,5 +315,6 @@
         opacity: 1;
         visibility: visible;
         display: block;
+        cursor: pointer;
     }
 }
