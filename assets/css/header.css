@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 36px 0px;
+    z-index: 1000;
 }
 
 .header__body-block1 {
@@ -15,6 +16,7 @@
 }
 
 .header__body-block2 {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,6 +34,8 @@
     height: 100%;
     /* object-fit: cover; */
 }
+
+
 
 .header__body-menu {
     display: flex;
@@ -248,4 +252,68 @@
 .pop-up-login__body-socisl_icon img {
     width: 100%;
     height: 100%;
+}
+
+.header__body-burger_menu {
+    display: none;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+.header__body-burger_menu span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.header__body-burger_menu span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.header__body-burger_menu span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+@media screen and (max-width: 1440px) {
+    .header__body-block1 {
+        gap: 0px;
+    }
+
+    .header__body-menu {
+        background-color: #FFFFFF;
+        box-shadow: var(--shadow-buttShadow);
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 15px;
+        top: 45%;
+        right: 130px;
+        padding: 20px 40px;
+        transform: translate(0px, -150%);
+        transition: transform 0.5s ease 0s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header__body-menu_active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0px, 0%);
+    }
+
+    .header__body-burger_menu {
+        opacity: 1;
+        visibility: visible;
+        display: block;
+    }
 }

@@ -20,3 +20,12 @@ function windowAppearance() {
     pop_up_login.style.opacity = '1';
     pop_up_login.style.transition = 'opacity 0.3s linear';
 }
+
+let burgerBtn = document.querySelector('.header__body-burger_menu');
+let headerMenu = document.querySelector('.header__body-menu');
+if (burgerBtn) {
+    burgerBtn.addEventListener('click', function(e) {
+        // headerMenu.classList.remove('header__body-menu')
+        headerMenu.classList.toggle('header__body-menu_active')
+    }) 
+}
