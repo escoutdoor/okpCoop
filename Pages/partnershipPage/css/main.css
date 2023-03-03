@@ -149,3 +149,24 @@
 
     margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1440px) {
+    .main-title {
+        font-size: 36px;
+        position: relative;
+        left: 70px;
+    }
+    .background-title {
+        font-size: 40px;
+    }
+    .background-subTitle {
+        font-size: 22px;
+    }
+    .main-block {
+        width: 400px;
+        height: 200px;
+    }
+    .main-block p {
+        display: none;
+    }
+}
