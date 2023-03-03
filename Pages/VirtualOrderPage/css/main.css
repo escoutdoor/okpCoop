@@ -123,6 +123,7 @@
 .addTrans__butt:focus {
     box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
     transform: translateY(-0.25em);
+    color: #fff;
 }
 
 .paypal__butt {
@@ -291,8 +292,10 @@ a:hover {
 
 .specialBlock {
     position: relative;
-    top: 7.5px;
+    top: 8.5px;
 }
+
+
 
 .modal-body h3 {
     text-align: center;
@@ -371,5 +374,14 @@ a:hover {
     .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
     .subheader__left img {width: 28px;height: 28px;}
 
-    /*  */
+    /* MAIN */
+    .inputBlock__item label {
+        font-size: 16px;
+    }
+    .inputBlock__item input {
+        width: 350px;
+    }
+    .footeracc {
+        margin-top: 800px;
+    }
 }

@@ -403,5 +403,21 @@ input::-webkit-inner-spin-button {
     .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
     .subheader__left img {width: 28px;height: 28px;} 
 
-    /*  */
+    /* MAIN */
+    .inputBlock {
+        gap: 50px;
+    }
+    .inputBlock .input-item input {
+        width: 350px;
+    }
+    .wrapacc {
+        left: 100px;
+    }
+    .underBlock {
+        right: 800px;
+    }
+    .underBlock.secondBlock {
+        position: relative;
+        left: -405px;
+    }
 }

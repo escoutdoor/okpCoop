@@ -42,15 +42,15 @@ button1.onclick = function() {
     button1.classList.toggle("rotated");
     block1.classList.toggle("newBorder");
 
-    // secondDropdownBlock.classList.remove("opened");
-    // secondButton.classList.remove("rotated");
-    // secondBlock.classList.remove("newBorder");
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder");
     thirdDropdownBlock.classList.remove("opened");
     thirdButton.classList.remove("rotated");
     thirdBlock.classList.remove("newBorder");
-    // fourthDropdownBlock.classList.remove("opened");
-    // fourthButton.classList.remove("rotated");
-    // fourthBlock.classList.remove("newBorder");
+    fourthDropdownBlock.classList.remove("opened");
+    fourthButton.classList.remove("rotated");
+    fourthBlock.classList.remove("newBorder");
 }
 
 secondButton.onclick = function() {
@@ -58,12 +58,12 @@ secondButton.onclick = function() {
     secondButton.classList.toggle("rotated");
     secondBlock.classList.toggle("newBorder");
 
-    // dropdownBlock1.classList.remove("opened");
-    // button1.classList.remove("rotated");
-    // block1.classList.remove("newBorder");
-    // thirdDropdownBlock.classList.remove("opened");
-    // thirdButton.classList.remove("rotated");
-    // thirdBlock.classList.remove("newBorder");
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    thirdDropdownBlock.classList.remove("opened");
+    thirdButton.classList.remove("rotated");
+    thirdBlock.classList.remove("newBorder");
     fourthDropdownBlock.classList.remove("opened");
     fourthButton.classList.remove("rotated");
     fourthBlock.classList.remove("newBorder");
@@ -74,15 +74,15 @@ thirdButton.onclick = function() {
     thirdButton.classList.toggle("rotated");
     thirdBlock.classList.toggle("newBorder");
 
-    // dropdownBlock1.classList.remove("opened");
-    // button1.classList.remove("rotated");
-    // block1.classList.remove("newBorder");
-    // secondDropdownBlock.classList.remove("opened");
-    // secondButton.classList.remove("rotated");
-    // secondBlock.classList.remove("newBorder");
-    // fourthDropdownBlock.classList.remove("opened");
-    // fourthButton.classList.remove("rotated");
-    // fourthBlock.classList.remove("newBorder");
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder");
+    fourthDropdownBlock.classList.remove("opened");
+    fourthButton.classList.remove("rotated");
+    fourthBlock.classList.remove("newBorder");
 }
 
 fourthButton.onclick = function() {
@@ -90,13 +90,13 @@ fourthButton.onclick = function() {
     fourthButton.classList.toggle("rotated");
     fourthBlock.classList.toggle("newBorder");
 
-    // dropdownBlock1.classList.remove("opened");
-    // button1.classList.remove("rotated");
-    // block1.classList.remove("newBorder");
-    // secondDropdownBlock.classList.remove("opened");
-    // secondButton.classList.remove("rotated");
-    // secondBlock.classList.remove("newBorder");
-    // thirdDropdownBlock.classList.remove("opened");
-    // thirdButton.classList.remove("rotated");
-    // thirdBlock.classList.remove("newBorder");
+    dropdownBlock1.classList.remove("opened");
+    button1.classList.remove("rotated");
+    block1.classList.remove("newBorder");
+    secondDropdownBlock.classList.remove("opened");
+    secondButton.classList.remove("rotated");
+    secondBlock.classList.remove("newBorder");
+    thirdDropdownBlock.classList.remove("opened");
+    thirdButton.classList.remove("rotated");
+    thirdBlock.classList.remove("newBorder");
 }

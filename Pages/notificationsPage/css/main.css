@@ -362,5 +362,27 @@ h2.main-title {
     .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
     .subheader__left img {width: 28px;height: 28px;}
 
-    /*  */
+    /* MAIN */
+    .main-content {
+        gap: 20px;
+    }
+    .main-item {
+        width: 1000px;
+        height: 250px;
+    }
+    .main-item h5 {
+        line-height: 35px;
+    }
+    .main-item p.content {
+        width: 700px;
+    }
+    .additionBlock {
+        width: 1000px;
+    }
+    .main-specialItem h5 {
+        font-size: 18px;
+    }
+    .main-specialItem button {
+        padding: 15px 60px;
+    }
 }
