@@ -1,15 +1,16 @@
 .footer {
     display: block;
     height: 384px;
-    padding-top: 70px;
     color: var(--color-black);
 }
 
 .footer__content {
     display: flex;
+    width: 100%;
     flex-direction: row;
     gap: 166px;
     justify-content: top;
+    padding: 70px 260px 55px;
 }
 
 .footer__content-social {
@@ -87,4 +88,16 @@
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
+}
+
+
+/* ---------------ADAPTATION---------------*/
+
+@media screen and (max-width: 1440px) {
+    /* under footer sett */
+    .underFooter {width: 1350px;}
+
+    /* footer */
+    .footer__content {padding: 55px 125px 25px;}
+
 }
