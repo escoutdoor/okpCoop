@@ -66,6 +66,9 @@ ul, ol {
     .background-wrap {
         width: 1320px;
     }
+    .wrapacc {
+        width: 1290px;
+    }
     body {
         overflow-x: hidden;
     }

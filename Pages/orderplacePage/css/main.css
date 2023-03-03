@@ -503,3 +503,28 @@ input::-webkit-inner-spin-button {
     padding: 0px;
     border-radius: 6px;
 }
+
+
+/* ------------------------ADAPTATION------------------------*/
+
+@media screen and (max-width: 1440px) {
+    /* subheader */
+    .realTime{gap: 3px;}
+    .subheader__left{gap: 20px;}
+    .addTrans__butt {margin-right: 20px;}
+    .subleft-schedule {display: none; visibility: hidden;}
+    .subleft-exchange, .subleft-bonus {gap: 8px;}
+    .realTime a,.subleft-bonus a, .subleft-exchange a{font-size: 13px; line-height: 13px;}
+    .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
+    .subheader__left img {width: 28px;height: 28px;}
+
+    /* form */
+    .order-title {font-size: 24px; line-height: 28px;}
+    .order-sub{font-size: 18px;line-height: 28px;}
+    #send2,#saveProd2,#dblProd2, #addProd,#saveProd, #dblProd, #send {width: 180px;}
+    .order__getinfo-item input, #comment, #comment2 {width: 633px;}
+    .order__getinfo-item h1, .order__getinfo-double__item h1{font-size: 16px;line-height: 28px;}
+    .order-comment h1 {font-size: 16px;line-height: 28px;}
+    .order__getinfo-double{gap: 19px;}
+    .order__getinfo-double__item input {width: 307px;}
+}
