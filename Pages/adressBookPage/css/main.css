@@ -3,7 +3,7 @@ html {
 }
 
 
-.persAcc__header {
+.subheader {
     display: flex;
     color: #fff;
     width: 100%;
@@ -14,7 +14,7 @@ html {
     margin-bottom: 80px;
 }
 
-.persAcc__headerCont {
+.subheader-content {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -22,83 +22,93 @@ html {
     align-items: center;
 }
 
-.persAcc__headerCont-left {
+.subheader__left {
     display: flex;
+    flex-direction: row;
+    gap: 30px;
     align-items: center;
-    width: 100%;
 }
 
-.persAcc__headerCont-londonReal__time {
+.subleft-time {
     display: flex;
-    gap: 17px;
+    flex-direction: row;
+    gap: 13px;
     align-items: center;
-    margin-right: 30px;
 }
 
 .realTime {
     display: flex;
-    width: 140px;
     flex-direction: row;
     gap: 5px;
-    color: #fff;
+    align-items: center;
+    font-weight: 600;
 }
 
-
 .realTime a,
-.realClock,
-.persAcc__headerCont-schedule__work p, 
-.persAcc__headerCont-exchange__rate a,
-.persAcc__headerCont-bonus a,
-.persAcc__headerCont-balance a {
+.subleft-bonus a,
+.subleft-exchange a{
     font-weight: 600;
     font-size: 15px;
     line-height: 16px;
     color: #fff;
 }
 
-.persAcc__headerCont-schedule__work {
-    display: flex;
-    align-items: center;
-    gap:8px;
-    margin-right: 30px;
+.realClock {
+    width: 75px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
 }
 
-.persAcc__headerCont-exchange__rate {
+.subleft-schedule {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.subleft-exchange {
     display: flex;
     flex-direction: row;
     gap: 14px;
     align-items: center;
-    margin-right: 30px;
 }
 
-.persAcc__headerCont-bonus {
+.subleft-bonus {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
     align-items: center;
 }
 
-.persAcc__headerCont-right {
-    display: flex;
-    align-items: center;
-    width: 606px;
-}
 
-.persAcc__headerCont-balance {
+/* right side of subheader */
+
+.subheader__right {
     display: flex;
-    gap: 5px;
-    width: 117px;
     flex-direction: row;
-    cursor: pointer;
+    align-items: center;
 }
 
-.persAcc__headerCont-right__buttons {
+.subright-balance {
     display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-right: 21px;
+}
+
+.subright-balance a{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #fff;
 }
 
 .addTrans__butt {
-    font-weight: 700;
-    margin: 0 30px 0 21px;
+    margin-right: 30px;
     font-size: 13px;
     line-height: 18px;
     width: 200px;
@@ -110,6 +120,7 @@ html {
     box-shadow: var(--shadow-buttShadow);
     border-radius: 36px;
     cursor: pointer;
+    font-weight: 700;
     transition: .3s transform, .25s box-shadow;
 }
 
@@ -157,7 +168,6 @@ html {
     box-shadow: 0 0.5em 0.5em -0.4em #ccc;
     transform: translateY(-0.25em);
 }
-
 
 /* MAIN PAGE */
 
@@ -377,4 +387,37 @@ input::-webkit-inner-spin-button {
 .buttonBlock button:hover {
     box-shadow: 0 0.5em 0.5em -0.4em #ccc;
     transform: translateY(-0.25em);
+}
+
+/* ------------------------ADAPTATION------------------------*/
+
+@media screen and (max-width: 1440px) {
+
+    /* subheader */
+    .realTime{gap: 3px;}
+    .subheader__left{gap: 20px;}
+    .addTrans__butt {margin-right: 20px;}
+    .subleft-schedule {display: none; visibility: hidden;}
+    .subleft-exchange, .subleft-bonus {gap: 8px;}
+    .realTime a,.subleft-bonus a, .subleft-exchange a{font-size: 13px; line-height: 13px;}
+    .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
+    .subheader__left img {width: 28px;height: 28px;} 
+
+    /* MAIN */
+    .inputBlock {
+        gap: 50px;
+    }
+    .inputBlock .input-item input {
+        width: 350px;
+    }
+    .wrapacc {
+        left: 100px;
+    }
+    .underBlock {
+        right: 800px;
+    }
+    .underBlock.secondBlock {
+        position: relative;
+        left: -405px;
+    }
 }

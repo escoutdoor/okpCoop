@@ -468,7 +468,6 @@
 /* ------------------------ADAPTATION------------------------*/
 
 @media screen and (max-width: 1440px) {
-    body { overflow-x: hidden;}
 
     /* subheader */
     .realTime{gap: 3px;}

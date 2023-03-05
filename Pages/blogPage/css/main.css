@@ -196,19 +196,21 @@
 /* PREFOOTER */
 
 .delPage__prefooter {
-    display: block;
+    display: flex;
+    align-items: center;
     width: 1800px;
     height: 280px;
     background: var(--background-color);
-    padding: 112px 200px 0px 202px;
     border-radius: 36px;
     margin: 160px auto 0 auto;
     color: #fff;
 }
 
 .delPage__prefooterContent {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 215px;
     align-items: center;
 }
 
@@ -226,4 +228,39 @@
 .delPage__prefooterContent-social img {
     width: 66px;
     height: 66px;
+}
+
+
+/* ------------------ADAPTATION------------------*/
+
+@media screen and (max-width: 1440px) { 
+    /* prefooter */
+    .delPage__prefooter {width: 1350px;}
+    .delPage__prefooterContent h1 { font-size: 36px; line-height: 42px; }
+    .delPage__prefooterContent { gap: 140px;}
+
+    /* MAIN */
+    .swiper {
+        width: 1150px;
+    }
+    .background-title {
+        font-size: 40px;
+    }
+    .main-block {
+        width: 350px;
+        height: 450px;
+    }
+    .main-block h4 {
+        width: 300px;
+    }
+    .imgBlock {
+        width: 350px;
+    }
+    .additionBlock {
+        margin-top: 60px;
+    }
+    .additionBlock.specialBlock {
+        position: relative;
+        top: -33px;
+    }
 }

@@ -6,7 +6,7 @@
     border-radius: 36px;
     background: var(--background-color);
     padding: 31px 100px 31px 104px;
-    margin-bottom: 76px;
+    margin-bottom: 80px;
 }
 
 .subheader-content {
@@ -123,6 +123,7 @@
 .addTrans__butt:focus {
     box-shadow: 0 0.5em 0.5em -0.4em #32CD32;
     transform: translateY(-0.25em);
+    color: #fff;
 }
 
 .paypal__butt {
@@ -291,8 +292,10 @@ a:hover {
 
 .specialBlock {
     position: relative;
-    top: 7.5px;
+    top: 8.5px;
 }
+
+
 
 .modal-body h3 {
     text-align: center;
@@ -355,4 +358,30 @@ a:hover {
     border: 1px solid #d72f2f;
 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* ------------------------ADAPTATION------------------------*/
+
+@media screen and (max-width: 1440px) {
+
+    /* subheader */
+    .realTime{gap: 3px;}
+    .subheader__left{gap: 20px;}
+    .addTrans__butt {margin-right: 20px;}
+    .subleft-schedule {display: none; visibility: hidden;}
+    .subleft-exchange, .subleft-bonus {gap: 8px;}
+    .realTime a,.subleft-bonus a, .subleft-exchange a{font-size: 13px; line-height: 13px;}
+    .subright-balance a, .realClock {font-size: 13px; line-height: 14px;}
+    .subheader__left img {width: 28px;height: 28px;}
+
+    /* MAIN */
+    .inputBlock__item label {
+        font-size: 16px;
+    }
+    .inputBlock__item input {
+        width: 350px;
+    }
+    .footeracc {
+        margin-top: 800px;
+    }
 }
