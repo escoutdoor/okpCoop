@@ -1,3 +1,11 @@
+.wrap {
+    max-width: 1410px;
+}
+
+.background-wrap {
+    max-width: 1810px;
+}
+
 .main__body {
     width: 100%;
 }
